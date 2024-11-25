@@ -51,11 +51,12 @@
                     @endif
                     @endauth
                 </nav>
+
                 <ul class="flex gap-4 mr-8">
                     <li><a href="{{ route('index') }}" class="hover:underline text-2xl hover:text-white duration-300">Home</a></li>
                     <li><a href="{{ route('services') }}" class="hover:underline text-2xl hover:text-white duration-300">Services</a></li>
                     <li><a href="{{ route('gallery') }}" class="hover:underline text-2xl hover:text-white duration-300">Gallery</a></li>
-                    <li><a href="https://booksy.com" class="bg-green-500/40 text-white py-2 px-6 rounded hover:bg-green-500 transition font-serif">Book Now</a></li>
+                    <li><a href="https://laalexiaatelier.booksy.com" class="bg-green-500/40 text-white py-2 px-6 rounded hover:bg-green-500 transition font-serif">Book Now</a></li>
                 </ul>
                 @endif
             </header>
