@@ -87,7 +87,7 @@
                             </p>
                         </div>
                         <div>
-                            <img class="object-cover h-[800px] w-[1200px]" src="{{ asset('images/alexia.jpg') }}" alt="woman-with-syringe" />
+                            <img class="object-cover h-[800px] w-[1200px]" src="{{ asset('images/alexia_2.webp') }}" alt="woman-with-syringe" />
                         </div>
                     </div>
                 </div>
