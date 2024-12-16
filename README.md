@@ -3,3 +3,4 @@
 <p>Finished Landing page layout. 8.12.2024</p>
 <p>Awaiting text and input from customer 10.12.2024</p>
 <p>Added services section </p>
+<p>Changed hosting to AWS and Ploi</p>
