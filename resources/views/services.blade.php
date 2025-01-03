@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L'Alexia Atelier - Permanent Makeup & Aesthetics Salon</title>
 
   <!-- Meta Tags for SEO -->
   <meta name="description" content="L'Alexia Atelier offers personalized permanent makeup and aesthetics treatments in Darlington, UK. Enhance your natural beauty with expert care.">
@@ -24,14 +25,11 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
-  <link rel="icon" href="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/logo.png" type="image/png">
-  <title>L'Alexia Atelier - Permanent Makeup & Aesthetics Salon</title>
+  <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
+  <title>L'Alexia Atelier</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap">
 
   <!-- Style -->
-  <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin="anonymous">
-  <link rel="dns-prefetch" href="https://kit.fontawesome.com">
-
-  <!-- FontAwesome Script -->
   <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
 
   <style>
@@ -40,16 +38,6 @@
       color: rgba(255, 255, 255, 0.85);
       background-color: black;
       margin: 0;
-    }
-
-    #background {
-      position: fixed;
-      inset: 0;
-      z-index: -10;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.4;
     }
 
     header {
@@ -139,7 +127,7 @@
       opacity: 100%;
       transition: opacity 0.3s ease;
     }
-    
+
     .content {
       margin: 2rem auto;
       max-width: 90%;
@@ -218,6 +206,22 @@
       font-size: xx-large;
     }
 
+    .services {
+      display: flex;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      justify-content: space-between;
+      list-style-type: none;
+      padding: 1.25em;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .services li {
+      text-decoration: none;
+      line-height: 1.8;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -228,6 +232,7 @@
     .text-center {
       text-align: center;
     }
+
     .text-center a:hover {
       cursor: pointer;
       text-decoration: none;
@@ -238,6 +243,7 @@
       background-clip: text;
       transition: color 0.3s, text-shadow 0.3s;
     }
+
     .hover-color {
       cursor: pointer;
       text-decoration: none;
@@ -248,10 +254,11 @@
       background-clip: text;
       transition: color 0.3s, text-shadow 0.3s;
     }
+
     .map-container {
       text-align: center;
+      padding: 1em 0em;
       margin: 2rem auto;
-      padding: 1.5rem;
       background-color: rgba(0, 0, 0, 0.8);
       color: white;
       border-radius: 0.5rem;
@@ -271,19 +278,93 @@
     }
 
     .map-container a:hover {
-     text-decoration: underline;
-    color: transparent;
-    background: linear-gradient(90deg, #e8de9c, #d6c273, #cab15c);
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-shadow: 0px 0px 1px #e8de9c;
-    opacity: 95%;
+      text-decoration: underline;
+      color: transparent;
+      background: linear-gradient(90deg, #e8de9c, #d6c273, #cab15c);
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-shadow: 0px 0px 1px #e8de9c;
+      opacity: 95%;
     }
 
     .flex-end {
       display: flex;
       justify-content: flex-end;
     }
+    
+    .services-navbar {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+  overflow: hidden;
+  background-color: black; 
+}
+
+.services-navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.services-navbar a:hover, .subnav:hover .subnavbtn {
+  text-decoration: underline;
+      color: transparent;
+      background: linear-gradient(90deg, #e8de9c, #d6c273, #cab15c);
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-shadow: 0px 0px 1px #e8de9c;
+      /* Layers of glow for a neon effect */
+      opacity: 95%;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  text-decoration: underline;
+      color: transparent;
+      background: linear-gradient(90deg, #e8de9c, #d6c273, #cab15c);
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-shadow: 0px 0px 1px #e8de9c;
+      /* Layers of glow for a neon effect */
+      opacity: 95%;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
 
     /* Media Queries for Responsiveness */
     @media (max-width: 768px) {
@@ -323,10 +404,12 @@
         display: flex;
         flex-direction: column;
       }
+
       .column-reverse {
         display: flex;
         flex-direction: column-reverse;
       }
+
       .gallery {
         display: flex;
         flex-direction: column;
@@ -345,13 +428,17 @@
         width: 100%;
         height: 100%;
       }
+      .services {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+      }
     }
     }
   </style>
 </head>
 
-<body>
-
+<body class="font-sans bg-gray-100">
   <header>
     <div class="header-logo">
       <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/logo.webp" alt="Beauty Saloon Logo">
@@ -363,51 +450,22 @@
       <li><a class="book-now" href="https://laalexiaatelier.booksy.com">Book Now</a></li>
     </ul>
   </header>
+
   <main>
     <div class="content">
-
       <div class="column-reverse">
-        <h1>Welcome to Permanent Makeup & Aesthetics</h1>
+        <h2>Services</h2>
         <p>Specializing in personalized treatments for beauty enhancement.</p>
         <p>
           When it comes to your appearance, you deserve the best care that money can buy.
-          Welcome to <span style="font-weight: bold; font-style: italic;">Permanent Make-Up Institute</span>,
+          Welcome to <span style="font-weight: bold; font-style: italic;">& Permanent Make-Up Institute</span>,
           the number one Skin Expert in cosmetology and aesthetics treatments in the North Yorkshire & Durhamshire area.
         </p>
         <p>Give us a call today and book a complimentary consultation meeting.</p>
       </div>
-      <div class="flex-end">
-        <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/alexia_2.webp" alt="Woman with syringe">
-      </div>
     </div>
-    <div class="content column-reverse">
-      <section class="about-me-section">
-        <h2>&#119808;&#119809;&#119822;&#119828;&#119827; &#119820;&#119812; &#128420;</h2>
-        <p>&#129392;.
-          Thank you for your trust and support &#129782;.
-        </p>
-        <p></p>
-        <p>
-          <strong>15 years of experience:</strong> I am a University graduate, accredited Aesthetic Medicine Practitioner,
-          and Laser Hair Removal Specialist.
-        </p>
-        <p>
-          <strong>Award-winning:</strong> Multiple <i>British Hair and Beauty Awards</i>, including Gold Winner for
-          Semi-Permanent Makeup and Aesthetic Salon of the Year &#127942;.
-        </p>
-        <p>
-          <strong>Published:</strong> Featured in *Leaders* magazine with a 3-page interview.
-        </p>
-        <p>
-          <strong>Artistic roots:</strong> I love creating art and have exhibited my paintings in Hartlepool.
-        </p>
-        <p>
-          <strong>Darlington-based</strong>
-        </p>
-    </div>
-    </section>
     <div class="gallery-content">
-      <h2 class="text-center gallery-title">Gallery</h2>
+      <h2 class="text-center gallery-title">Services</h2>
       <section class="gallery">
         <div class="text-center">
           <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/lips.webp" alt="Client Work 3">
@@ -422,14 +480,53 @@
           <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/russian_lips2.webp" alt="Client Work 3">
         </div>
       </section>
-        <h2 class="text-center"><a href="{{ route('gallery') }}">View More...</a></h2>
-
     </div>
   </main>
+  <div class="services-navbar">
+  <div class="subnav">
+    <button class="subnavbtn">Semi Permanent Make Up <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#team">Derma Fillers</a>
+      <a href="#careers">Lips Dissolving</a>
+      <a href="#careers">Anti Wrinkle Injections</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Aesthetics Treatments <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#bring">PDO/PLLA Threads Face Lift</a>
+      <a href="#deliver">Fat Dissolving</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">RF Fractional Microneedling <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Skin Care Treatment</a>
+      <a href="#link2">Hair Loss Therapy</a>
+      <a href="#link3">IV Drip Vitamins Infusion</a>
+    </div>
+  </div>
+    <div class="subnav">
+    <button class="subnavbtn">Slimming / Anti-cellulite Body Treatment <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Small Tattoo</a>
+      <a href="#link2">Laser Hair Removal</a>
+    </div>
+  </div>
+    <div class="subnav">
+    <button class="subnavbtn">PMU & Tattoo Removal <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Skin Tags / Red Facial Veins Removal</a>
+      <a href="#link2">Lash Lift & Eyebrows Lamination</a>
+      <a href="#link3">Carboxytherapy</a>
+    </div>
+  </div>
+</div>
+  </div>
   <div class="map-container">
     <h2>Find Us</h2>
     <p>Visit us at:</p>
-    <p><strong>12A Gilling Cres, Darlington DL1 4TH</strong></p>
+    <p><strong>12 Gilling Cres, Darlington DL1 4TH</strong></p>
     <p><a href="https://www.google.com/maps/dir//12+Gilling+Cres+Darlington+DL1+4TH/@54.5178569,-1.5305936,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x487e9a2ecbb6ea53:0x308f89e3df7508b0"><i class="fa-solid fa-map-location-dot fa-xl"></i></a></p>
   </div>
   <footer>
