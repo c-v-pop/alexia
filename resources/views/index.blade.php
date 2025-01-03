@@ -284,6 +284,9 @@
       display: flex;
       justify-content: flex-end;
     }
+    hr {
+        visibility: hidden;
+    }
 
     /* Media Queries for Responsiveness */
     @media (max-width: 768px) {
@@ -293,10 +296,17 @@
         background-color: transparent;
       }
 
+      hr {
+        visibility: visible;
+        width: 80%;
+        border-color: #cab15c;
+        margin: 0px;
+        padding: 0px;
+      }
+
       .nav-list {
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
       }
 
       .nav-item a {
@@ -305,6 +315,7 @@
 
       .book-now {
         font-size: 1rem;
+        margin-top: 1rem;
       }
 
       .content h1 {
@@ -346,7 +357,6 @@
         height: 100%;
       }
     }
-    }
   </style>
 </head>
 
@@ -358,9 +368,12 @@
     </div>
     <ul class="nav-list">
       <li class="nav-item"><a href="{{ route('index') }}">Home</a></li>
+      <hr>
       <li class="nav-item"><a href="{{ route('services') }}">Services</a></li>
+      <hr>
       <li class="nav-item"><a href="{{ route('gallery') }}">Gallery</a></li>
-      <li><a class="book-now" href="https://laalexiaatelier.booksy.com">Book Now</a></li>
+      <hr>
+      <li class="book-now"><a class="book-now" href="https://laalexiaatelier.booksy.com">Book Now</a></li>
     </ul>
   </header>
   <main>
