@@ -9,6 +9,9 @@ Route::get('/', function () {
 })->name('index');
 Route::get('/services', [PageController::class, 'services'])->name('services');
 Route::get('/gallery', [PageController::class, 'gallery'])->name('gallery');
+Route::get('/policies', [PageController::class, 'policies'])->name('policies');
+Route::get('/pricelist', [PageController::class, 'pricelist'])->name('pricelist');
+Route::get('/treatments', [PageController::class, 'treatments'])->name('treatments');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

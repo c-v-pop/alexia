@@ -20,7 +20,7 @@
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:title" content="L'Alexia Atelier - Permanent Makeup & Aesthetics Salon">
-  <meta name="twitter:description" content="Personalized permanent makeup and aesthetics treatments in Darlington, UK. Book now for a consultation at L'Alexia Atelier.">
+  <meta name="twitter:description" content="Personalized permanent makeup and aesthetics treatments in Darlington, UK. Book for a consultation at L'Alexia Atelier.">
   <meta name="twitter:image" content="https://example.com/path-to-image.jpg"> <!-- Replace with actual image -->
   <meta name="twitter:card" content="summary_large_image">
 
@@ -346,9 +346,18 @@
     </div>
     <ul class="nav-list">
       <li class="nav-item"><a href="{{ route('index') }}">Home</a></li>
+      <hr>
+      <li class="nav-item"><a href="{{ route('treatments') }}">Treatments and Offers</a></li>
+      <hr>
+      <li class="nav-item"><a href="{{ route('pricelist') }}">Pricelist</a></li>
+      <hr>
       <li class="nav-item"><a href="{{ route('services') }}">Services</a></li>
+      <hr>
+      <li class="nav-item"><a href="{{ route('policies') }}">Info & Policies</a></li>
+      <hr>
       <li class="nav-item"><a href="{{ route('gallery') }}">Gallery</a></li>
-      <li><a class="book-now" href="https://laalexiaatelier.booksy.com">Book Now</a></li>
+      <hr>
+      <li><a class="book-now" href="https://laalexiaatelier.booksy.com">Appointments</a></li>
     </ul>
   </header>
 
