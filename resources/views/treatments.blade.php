@@ -41,15 +41,13 @@
       background-color: black;
       margin: 0;
     }
+    li {
+      list-style: none;
+    }
 
-    #background {
-      position: fixed;
-      inset: 0;
-      z-index: -10;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.4;
+    .flex-center {
+      display: flex;
+      justify-content: center;
     }
 
     header {
@@ -96,33 +94,6 @@
       opacity: 95%;
     }
 
-    .about-me-section {
-      color: white;
-      padding: 2rem 1rem;
-      border-radius: 0.5rem;
-      max-width: 1450px;
-      margin: 2rem auto;
-      line-height: 1.8;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .about-me-section h2 {
-      text-align: center;
-      /* Center align only the h2 */
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-
-    .about-me-section p {
-      font-size: 1.25rem;
-      margin: 0.5rem 0;
-      text-align: left;
-      /* Align p tags to the left */
-      text-decoration: none;
-      /* Ensures no text decoration */
-    }
-
     .book-now {
       background: rgb(238, 185, 93);
       background: linear-gradient(145deg, rgba(238, 185, 93, 0.8603816526610644) 25%, rgba(242, 237, 207, 1) 52%, rgba(238, 185, 93, 1) 77%);
@@ -138,84 +109,7 @@
     .book-now:hover {
       opacity: 100%;
       transition: opacity 0.3s ease;
-    }
-    
-    .content {
-      margin: 2rem auto;
-      max-width: 90%;
-      min-height: 70vh;
-      text-align: center;
-      padding: 1.5rem;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: white;
-      border-radius: 0.5rem;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      max-width: 1450px;
-      display: flex;
-      gap: 4em;
-      justify-content: space-between;
-      align-items: center;
-      line-height: 1.8;
-    }
-
-    .content img {
-      width: 400px;
-      /* Set explicit width */
-      height: 600px;
-      /* Set explicit height */
-      object-fit: cover;
-      /* Ensure no distortion */
-      border-radius: 10px;
-      /* Optional styling */
-    }
-
-    .content h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
-    }
-
-    .content p {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-
-    .gallery {
-      min-height: 80vh;
-      max-width: 1450px;
-      display: flex;
-    }
-
-    .gallery img {
-      width: 400px;
-      /* Adjust the width as needed */
-      height: 400px;
-      /* Adjust the height as needed */
-      object-fit: cover;
-      /* Ensures images are cropped to fit without distortion */
-      border-radius: 10px;
-      /* Optional: gives a rounded corner effect */
-      margin: 5px;
-      /* Adds space between images */
-      transition: transform 0.3s ease;
-      /* Adds a hover effect */
-    }
-
-    .gallery-content {
-      background-color: rgba(0, 0, 0, 0.8);
-      max-width: 1450px;
-      margin: 3em auto;
-      padding-bottom: 3em;
-    }
-
-    .gallery-content a {
-      color: white;
-      text-decoration: none;
-      font-size: x-large;
-    }
-
-    .gallery-content h2 {
-      padding-top: 1em;
-      font-size: xx-large;
+      color: rgb(97, 29, 223);
     }
 
     footer {
@@ -223,30 +117,6 @@
       padding: 1rem;
       color: white;
       background-color: black;
-    }
-
-    .text-center {
-      text-align: center;
-    }
-    .text-center a:hover {
-      cursor: pointer;
-      text-decoration: none;
-      color: transparent;
-      /* Hide the default text color */
-      background: linear-gradient(90deg, #cab15c, #e8de9c, #d6c273);
-      -webkit-background-clip: text;
-      background-clip: text;
-      transition: color 0.3s, text-shadow 0.3s;
-    }
-    .hover-color {
-      cursor: pointer;
-      text-decoration: none;
-      color: transparent;
-      /* Hide the default text color */
-      background: linear-gradient(90deg, #cab15c, #e8de9c, #d6c273);
-      -webkit-background-clip: text;
-      background-clip: text;
-      transition: color 0.3s, text-shadow 0.3s;
     }
     .map-container {
       text-align: center;
@@ -279,13 +149,12 @@
     text-shadow: 0px 0px 1px #e8de9c;
     opacity: 95%;
     }
-
-    .flex-end {
-      display: flex;
-      justify-content: flex-end;
-    }
     hr {
         visibility: hidden;
+    }
+    .hero_block {
+      font-size: larger;
+      margin: 5em auto;
     }
 
     /* Media Queries for Responsiveness */
@@ -295,7 +164,9 @@
         align-items: center;
         background-color: transparent;
       }
-
+      .hero_block {
+        font-size: medium;
+      }
       hr {
         visibility: visible;
         width: 80%;
@@ -317,44 +188,14 @@
         font-size: 1rem;
         margin-top: 1rem;
       }
-
-      .content h1 {
-        font-size: 1.8rem;
-      }
-
-      .content h2 {
-        font-size: 1.6rem;
-      }
-
-      .content p {
-        font-size: 1rem;
-      }
-
-      .content {
-        display: flex;
+      .flex-center {
         flex-direction: column;
-      }
-      .column-reverse {
-        display: flex;
-        flex-direction: column-reverse;
-      }
-      .gallery {
-        display: flex;
-        flex-direction: column;
-        /* Switch to column layout */
-        align-items: center;
+        text-align: center;
         margin: auto;
-        width: 90%;
       }
-
-      .gallery img {
-        width: 100%;
-        height: 100%;
-      }
-
-      .content img {
-        width: 100%;
-        height: 100%;
+      ul {
+        margin: 0px;
+        padding: 0px;
       }
     }
   </style>
@@ -383,70 +224,83 @@
     </ul>
   </header>
   <main>
-    <div class="content">
-
-      <div class="column-reverse">
-        <h1>Welcome to Permanent Makeup & Aesthetics</h1>
-        <p>Specializing in personalized treatments for beauty enhancement.</p>
-        <p>
-          When it comes to your appearance, you deserve the best care that money can buy.
-          Welcome to <span style="font-weight: bold; font-style: italic;">Permanent Make-Up Institute</span>,
-          the number one Skin Expert in cosmetology and aesthetics treatments in the North Yorkshire & Durhamshire area.
-        </p>
-        <p>Give us a call today and book a complimentary consultation meeting.</p>
-      </div>
-      <div class="flex-end">
-        <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/alexia_2.webp" alt="Woman with syringe">
-      </div>
+    <div class="hero_block">
+      <div class="flex-center">
+        <ul>
+          <h3>Scalp & Hair Loss Therapy</h3>
+        </ul>
+      <ul>
+        <h3>Carboxytherapy</h3>
+      </ul>
+      <ul>
+        <h3>IV Vitamins Drip Therapy</h3>
+      </ul>
+      <ul>
+        <h3>RF Microneedling</h3>
+      </ul>   
     </div>
-    <div class="content column-reverse">
-      <section class="about-me-section">
-        <h2>&#119808;&#119809;&#119822;&#119828;&#119827; &#119820;&#119812; &#128420;</h2>
-        <p>&#129392;.
-          Thank you for your trust and support &#129782;.
-        </p>
-        <p></p>
-        <p>
-          <strong>15 years of experience:</strong> I am a University graduate, accredited Aesthetic Medicine Practitioner,
-          and Laser Hair Removal Specialist.
-        </p>
-        <p>
-          <strong>Award-winning:</strong> Multiple <i>British Hair and Beauty Awards</i>, including Gold Winner for
-          Semi-Permanent Makeup and Aesthetic Salon of the Year &#127942;.
-        </p>
-        <p>
-          <strong>Published:</strong> Featured in *Leaders* magazine with a 3-page interview.
-        </p>
-        <p>
-          <strong>Artistic roots:</strong> I love creating art and have exhibited my paintings in Hartlepool.
-        </p>
-        <p>
-          <strong>Darlington-based</strong>
-        </p>
-    </div>
-    </section>
-    <div class="gallery-content">
-      <h2 class="text-center gallery-title">Gallery</h2>
-      <section class="gallery">
-        <div class="text-center">
-          <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/lips.webp" alt="Client Work 3">
-          <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/eyebrows.webp" alt="Client Work 3">
-        </div>
-        <div class="text-center">
-          <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/scar.webp" alt="Client Work 3">
-          <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/wrinkles.webp" alt="Client Work 3">
-        </div>
-        <div class="text-center">
-          <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/wrinkles_2.webp" alt="Client Work 3">
-          <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/russian_lips2.webp" alt="Client Work 3">
-        </div>
-      </section>
-        <h2 class="text-center"><a href="{{ route('gallery') }}">View More...</a></h2>
-
+      <div class="flex-center">
+        <ul>
+          <h3>Semi Permanent Make Up</h3>
+          <li>Ombre Powder Brows</li>
+          <li>Lips</li>
+          <li>Eyeliner</li>
+        </ul>
+        <ul>
+          <h3>Advanced Aesthetic Treatments</h3>
+          <li>PDO threads</li>
+          <li>Anti-wrinkle injections</li>
+          <li>Lips Modeling</li>
+          <li>Wrinkle filling</li>
+          <li>Platelet Rich Plasma & Fibrin</li>
+          <li>Skin Needle Mesotherapy</li>
+          <li>Fat Dissolving</li>
+          <li>Skin Tissue Stimulators</li>
+        </ul>
+        <ul>
+          <h3>Professional Skin Care</h3>
+          <li>Facial Treatments for all skin types</li>
+          <li>Individual Therapy for problematic skin</li>
+          <li>Micro-Needle skin Mesotherapy</li>
+          <li>No-Needle Mesotherapy</li>
+          <li>Closing the Blood Vessels</li>
+          <li>Original Hydrafacial</li>
+          <li>Oxygen Infusion</li>
+          <li>Oxyabrasion</li>
+          <li>Diamond Microdermabrasion</li>
+          <li>Ultrasonic</li>
+          <li>RF</li>
+          <li>Cavitation</li>
+          <li>Chemical peels</li>
+        </ul>
+      </div>
+      <div class="flex-center">
+        <ul>
+          <h3>Body Treatments</h3>
+          <li>Anti-cellulite treatments</li>
+          <li>Slimming treatments</li>
+          <li>Individual scars & stretch marks therapy</li>
+          <li>Carboxytherapy</li>
+          <li>Micropuncture</li>
+          <li>Dermomassage</li>
+          <li>Body wrapping</li>
+        </ul>
+        <ul>
+          <h3>Eye Beauty Treatments</h3>
+          <li>HD Brows</li>
+          <li>Lash Lift</li>
+          <li>Brows Lamination</li>
+          <li>Under the Eye Therapy</li>
+        </ul>
+        <ul>
+          <h3>Pregnant & Postpartum Care</h3>
+          <li>Facial & Body Treatments</li>
+        </ul>
+      </div>
     </div>
   </main>
   <div class="map-container">
-    <h2>Find Us</h2>
+    <h3>Find Us</h3>
     <p>Visit us at:</p>
     <p><strong>12A Gilling Cres, Darlington DL1 4TH</strong></p>
     <p><a href="https://www.google.com/maps/dir//12+Gilling+Cres+Darlington+DL1+4TH/@54.5178569,-1.5305936,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x487e9a2ecbb6ea53:0x308f89e3df7508b0"><i class="fa-solid fa-map-location-dot fa-xl"></i></a></p>
