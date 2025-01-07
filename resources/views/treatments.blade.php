@@ -155,6 +155,8 @@
     .hero_block {
       font-size: larger;
       margin: 5em auto;
+      display: flex;
+      flex-direction: column;
     }
 
     /* Media Queries for Responsiveness */
@@ -227,26 +229,6 @@
     <div class="hero_block">
       <div class="flex-center">
         <ul>
-          <h3>Scalp & Hair Loss Therapy</h3>
-        </ul>
-      <ul>
-        <h3>Carboxytherapy</h3>
-      </ul>
-      <ul>
-        <h3>IV Vitamins Drip Therapy</h3>
-      </ul>
-      <ul>
-        <h3>RF Microneedling</h3>
-      </ul>   
-    </div>
-      <div class="flex-center">
-        <ul>
-          <h3>Semi Permanent Make Up</h3>
-          <li>Ombre Powder Brows</li>
-          <li>Lips</li>
-          <li>Eyeliner</li>
-        </ul>
-        <ul>
           <h3>Advanced Aesthetic Treatments</h3>
           <li>PDO threads</li>
           <li>Anti-wrinkle injections</li>
@@ -257,6 +239,30 @@
           <li>Fat Dissolving</li>
           <li>Skin Tissue Stimulators</li>
         </ul>
+        <ul>
+          <h3>Body Treatments</h3>
+          <li>Anti-cellulite treatments</li>
+          <li>Slimming treatments</li>
+          <li>Individual scars & marks therapy</li>
+          <li>Carboxytherapy</li>
+          <li>Micropuncture</li>
+          <li>Dermomassage</li>
+          <li>Body wrapping</li>
+        </ul>
+        <ul>
+          <h3>Semi Permanent Make Up</h3>
+          <li>Ombre Powder Brows</li>
+          <li>Lips</li>
+          <li>Eyeliner</li>
+        </ul>
+        <ul>
+          <h3>IV Vitamins Drip Therapy</h3>
+        </ul>
+        <ul>
+          <h3>RF Microneedling</h3>
+        </ul>   
+      </div>
+      <div class="flex-center">
         <ul>
           <h3>Professional Skin Care</h3>
           <li>Facial Treatments for all skin types</li>
@@ -273,18 +279,6 @@
           <li>Cavitation</li>
           <li>Chemical peels</li>
         </ul>
-      </div>
-      <div class="flex-center">
-        <ul>
-          <h3>Body Treatments</h3>
-          <li>Anti-cellulite treatments</li>
-          <li>Slimming treatments</li>
-          <li>Individual scars & stretch marks therapy</li>
-          <li>Carboxytherapy</li>
-          <li>Micropuncture</li>
-          <li>Dermomassage</li>
-          <li>Body wrapping</li>
-        </ul>
         <ul>
           <h3>Eye Beauty Treatments</h3>
           <li>HD Brows</li>
@@ -296,7 +290,13 @@
           <h3>Pregnant & Postpartum Care</h3>
           <li>Facial & Body Treatments</li>
         </ul>
-      </div>
+        <ul>
+          <h3>Scalp & Hair Loss Therapy</h3>
+        </ul>
+      <ul>
+        <h3>Carboxytherapy</h3>
+      </ul>
+    </div>
     </div>
   </main>
   <div class="map-container">
