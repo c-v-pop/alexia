@@ -43,6 +43,7 @@
     }
     li {
       list-style: none;
+      margin: 0.3em 0em;
     }
 
     .flex-center {
@@ -158,6 +159,11 @@
       display: flex;
       flex-direction: column;
     }
+    .styled-border {
+      border: solid;
+      border-color: rgb(238, 185, 93);
+      padding: 1em
+    }
 
     /* Media Queries for Responsiveness */
     @media (max-width: 768px) {
@@ -166,6 +172,12 @@
         align-items: center;
         background-color: transparent;
       }
+      .styled-border {
+      border: dotted;
+      padding: 1em;
+      margin: 1em 1em;
+      border-color: rgb(238, 185, 93);
+    }
       .hero_block {
         font-size: medium;
       }
@@ -228,7 +240,7 @@
   <main>
     <div class="hero_block">
       <div class="flex-center">
-        <ul>
+        <ul class="styled-border">
           <h3>Advanced Aesthetic Treatments</h3>
           <li>PDO threads</li>
           <li>Anti-wrinkle injections</li>
@@ -239,7 +251,7 @@
           <li>Fat Dissolving</li>
           <li>Skin Tissue Stimulators</li>
         </ul>
-        <ul>
+        <ul class="styled-border">
           <h3>Body Treatments</h3>
           <li>Anti-cellulite treatments</li>
           <li>Slimming treatments</li>
@@ -249,21 +261,21 @@
           <li>Dermomassage</li>
           <li>Body wrapping</li>
         </ul>
-        <ul>
+        <ul class="styled-border">
           <h3>Semi Permanent Make Up</h3>
           <li>Ombre Powder Brows</li>
           <li>Lips</li>
           <li>Eyeliner</li>
         </ul>
-        <ul>
+        <ul class="styled-border">
           <h3>IV Vitamins Drip Therapy</h3>
         </ul>
-        <ul>
+        <ul class="styled-border">
           <h3>RF Microneedling</h3>
         </ul>   
       </div>
       <div class="flex-center">
-        <ul>
+        <ul class="styled-border">
           <h3>Professional Skin Care</h3>
           <li>Facial Treatments for all skin types</li>
           <li>Individual Therapy for problematic skin</li>
@@ -279,21 +291,21 @@
           <li>Cavitation</li>
           <li>Chemical peels</li>
         </ul>
-        <ul>
+        <ul class="styled-border">
           <h3>Eye Beauty Treatments</h3>
           <li>HD Brows</li>
           <li>Lash Lift</li>
           <li>Brows Lamination</li>
           <li>Under the Eye Therapy</li>
         </ul>
-        <ul>
+        <ul class="styled-border">
           <h3>Pregnant & Postpartum Care</h3>
           <li>Facial & Body Treatments</li>
         </ul>
-        <ul>
+        <ul class="styled-border">
           <h3>Scalp & Hair Loss Therapy</h3>
         </ul>
-      <ul>
+      <ul class="styled-border">
         <h3>Carboxytherapy</h3>
       </ul>
     </div>
