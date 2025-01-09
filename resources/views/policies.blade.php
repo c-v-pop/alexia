@@ -41,6 +41,9 @@
       background-color: black;
       margin: 0;
     }
+    li {
+      list-style: none;
+    }
 
     header {
       display: flex;
@@ -203,6 +206,7 @@
     <div>
       <ul>
         <h3>SEMI PERMANENT MAKE-UP</h3>
+        <img src="{{ asset('images/laser_hair_removal.webp') }}" alt="laser hair removal">
         <li>Sunbeds - <strong>2 WEEKS BEFORE THE TREATMENT!</strong></li>
         <li>Blood thinners and drugs.</li>
         <li>Acne medication (e.g., Izotek).</li>
@@ -355,6 +359,50 @@
         <li>Previously performed face care treatments (ask for details)</li>
       </ul>
     </div>
+    <aside>
+      <div>
+        <ul>
+          <h3>Our Clinic Regulations</h3>
+          <li>By subscribing for the treatment, you fully accept the regulations and the rules listed below.</li>
+          <li>Clients before each treatment sign the consent for the procedure and take into account the side effects of the performed treatment.</li>
+          <li>When booking an appointment for semi-permanent makeup or needle aesthetics treatment, a payment (down payment) of £50 is required, it is the only form of reservation of the date. For no-needle treatment and less invasive therapy, the deposit is £30.</li>
+          <li>The Client has 48 hours from the moment of signing up to settle the deposit. If not done, the reservation is automatically canceled, and the date becomes available to other customers.</li>
+          <li>If the treatment takes place, its price is reduced by the value of the deposit.</li>
+          <li>The deposit can be settled by bank transfer: <strong>A N BARTOSINSKA, sort code: 20-61-51, Acc: 63549836</strong>.</li>
+          <li>In the title of the transfer, you must enter your name, surname, date, and time of the visit. Failure to provide these details makes it impossible to guarantee availability of the booked date.</li>
+          <li>When booking the date, ensure there are no contraindications for the procedure. If there are doubts about your health or medications, contact me immediately. Appearing at the appointment with an obvious contraindication results in the loss of the deposit.</li>
+          <li>Consultation regarding semi-permanent makeup treatment is always free. If you have doubts about the procedure, make a free consultation appointment by phone.</li>
+          <li>Consultation regarding skin condition, skin examination, pre-treatment, and after-treatment advice costs £39 for a 25-minute session. If the Client books an appointment and pays for the treatment in full after the consultation, the consultation is free.</li>
+          <li>The customer has the right to change the date of the visit at least 72 hours before the planned visit. Last-minute cancellations result in being added to the "Black List" and loss of the advance payment. Exceptional situations must be confirmed with documentation, e.g., a sick leave.</li>
+          <li>Clients can postpone the appointment twice, requesting no later than 72 hours before the planned meeting. Otherwise, the down payment will be forfeited. Appointments cannot be postponed indefinitely.</li>
+          <li>If health conditions change and prevent the procedure, the advance payment is returned upon presenting a physician's note.</li>
+          <li>Complete resignation from the treatment forfeits the down payment. The treatment cannot be transferred to another client.</li>
+          <li>Clients with previous permanent makeup must inform the linergist. Arriving with old, visible makeup without prior notice, which makes the procedure impossible, results in loss of the deposit.</li>
+          <li>During the semi-permanent makeup treatment, an initial drawing is made, and the method is selected based on the client’s natural beauty.</li>
+          <li>The artist reserves the right to refuse service if the Client’s expectations are inconsistent with the proposed visualization.</li>
+          <li>If the Client does not accept the proposed shape, method, and color of the pigment and decides to resign during the visit, the advance payment is non-refundable.</li>
+          <li>L' Alexia Atelier does not guarantee the effect or final result of the procedure. The skin’s response and aftercare are crucial.</li>
+          <li>Lip Modeling requires 4-6 weeks to settle. Multiple visits may be needed for optimal results.</li>
+          <li>Clients delaying makeup correction due to pregnancy must pay 30% of the current price within two years or 100% afterward.</li>
+          <li>Permanent makeup refreshes up to a year cost 50% of the current price. Over two years, it costs 100%.</li>
+          <li>Corrections after other salons are priced individually and treated as new treatments.</li>
+          <li>Visible asymmetries unsuitable for pigmentation require aesthetic medicine treatments.</li>
+          <li>Treatment prices in the price list cover one pigmentation session; corrections are extra.</li>
+          <li>Gift vouchers are non-refundable if contraindications prevent treatment.</li>
+          <li>Clients are requested to come alone and mute phones during procedures.</li>
+          <li>Children are not allowed during treatment procedures.</li>
+          <li>Clients arriving over 15 minutes late risk losing their deposit and having the procedure refused.</li>
+          <li>L' Alexia Atelier reserves the right to modify regulations and appointment dates by mutual agreement.</li>
+          <li>No refund policy applies to treatments, as time, products, and work are invested in each appointment.</li>
+          <li>Complaints must be submitted in person at the salon. Phone calls, messages, or photos are not accepted.</li>
+          <li>Complaint procedures may take up to 30 working days from submission.</li>
+          <li>The salon offers assistance for post-treatment complications if the client cooperates and follows recommendations.</li>
+          <li>Necessary corrections require the Client’s attendance at the salon on the appointed date.</li>
+          <li>Clients are responsible for transportation costs to the salon. The salon does not compensate for such expenses.</li>
+          <li>By paying the deposit and attending L' Alexia Atelier, you agree to these rules.</li>
+      </ul>      
+      </div>
+    </aside>
   </main>
   <div class="map-container">
     <h2>Find Us</h2>
