@@ -41,8 +41,18 @@
       background-color: black;
       margin: 0;
     }
+
+    .double-border {
+    border: double;
+    border-color: #d6c273;
+    padding: 0.5em 1.5em;
+    margin: 2em 0.5em;
+    }
+
     li {
       list-style: none;
+      line-break: auto;
+      margin: 7px 0px;
     }
 
     header {
@@ -195,7 +205,7 @@
       <hr>
       <li class="nav-item"><a href="{{ route('services') }}">Services</a></li>
       <hr>
-      <li class="nav-item"><a href="{{ route('policies') }}">Info & Policies</a></li>
+      <li class="nav-item"><a href="{{ route('policies') }}">Contraindications</a></li>
       <hr>
       <li class="nav-item"><a href="{{ route('gallery') }}">Gallery</a></li>
       <hr>
@@ -204,9 +214,8 @@
   </header>
   <main>
     <div>
-      <ul>
+      <ul class="double-border">
         <h3>SEMI PERMANENT MAKE-UP</h3>
-        <img src="{{ asset('images/laser_hair_removal.webp') }}" alt="laser hair removal">
         <li>Sunbeds - <strong>2 WEEKS BEFORE THE TREATMENT!</strong></li>
         <li>Blood thinners and drugs.</li>
         <li>Acne medication (e.g., Izotek).</li>
@@ -234,7 +243,10 @@
         <li>Active cold sores.</li>
         <li>Excessive and unrealistic expectations of treatment outcomes.</li>
       </ul>
-      <ul>
+      {{-- <div class="round-image-separator">
+        <img src="{{ asset('images/face-needles.avif') }}" alt="woman getting face injection">
+      </div> --}}
+      <ul class="double-border">
         <h3>RUSSIAN LIPS MODELING </h3>
         <li>Pregnancy and breastfeeding.</li>
         <li>Age under 18.</li>
@@ -255,14 +267,14 @@
         <li>Hypersensitivity to hyaluronic acid.</li>
         <li>Unrealistic patient expectations.</li>
       </ul>
-      <ul>
+      <ul class="double-border">
         <h3>LIPS  DISSOLVING </h3>
         <li>Allergy to Hymenoptera insect venom</li>
         <li>Allergy to bovine and sheep protein</li>
         <li>Active herpes</li>
         <li>Are bacterial, viral or fungal infections</li>
       </ul>
-      <ul>
+      <ul class="double-border">
         <h3>ANTI - WRINKLE  INJECTIONS</h3>
         <li>Neuromuscular diseases, i.e. Myasthenia Gravis.</li>
         <li>Lambert-Eaton Syndrome.</li>
@@ -272,7 +284,7 @@
         <li>Allergy to protein.</li>
         <li>Active herpes.</li>
       </ul>
-      <ul>
+      <ul class="double-border">
         <h3>SKIN NEEDLE MESOTHERAPY</h3>
         <li>The period of pregnancy and breastfeeding.</li>
         <li>Taking anticoagulants.</li>
@@ -286,7 +298,7 @@
         <li>Hypersensitivity to the ingredients of the applied preparations.</li>
         <li>Skin that does not tolerate injections well (including vascular skin and skin with a tendency to form keloids).</li>    
       </ul>
-      <ul>
+      <ul class="double-border">
         <h3>PDO / PLLA THREADS  LIFT</h3>
         <li>Allergies</li>
         <li>Active cancer or autoimmune diseases (including Hashimoto's)</li>
@@ -299,7 +311,7 @@
         <li>Tendency to form keloids</li>
         <li>Inflammation of the skin, subcutaneous tissue, and mucous membranes</li>
       </ul>
-      <ul>
+      <ul class="double-border">
         <h3>RF MICRONEEDLING</h3>
         <li>Pregnancy and breastfeeding period</li>
         <li>Thyroid disease (unregulated)</li>
@@ -330,7 +342,7 @@
         <li>People prone to herpes should use a prophylactic treatment, e.g., Heviran, 24 hours before the procedure</li>
         <li>Consuming alcohol before the procedure</li>
       </ul>
-      <ul>
+      <ul class="double-border">
         <h3>CARBOXYTHERAPY</h3>
         <li>Hemophilia, Willebrand's disease, healing disorders</li>
         <li>Advanced anemia</li>
@@ -348,7 +360,7 @@
         <li>Aesthetic treatments (up to 3 weeks after the procedure)</li>
         <li>Carboxytherapy treatment is a contraindication for people: pregnant, breastfeeding, with local implants, with unstable blood pressure and diabetes</li>    
       </ul>
-      <ul>
+      <ul class="double-border">
         <h3>CLOSING  BLOOD CAPILARES</h3>
         <li>Pregnancy and breastfeeding</li>
         <li>Cancer diseases</li>
@@ -361,7 +373,7 @@
     </div>
     <aside>
       <div>
-        <ul>
+        <ul class="double-border">
           <h3>Our Clinic Regulations</h3>
           <li>By subscribing for the treatment, you fully accept the regulations and the rules listed below.</li>
           <li>Clients before each treatment sign the consent for the procedure and take into account the side effects of the performed treatment.</li>
