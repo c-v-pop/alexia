@@ -454,6 +454,7 @@
   <footer>
     <p>&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
   </footer>
+  <p>add tailwind back</p>
 </body>
 
 </html>
