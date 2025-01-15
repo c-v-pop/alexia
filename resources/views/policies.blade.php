@@ -45,8 +45,8 @@
     .double-border {
     border: double;
     border-color: #d6c273;
-    padding: 0.5em 1.5em;
-    margin: 2em 0.5em;
+    max-width: 1024px;
+    margin: auto;
     }
 
     li {
@@ -172,7 +172,14 @@
         margin: 0px;
         padding: 0px;
       }
-
+      .double-border {
+        padding: 0.5em 1.5em;
+        margin: 2em 0.5em;
+        text-align: center;
+      }
+      .double-border li {
+        margin-bottom: 0.5em;
+      }
       .nav-list {
         flex-direction: column;
         align-items: center;

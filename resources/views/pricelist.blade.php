@@ -33,7 +33,7 @@
   <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
 
   <style>
-    body {
+ body {
       font-family: "Figtree", sans-serif;
       color: rgba(255, 255, 255, 0.85);
       background-color: black;
@@ -48,7 +48,6 @@
       flex-wrap: wrap;
       background-color: black;
     }
-
     .header-logo img {
       height: 8rem;
       max-width: 100%;
@@ -60,6 +59,12 @@
       list-style: none;
       padding: 0;
       margin: 0;
+    }
+    .prices {
+      text-align: center;
+    }
+    .prices li {
+      list-style-type: none;
     }
 
     .nav-item a {
@@ -383,6 +388,9 @@
       .nav-item a {
         font-size: 1rem;
       }
+      .prices {
+      text-align: center;
+    }
 
       .book-now {
         font-size: 1rem;
@@ -434,7 +442,7 @@
           text-align: center;
       }
     }
-    }
+  </style>
   </style>
 </head>
 
@@ -460,7 +468,7 @@
     </ul>
   </header>
 
-  <div class="space-y-6">
+  <div class="space-y-6 prices">
     <!-- Consultation Section -->
     <div>
         <h2 class="text-lg font-bold">Consultation</h2>
