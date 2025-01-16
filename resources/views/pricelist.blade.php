@@ -31,7 +31,17 @@
 
   <!-- Style -->
   <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
-
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burgerMenu = document.querySelector('.burger-menu');
+      const navList = document.querySelector('.nav-list');
+  
+      burgerMenu.addEventListener('click', () => {
+        navList.classList.toggle('active'); // Toggles visibility
+      });
+    });
+  </script>
+  
   <style>
  body {
       font-family: "Figtree", sans-serif;
