@@ -479,7 +479,7 @@
   </header>
 
   <div class="space-y-6 prices">
-    <!-- Consultation Section -->
+    {{-- <!-- Consultation Section -->
     <div>
         <h2 class="text-lg font-bold">Consultation</h2>
         <ul class="space-y-4">
@@ -568,7 +568,7 @@
                 <p class="text-sm text-gray-600">Duration: 1h</p>
             </li>
         </ul>
-    </div>
+    </div> --}}
 
     <!-- Anti Wrinkle Injections Section -->
     <div>
