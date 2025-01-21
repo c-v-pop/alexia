@@ -76,7 +76,7 @@ hr {
 .regulations {
   max-width: 800px;
   margin: 40px auto;
-  background-color: black;
+  background-color: rgba(14, 13, 14, 0.60);
   color: white;
   border-radius: 10px;
   padding: 30px;
@@ -111,7 +111,10 @@ hr {
     flex-direction: column;
     align-items: center;
   }
-
+.regulations {
+  border: none;
+  background-color: rgba(14, 13, 14, 0.60);
+}
   hr {
     visibility: visible;
     width: 80%;
