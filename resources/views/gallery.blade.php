@@ -46,7 +46,7 @@
       align-items: center;
       padding: 0 1em;
       flex-wrap: wrap;
-      background-color: black;
+      background-color: rgba(14, 13, 14, 0.60);
     }
 
     .header-logo img {

@@ -35,21 +35,11 @@
   <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
 
   <style>
-    body {
+  body {
       font-family: "Figtree", sans-serif;
       color: rgba(255, 255, 255, 0.85);
       background-color: black;
       margin: 0;
-    }
-
-    #background {
-      position: fixed;
-      inset: 0;
-      z-index: -10;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.4;
     }
 
     header {
@@ -58,7 +48,7 @@
       align-items: center;
       padding: 0 1em;
       flex-wrap: wrap;
-      background-color: black;
+      background-color: rgba(14, 13, 14, 0.60);
     }
 
     .header-logo img {
@@ -146,7 +136,7 @@
       min-height: 70vh;
       text-align: center;
       padding: 1.5rem;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(14, 13, 14, 0.60);
       color: white;
       border-radius: 0.5rem;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -179,80 +169,17 @@
       margin-bottom: 1rem;
     }
 
-    .gallery {
-      min-height: 80vh;
-      max-width: 1450px;
-      display: flex;
-    }
-
-    .gallery img {
-      width: 400px;
-      /* Adjust the width as needed */
-      height: 400px;
-      /* Adjust the height as needed */
-      object-fit: cover;
-      /* Ensures images are cropped to fit without distortion */
-      border-radius: 10px;
-      /* Optional: gives a rounded corner effect */
-      margin: 5px;
-      /* Adds space between images */
-      transition: transform 0.3s ease;
-      /* Adds a hover effect */
-    }
-
-    .gallery-content {
-      background-color: rgba(0, 0, 0, 0.8);
-      max-width: 1450px;
-      margin: 3em auto;
-      padding-bottom: 3em;
-    }
-
-    .gallery-content a {
-      color: white;
-      text-decoration: none;
-      font-size: x-large;
-    }
-
-    .gallery-content h2 {
-      padding-top: 1em;
-      font-size: xx-large;
-    }
-
     footer {
       text-align: center;
       padding: 1rem;
       color: white;
-      background-color: black;
-    }
-
-    .text-center {
-      text-align: center;
-    }
-    .text-center a:hover {
-      cursor: pointer;
-      text-decoration: none;
-      color: transparent;
-      /* Hide the default text color */
-      background: linear-gradient(90deg, #cab15c, #e8de9c, #d6c273);
-      -webkit-background-clip: text;
-      background-clip: text;
-      transition: color 0.3s, text-shadow 0.3s;
-    }
-    .hover-color {
-      cursor: pointer;
-      text-decoration: none;
-      color: transparent;
-      /* Hide the default text color */
-      background: linear-gradient(90deg, #cab15c, #e8de9c, #d6c273);
-      -webkit-background-clip: text;
-      background-clip: text;
-      transition: color 0.3s, text-shadow 0.3s;
+      background-color: rgba(14, 13, 14, 0.60);
     }
     .map-container {
       text-align: center;
       margin: 2rem auto;
       padding: 1.5rem;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(14, 13, 14, 0.60);
       color: white;
       border-radius: 0.5rem;
       max-width: 1450px;
@@ -338,19 +265,6 @@
         display: flex;
         flex-direction: column-reverse;
       }
-      .gallery {
-        display: flex;
-        flex-direction: column;
-        /* Switch to column layout */
-        align-items: center;
-        margin: auto;
-        width: 90%;
-      }
-
-      .gallery img {
-        width: 100%;
-        height: 100%;
-      }
 
       .content img {
         width: 100%;
@@ -425,25 +339,6 @@
         </p>
     </div>
     </section>
-    <div class="gallery-content">
-      <h2 class="text-center gallery-title">Gallery</h2>
-      <section class="gallery">
-        <div class="text-center">
-          <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/lips.webp" alt="Client Work 3">
-          <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/eyebrows.webp" alt="Client Work 3">
-        </div>
-        <div class="text-center">
-          <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/scar.webp" alt="Client Work 3">
-          <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/wrinkles.webp" alt="Client Work 3">
-        </div>
-        <div class="text-center">
-          <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/wrinkles_2.webp" alt="Client Work 3">
-          <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/russian_lips2.webp" alt="Client Work 3">
-        </div>
-      </section>
-        <h2 class="text-center"><a href="{{ route('gallery') }}">View More...</a></h2>
-
-    </div>
   </main>
   <div class="map-container">
     <h2>Find Us</h2>
@@ -454,7 +349,6 @@
   <footer>
     <p>&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
   </footer>
-  <p>add tailwind back</p>
 </body>
 
 </html>

@@ -49,6 +49,9 @@
       background-color: black;
       margin: 0;
     }
+  .hero_block {
+    background-color: rgba(14, 13, 14, 0.60);
+  }
 
     header {
       display: flex;
@@ -56,7 +59,7 @@
       align-items: center;
       padding: 0 1em;
       flex-wrap: wrap;
-      background-color: black;
+      background-color: rgba(14, 13, 14, 0.60);
     }
     .header-logo img {
       height: 8rem;
@@ -478,8 +481,8 @@
     </ul>
   </header>
 
-  <div class="space-y-6 prices">
-    {{-- <!-- Consultation Section -->
+  <div class="space-y-6 prices hero_block">
+   <!-- Consultation Section -->
     <div>
         <h2 class="text-lg font-bold">Consultation</h2>
         <ul class="space-y-4">
@@ -568,7 +571,7 @@
                 <p class="text-sm text-gray-600">Duration: 1h</p>
             </li>
         </ul>
-    </div> --}}
+    </div> 
 
     <!-- Anti Wrinkle Injections Section -->
     <div>
