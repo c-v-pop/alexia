@@ -353,7 +353,7 @@
       <hr>
       <li class="nav-item"><a href="{{ route('services') }}">Services</a></li>
       <hr>
-      <li class="nav-item"><a href="{{ route('policies') }}">Info & Policies</a></li>
+      <li class="nav-item"><a href="{{ route('policies') }}">Clinic Regulations</a></li>
       <hr>
       <li class="nav-item"><a href="{{ route('gallery') }}">Gallery</a></li>
       <hr>
