@@ -159,7 +159,7 @@ hr {
   <ul class="nav-list">
     <li class="nav-item"><a href="{{ route('index') }}">Home</a></li>
     <hr>
-    <li class="nav-item"><a href="{{ route('treatments') }}">Treatments and Offers</a></li>
+    <li class="nav-item"><a href="{{ route('treatments') }}">Treatments and Pricelist</a></li>
     <hr>
     <li class="nav-item"><a href="{{ route('pricelist') }}">Pricelist</a></li>
     <hr>
