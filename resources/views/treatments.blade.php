@@ -190,6 +190,9 @@
          margin: 0px;
          padding: 0px;
          }
+         section {
+          padding: 0em 2em;
+         }
          }
       </style>
    </head>
@@ -203,9 +206,7 @@
             <hr>
             <li class="nav-item"><a href="{{ route('treatments') }}">Treatments and Pricelist</a></li>
             <hr>
-            <li class="nav-item"><a href="{{ route('pricelist') }}">Pricelist</a></li>
-            <hr>
-            <li class="nav-item"><a href="{{ route('services') }}">Services</a></li>
+            <li class="nav-item"><a href="{{ route('services') }}">Contraindications</a></li>
             <hr>
             <li class="nav-item"><a href="{{ route('policies') }}">Clinic Regulations</a></li>
             <hr>
@@ -218,7 +219,7 @@
          <div class="hero_block">
             <div class="flex-center">
                <section>
-                  <h2 class="text-center">Please feel FREE to book your consultation with me. I am happy to help you and meet your expectations.</h2>
+                  <h2 class="text-center">Please feel FREE to book your consultation with me. <br> I am happy to help you and meet your expectations.</h2>
                   <div class="service-category">
                      <h3>Semi Permanent Make Up</h3>
                      <ul>

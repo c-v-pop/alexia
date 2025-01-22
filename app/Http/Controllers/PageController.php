@@ -25,11 +25,6 @@ class PageController extends Controller
         return view('policies');
     }
 
-    public function pricelist()
-    {
-        return view('pricelist');
-    }
-
     public function treatments()
     {
         return view('treatments');

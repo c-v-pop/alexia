@@ -91,7 +91,7 @@
       max-width: 1450px;
       margin: 2rem auto;
       line-height: 1.8;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 6px rgba(14, 13, 14, 0.60);
     }
 
     .about-me-section h2 {
@@ -134,7 +134,7 @@
       min-height: 70vh;
       text-align: center;
       padding: 1.5rem;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(14, 13, 14, 0.60);
       color: white;
       border-radius: 0.5rem;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -189,7 +189,7 @@
     }
 
     .gallery-content {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(14, 13, 14, 0.60);
       max-width: 1450px;
       margin: 3em auto;
       padding-bottom: 3em;
@@ -210,7 +210,7 @@
       text-align: center;
       padding: 1rem;
       color: white;
-      background-color: black;
+      background-color: rgba(14, 13, 14, 0.60);
     }
 
     .text-center {
@@ -239,7 +239,7 @@
       text-align: center;
       margin: 2rem auto;
       padding: 1.5rem;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(14, 13, 14, 0.60);
       color: white;
       border-radius: 0.5rem;
       max-width: 1450px;
@@ -271,6 +271,7 @@
       display: flex;
       justify-content: flex-end;
     }
+    
 
     /* Media Queries for Responsiveness */
     @media (max-width: 768px) {
@@ -335,7 +336,6 @@
         height: 100%;
       }
     }
-    }
   </style>
 </head>
 
@@ -349,9 +349,7 @@
       <hr>
       <li class="nav-item"><a href="{{ route('treatments') }}">Treatments and Pricelist</a></li>
       <hr>
-      <li class="nav-item"><a href="{{ route('pricelist') }}">Pricelist</a></li>
-      <hr>
-      <li class="nav-item"><a href="{{ route('services') }}">Services</a></li>
+      <li class="nav-item"><a href="{{ route('services') }}">Contraindications</a></li>
       <hr>
       <li class="nav-item"><a href="{{ route('policies') }}">Clinic Regulations</a></li>
       <hr>

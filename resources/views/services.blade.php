@@ -208,9 +208,7 @@
       <hr>
       <li class="nav-item"><a href="{{ route('treatments') }}">Treatments and Pricelist</a></li>
       <hr>
-      <li class="nav-item"><a href="{{ route('pricelist') }}">Pricelist</a></li>
-      <hr>
-      <li class="nav-item"><a href="{{ route('services') }}">Services</a></li>
+      <li class="nav-item"><a href="{{ route('services') }}">Contraindications</a></li>
       <hr>
       <li class="nav-item"><a href="{{ route('policies') }}">Clinic Regulations</a></li>
       <hr>
