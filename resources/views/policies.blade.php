@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  font-family: "Figtree", sans-serif;
+  font-family: system-ui;
   color: rgba(255, 255, 255, 0.85);
   background-color: black;
   margin: 0;
@@ -116,6 +116,7 @@ hr {
   header {
     flex-direction: column;
     align-items: center;
+    background-color: black;
   }
 .regulations {
   border: none;

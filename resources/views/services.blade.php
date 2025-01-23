@@ -36,7 +36,7 @@
 
   <style>
     body {
-      font-family: "Figtree", sans-serif;
+      font-family: system-ui;
       color: rgba(255, 255, 255, 0.85);
       background-color: black;
       margin: 0;
@@ -117,13 +117,6 @@
       transition: opacity 0.3s ease;
     }
 
-    footer {
-         text-align: center;
-         padding: 1rem;
-         color: white;
-         background-color: rgba(14, 13, 14, 0.60);
-         max-width: 100%;
-      }
     .map-container {
       text-align: center;
       margin: 2rem auto;

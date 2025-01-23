@@ -36,7 +36,7 @@
 
   <style>
   body {
-      font-family: "Figtree", sans-serif;
+    font-family: system-ui;
       color: rgba(255, 255, 255, 0.85);
       background-color: black;
       margin: 0;
