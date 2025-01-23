@@ -41,6 +41,10 @@
       background-color: black;
       margin: 0;
     }
+    main {
+      max-width: 1400px;
+      margin: auto;
+    }
 
     header {
       display: flex;
@@ -182,7 +186,7 @@
       background-color: rgba(14, 13, 14, 0.60);
       color: white;
       border-radius: 0.5rem;
-      max-width: 1450px;
+      max-width: 100%;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
@@ -270,6 +274,7 @@
         width: 100%;
         height: 100%;
       }
+      
     }
   </style>
 </head>

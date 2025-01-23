@@ -45,8 +45,9 @@
     .double-border {
     border: double;
     border-color: #d6c273;
+    background-color: rgba(14, 13, 14, 0.60);
     max-width: 1024px;
-    margin: auto;
+    margin: 4em auto;
     }
 
     li {
@@ -117,22 +118,29 @@
     }
 
     footer {
-      text-align: center;
-      padding: 1rem;
-      color: white;
-      background-color: black;
-    }
+         text-align: center;
+         padding: 1rem;
+         color: white;
+         background-color: rgba(14, 13, 14, 0.60);
+         max-width: 100%;
+      }
     .map-container {
       text-align: center;
       margin: 2rem auto;
       padding: 1.5rem;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(14, 13, 14, 0.60);
       color: white;
       border-radius: 0.5rem;
-      max-width: 1450px;
+      max-width: 100%;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-
+    footer {
+         text-align: center;
+         padding: 1rem;
+         color: white;
+         background-color: rgba(14, 13, 14, 0.60);
+         max-width: 100%;
+      }
     .map-container p {
       font-size: 1.25rem;
       margin: 1.5rem 0;
@@ -176,6 +184,7 @@
         padding: 0.5em 1.5em;
         margin: 2em 0.5em;
         text-align: center;
+        background-color: rgba(14, 13, 14, 0.60);
       }
       .double-border li {
         margin-bottom: 0.5em;

@@ -9,7 +9,13 @@ body {
   background-color: black;
   margin: 0;
 }
-
+footer {
+         text-align: center;
+         padding: 1rem;
+         color: white;
+         background-color: rgba(14, 13, 14, 0.60);
+         max-width: 100%;
+      }
 header {
   display: flex;
   justify-content: space-between;
@@ -187,6 +193,8 @@ hr {
     <li>The customer has the right to change the date of the visit at least 48 hours before the planned visit. Last-minute cancellations result in a lost deposit. Multiple cancellations may lead to being added to the "Black List" and loss of the advance payment.</li>
   </ul>
 </div>
-
+<footer>
+  <p>&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
+</footer>
 </body>
 </html>

@@ -13,7 +13,7 @@ class PageController extends Controller
 
     public function services()
     {
-        return view('services');
+        return view('services'); 
     }
 
     public function gallery()
