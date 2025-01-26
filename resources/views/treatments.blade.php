@@ -28,8 +28,18 @@
    <link rel="dns-prefetch" href="https://kit.fontawesome.com">
    <!-- FontAwesome Script -->
    <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
+   <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
    <style>
-      body {
+ body {
          font-family: system-ui;
          color: rgba(255, 255, 255, 0.85);
          background-color: black;
@@ -63,17 +73,6 @@
          padding: 0 1em;
          flex-wrap: wrap;
          background-color: rgba(14, 13, 14, 0.60);
-      }
-      .header-logo img {
-         height: 8rem;
-         max-width: 100%;
-      }
-      .nav-list {
-         display: flex;
-         gap: 1rem;
-         list-style: none;
-         padding: 0;
-         margin: 0;
       }
       .nav-item a {
          font-size: 2rem;
@@ -156,38 +155,56 @@
          flex-direction: column;
          background-color: rgba(14, 13, 14, 0.60);
       }
-      .styled-border {
-         border: solid;
-         border-color: rgb(238, 185, 93);
-         padding: 1em
-      }
       /* Media Queries for Responsiveness */
       @media (max-width: 768px) {
-         header {
-            flex-direction: column;
-            align-items: center;
-            background-color: transparent;
-         }
-         .styled-border {
-            border: dotted;
-            padding: 1em;
-            margin: 1em 1em;
-            border-color: rgb(238, 185, 93);
-         }
          .hero_block {
             font-size: medium;
          }
-         hr {
-            visibility: visible;
-            width: 80%;
-            border-color: #cab15c;
-            margin: 0px;
-            padding: 0px;
-         }
-         .nav-list {
-            flex-direction: column;
-            align-items: center;
-         }
+         header {
+        padding: 0;
+      }
+      .topnav {
+        overflow: hidden;
+        background-color: rgba(14, 13, 14, 0.60);
+        position: relative;
+      }
+      
+      .topnav #myLinks {
+        display: none;
+        list-style: none;
+      }
+      
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      .topnav a.icon {
+        background: rgba(14, 13, 14, 0.60);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      .topnav a:hover {
+        background-color: rgba(14, 13, 14, 0.60);
+        color: white;
+      }
+      .logo {
+        width: 12%;
+        min-height: 100%;
+      }
+      hr {
+        visibility: visible;
+        width: 100%;
+        border-color: #cab15c;
+        margin: 0px;
+        padding: 0px;
+      }
          .nav-item a {
             font-size: 1rem;
          }
@@ -219,23 +236,26 @@
 </head>
 <body>
    <header>
-      <div class="header-logo">
-         <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/logo.webp" alt="Permanent Makeup and Aesthetics Salon Logo">
+      <div class="topnav">
+        <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/logo.webp" alt="Beauty Saloon Logo" class="logo">
+        <div id="myLinks">
+          <li class="nav-item"><a href="{{ route('index') }}">Home</a></li>
+          <hr>
+          <li class="nav-item"><a href="{{ route('treatments') }}">Treatments and Pricelist</a></li>
+          <hr>
+          <li class="nav-item"><a href="{{ route('services') }}">Contraindications</a></li>
+          <hr>
+          <li class="nav-item"><a href="{{ route('policies') }}">Clinic Regulations</a></li>
+          <hr>
+          <li class="nav-item"><a href="{{ route('gallery') }}">Gallery</a></li>
+          <hr>
+          <li><a class="book-now" href="https://laalexiaatelier.booksy.com">Appointments</a></li>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-      <ul class="nav-list">
-         <li class="nav-item"><a href="{{ route('index') }}">Home</a></li>
-         <hr>
-         <li class="nav-item"><a href="{{ route('treatments') }}">Treatments and Pricelist</a></li>
-         <hr>
-         <li class="nav-item"><a href="{{ route('services') }}">Contraindications</a></li>
-         <hr>
-         <li class="nav-item"><a href="{{ route('policies') }}">Clinic Regulations</a></li>
-         <hr>
-         <li class="nav-item"><a href="{{ route('gallery') }}">Gallery</a></li>
-         <hr>
-         <li><a class="book-now" href="https://laalexiaatelier.booksy.com">Appointments</a></li>
-      </ul>
-   </header>
+    </header>
    <main>
       <div class="hero_block">
          <div class="flex-center">

@@ -73,19 +73,6 @@
       background-color: rgba(14, 13, 14, 0.60);
     }
     
-    .header-logo img {
-      height: 8rem;
-      max-width: 100%;
-    }
-    
-    .nav-list {
-      display: flex;
-      gap: 1rem;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    
     .nav-item a {
       font-size: 2rem;
       text-decoration: none;
@@ -169,9 +156,6 @@
     /* Media Queries for Responsiveness */
     @media (max-width: 768px) {
       header {
-        flex-direction: column;
-        align-items: center;
-        background-color: transparent;
         padding: 0;
       }
       .topnav {
@@ -205,11 +189,6 @@
         background-color: rgba(14, 13, 14, 0.60);
         color: white;
       }
-      
-      .active {
-        background-color: #04AA6D;
-        color: white;
-      }
       .logo {
         width: 12%;
         min-height: 100%;
@@ -229,10 +208,6 @@
       }
       .double-border li {
         margin-bottom: 0.5em;
-      }
-      .nav-list {
-        flex-direction: column;
-        align-items: center;
       }
       
       .nav-item a {
