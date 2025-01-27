@@ -94,7 +94,7 @@
       color: white;
     }
     .nav-item a {
-      font-size: 2rem;
+      font-size: 1.25rem;
       text-decoration: none;
       color: transparent;
       /* Hide the default text color */
