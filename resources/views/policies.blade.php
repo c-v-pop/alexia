@@ -53,18 +53,48 @@
       max-width: 100%;
     }
     header {
+      padding: 0;
+    }
+    .topnav {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 1em;
-      flex-wrap: wrap;
       background-color: rgba(14, 13, 14, 0.60);
+      position: relative;
     }
     
+    .topnav #myLinks {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-right: 1em;
+    }
+    
+    .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    
+    .topnav a.icon {
+      display: none;
+      position: absolute;
+    }
+    .logo {
+      width: 10%;
+      object-fit: cover;
+    }
+    
+    .topnav a:hover {
+      background-color: rgba(14, 13, 14, 0.60);
+      color: white;
+    }
     .nav-item a {
       font-size: 2rem;
       text-decoration: none;
       color: transparent;
+      /* Hide the default text color */
       background: linear-gradient(90deg, #cab15c, #e8de9c, #d6c273);
       -webkit-background-clip: text;
       background-clip: text;
@@ -73,10 +103,12 @@
     
     .nav-item a:hover {
       text-decoration: underline;
+      color: transparent;
       background: linear-gradient(90deg, #e8de9c, #d6c273, #cab15c);
       -webkit-background-clip: text;
       background-clip: text;
       text-shadow: 0px 0px 1px #e8de9c;
+      /* Layers of glow for a neon effect */
       opacity: 95%;
     }
     
@@ -141,6 +173,7 @@
         padding: 0;
       }
       .topnav {
+        display: block;
         overflow: hidden;
         background-color: rgba(14, 13, 14, 0.60);
         position: relative;
@@ -211,19 +244,21 @@
   
   <header>
     <div class="topnav">
-      <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/logo.webp" alt="Beauty Saloon Logo" class="logo">
+      <div class="logo-container">
+        <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/logo.webp" alt="Beauty Saloon Logo" class="logo">
+      </div>
       <div id="myLinks">
-        <li class="nav-item"><a href="{{ route('index') }}">Home</a></li>
+        <p class="nav-item"><a href="{{ route('index') }}">Home</a></p>
         <hr>
-        <li class="nav-item"><a href="{{ route('treatments') }}">Treatments and Pricelist</a></li>
+        <p class="nav-item"><a href="{{ route('treatments') }}">Treatments and Pricelist</a></p>
         <hr>
-        <li class="nav-item"><a href="{{ route('services') }}">Contraindications</a></li>
+        <p class="nav-item"><a href="{{ route('services') }}">Contraindications</a></p>
         <hr>
-        <li class="nav-item"><a href="{{ route('policies') }}">Clinic Regulations</a></li>
+        <p class="nav-item"><a href="{{ route('policies') }}">Clinic Regulations</a></p>
         <hr>
-        <li class="nav-item"><a href="{{ route('gallery') }}">Gallery</a></li>
+        <p class="nav-item"><a href="{{ route('gallery') }}">Gallery</a></p>
         <hr>
-        <li><a class="book-now" href="https://laalexiaatelier.booksy.com">Appointments</a></li>
+        <p><a class="book-now" href="https://laalexiaatelier.booksy.com">Appointments</a></p>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>

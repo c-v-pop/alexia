@@ -4,33 +4,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  
   <!-- Meta Tags for SEO -->
   <meta name="description" content="L'Alexia Atelier offers personalized permanent makeup and aesthetics treatments in Darlington, UK. Enhance your natural beauty with expert care.">
   <meta name="keywords" content="permanent makeup, aesthetics salon, beauty treatments, Darlington, eyeliner tattoos, eyebrow tattoos, lip blush, skin care, beauty expert">
   <meta name="author" content="L'Alexia Atelier">
-
+  
   <!-- Open Graph Meta Tags for Social Media -->
   <meta property="og:title" content="L'Alexia Atelier - Permanent Makeup & Aesthetics Salon">
   <meta property="og:description" content="Enhance your beauty with expert permanent makeup and aesthetics treatments at L'Alexia Atelier in Darlington, UK. Book your consultation today.">
   <meta property="og:image" content="https://example.com/path-to-image.jpg"> <!-- Replace with actual image -->
   <meta property="og:url" content="https://yourwebsite.com">
   <meta property="og:type" content="website">
-
+  
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:title" content="L'Alexia Atelier - Permanent Makeup & Aesthetics Salon">
   <meta name="twitter:description" content="Personalized permanent makeup and aesthetics treatments in Darlington, UK. Book for a consultation at L'Alexia Atelier.">
   <meta name="twitter:image" content="https://example.com/path-to-image.jpg"> <!-- Replace with actual image -->
   <meta name="twitter:card" content="summary_large_image">
-
+  
   <!-- Favicon -->
   <link rel="icon" href="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/logo.png" type="image/png">
   <title>L'Alexia Atelier - Permanent Makeup & Aesthetics Salon</title>
-
+  
   <!-- Style -->
   <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin="anonymous">
   <link rel="dns-prefetch" href="https://kit.fontawesome.com">
-
+  
   <!-- FontAwesome Script -->
   <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
   <script>
@@ -45,7 +45,7 @@
   </script>
   <style>
     body {
-    font-family: system-ui;
+      font-family: system-ui;
       color: rgba(255, 255, 255, 0.85);
       background-color: black;
       margin: 0;
@@ -54,16 +54,44 @@
       max-width: 1400px;
       margin: auto;
     }
-
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 1em;
-      flex-wrap: wrap;
-      background-color: rgba(14, 13, 14, 0.60);
+      padding: 0;
     }
-
+    .topnav {
+      display: flex;
+      background-color: rgba(14, 13, 14, 0.60);
+      position: relative;
+    }
+    
+    .topnav #myLinks {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-right: 1em;
+    }
+    
+    .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    
+    .topnav a.icon {
+      display: none;
+      position: absolute;
+    }
+    .logo {
+      width: 12%;
+      object-fit: cover;
+    }
+    
+    .topnav a:hover {
+      background-color: rgba(14, 13, 14, 0.60);
+      color: white;
+    }
     .nav-item a {
       font-size: 2rem;
       text-decoration: none;
@@ -74,7 +102,7 @@
       background-clip: text;
       transition: color 0.3s, text-shadow 0.3s;
     }
-
+    
     .nav-item a:hover {
       text-decoration: underline;
       color: transparent;
@@ -85,7 +113,7 @@
       /* Layers of glow for a neon effect */
       opacity: 95%;
     }
-
+    
     .about-me-section {
       color: white;
       padding: 2rem 1rem;
@@ -95,7 +123,7 @@
       line-height: 1.8;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-
+    
     .about-me-section h2 {
       text-align: center;
       /* Center align only the h2 */
@@ -103,7 +131,7 @@
       font-weight: bold;
       margin-bottom: 1rem;
     }
-
+    
     .about-me-section p {
       font-size: 1.25rem;
       margin: 0.5rem 0;
@@ -112,7 +140,7 @@
       text-decoration: none;
       /* Ensures no text decoration */
     }
-
+    
     .book-now {
       background: rgb(238, 185, 93);
       background: linear-gradient(145deg, rgba(238, 185, 93, 0.8603816526610644) 25%, rgba(242, 237, 207, 1) 52%, rgba(238, 185, 93, 1) 77%);
@@ -124,7 +152,7 @@
       text-decoration: none;
       font-size: 2rem;
     }
-
+    
     .book-now:hover {
       opacity: 100%;
       transition: opacity 0.3s ease;
@@ -147,7 +175,7 @@
       align-items: center;
       line-height: 1.8;
     }
-
+    
     .content img {
       width: 400px;
       /* Set explicit width */
@@ -158,17 +186,17 @@
       border-radius: 10px;
       /* Optional styling */
     }
-
+    
     .content h1 {
       font-size: 2.5rem;
       font-weight: bold;
     }
-
+    
     .content p {
       font-size: 1.2rem;
       margin-bottom: 1rem;
     }
-
+    
     footer {
       text-align: center;
       padding: 1rem;
@@ -185,42 +213,43 @@
       max-width: 100%;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-
+    
     .map-container p {
       font-size: 1.25rem;
       margin: 1.5rem 0;
       color: rgba(255, 255, 255, 0.85);
     }
-
+    
     .map-container a {
       text-decoration: none;
       color: white;
     }
-
+    
     .map-container a:hover {
-     text-decoration: underline;
-    color: transparent;
-    background: linear-gradient(90deg, #e8de9c, #d6c273, #cab15c);
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-shadow: 0px 0px 1px #e8de9c;
-    opacity: 95%;
+      text-decoration: underline;
+      color: transparent;
+      background: linear-gradient(90deg, #e8de9c, #d6c273, #cab15c);
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-shadow: 0px 0px 1px #e8de9c;
+      opacity: 95%;
     }
-
+    
     .flex-end {
       display: flex;
       justify-content: flex-end;
     }
     hr {
-        visibility: hidden;
+      visibility: hidden;
     }
-
+    
     /* Media Queries for Responsiveness */
     @media (max-width: 768px) {
       header {
         padding: 0;
       }
       .topnav {
+        display: block;
         overflow: hidden;
         background-color: rgba(14, 13, 14, 0.60);
         position: relative;
@@ -251,10 +280,6 @@
         background-color: rgba(14, 13, 14, 0.60);
         color: white;
       }
-      .logo {
-        width: 12%;
-        min-height: 100%;
-      }
       hr {
         visibility: visible;
         width: 100%;
@@ -262,28 +287,28 @@
         margin: 0px;
         padding: 0px;
       }
-
+      
       .nav-item a {
         font-size: 1rem;
       }
-
+      
       .book-now {
         font-size: 1rem;
         margin-top: 1rem;
       }
-
+      
       .content h1 {
         font-size: 1.8rem;
       }
-
+      
       .content h2 {
         font-size: 1.6rem;
       }
-
+      
       .content p {
         font-size: 1rem;
       }
-
+      
       .content {
         display: flex;
         flex-direction: column;
@@ -292,7 +317,7 @@
         display: flex;
         flex-direction: column-reverse;
       }
-
+      
       .content img {
         width: 100%;
         height: 100%;
@@ -304,19 +329,21 @@
 <body>
   <header>
     <div class="topnav">
-      <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/logo.webp" alt="Beauty Saloon Logo" class="logo">
+      <div class="logo-container">
+        <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/logo.webp" alt="Beauty Saloon Logo" class="logo">
+      </div>
       <div id="myLinks">
-        <li class="nav-item"><a href="{{ route('index') }}">Home</a></li>
+        <p class="nav-item"><a href="{{ route('index') }}">Home</a></p>
         <hr>
-        <li class="nav-item"><a href="{{ route('treatments') }}">Treatments and Pricelist</a></li>
+        <p class="nav-item"><a href="{{ route('treatments') }}">Treatments and Pricelist</a></p>
         <hr>
-        <li class="nav-item"><a href="{{ route('services') }}">Contraindications</a></li>
+        <p class="nav-item"><a href="{{ route('services') }}">Contraindications</a></p>
         <hr>
-        <li class="nav-item"><a href="{{ route('policies') }}">Clinic Regulations</a></li>
+        <p class="nav-item"><a href="{{ route('policies') }}">Clinic Regulations</a></p>
         <hr>
-        <li class="nav-item"><a href="{{ route('gallery') }}">Gallery</a></li>
+        <p class="nav-item"><a href="{{ route('gallery') }}">Gallery</a></p>
         <hr>
-        <li><a class="book-now" href="https://laalexiaatelier.booksy.com">Appointments</a></li>
+        <p><a class="book-now" href="https://laalexiaatelier.booksy.com">Appointments</a></p>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
@@ -325,7 +352,7 @@
   </header>
   <main>
     <div class="content">
-
+      
       <div class="column-reverse">
         <h1>Welcome to Permanent Makeup & Aesthetics</h1>
         <p>Specializing in personalized treatments for beauty enhancement.</p>
@@ -364,7 +391,7 @@
         <p>
           <strong>Darlington-based</strong>
         </p>
-    </div>
+      </div>
     </section>
   </main>
   <div class="map-container">
