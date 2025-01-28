@@ -45,6 +45,9 @@
          background-color: black;
          margin: 0;
       }
+      .fa-bars {
+         color: tan;
+      }
       .double-border {
          display: flex;
          flex-direction: column;
@@ -84,7 +87,6 @@
     }
     
     .topnav a {
-      color: white;
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -207,7 +209,6 @@
       }
       
       .topnav a {
-        color: white;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
@@ -241,6 +242,7 @@
             font-size: 1rem;
          }
          .book-now {
+            color: black;
             font-size: 1rem;
             margin-top: 1rem;
          }

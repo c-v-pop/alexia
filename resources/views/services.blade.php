@@ -50,6 +50,9 @@
       background-color: black;
       margin: 0;
     }
+    .fa-bars {
+         color: tan;
+      }
     h3 {
       margin-left: 2em;
     }
@@ -85,7 +88,6 @@
     }
     
     .topnav a {
-      color: white;
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -203,7 +205,6 @@
       }
       
       .topnav a {
-        color: white;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;

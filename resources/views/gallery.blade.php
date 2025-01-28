@@ -51,7 +51,9 @@
       background-color: black;
       margin: 0;
     }
-    
+    .fa-bars {
+         color: tan;
+      }
     hr {
       visibility: hidden;
     }
@@ -73,7 +75,6 @@
     }
     
     .topnav a {
-      color: white;
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -261,7 +262,6 @@
       }
       
       .topnav a {
-        color: white;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
