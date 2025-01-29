@@ -7,3 +7,6 @@
 <p>Changed hosting to AWS and Ploi</p>
 <h2>Created server on ploi and configured it</h2>
 <p>Imported input from previous website</p>
+
+
+Adding TailwindCSS Back
