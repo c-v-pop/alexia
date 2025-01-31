@@ -30,17 +30,13 @@
   <!-- Style -->
   <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin="anonymous">
   <link rel="dns-prefetch" href="https://kit.fontawesome.com">
+  <script src="https://cdn.tailwindcss.com"></script>
   
   <!-- FontAwesome Script -->
   <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
   <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
+    function toggleMenu() {
+      document.getElementById("myLinks").classList.toggle("hidden");
     }
   </script>
   <style>
@@ -328,27 +324,25 @@
 </head>
 
 <body>
-  <header>
-    <div class="topnav">
-      <div class="logo-container">
-        <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/logo.webp" alt="Beauty Saloon Logo" class="logo">
-      </div>
-      <div id="myLinks">
-        <p class="nav-item"><a href="{{ route('index') }}">Home</a></p>
-        <hr>
-        <p class="nav-item"><a href="{{ route('treatments') }}">Treatments and Pricelist</a></p>
-        <hr>
-        <p class="nav-item"><a href="{{ route('services') }}">Contraindications</a></p>
-        <hr>
-        <p class="nav-item"><a href="{{ route('policies') }}">Clinic Regulations</a></p>
-        <hr>
-        <p class="nav-item"><a href="{{ route('gallery') }}">Gallery</a></p>
-        <hr>
-        <p><a class="book-now" href="https://laalexiaatelier.booksy.com">Appointments</a></p>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
+  <header class="bg-opacity-60 bg-gray-900">
+    <div class="flex justify-between items-center p-4">
+      <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/logo.webp" alt="Beauty Saloon Logo" class="w-20">
+      <nav class="hidden md:flex space-x-6">
+        <a href="{{ route('index') }}" class="text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Home</a>
+        <a href="{{ route('treatments') }}" class="text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Treatments</a>
+        <a href="{{ route('services') }}" class="text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Contraindications</a>
+        <a href="{{ route('policies') }}" class="text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Clinic Regulations</a>
+        <a href="{{ route('gallery') }}" class="text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Gallery</a>
+      </nav>
+      <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-lg" href="https://laalexiaatelier.booksy.com">Appointments</a>
+      <button class="md:hidden text-[rgba(238,185,93,1)] text-2xl" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+    </div>
+    <div id="myLinks" class="hidden flex flex-col md:hidden bg-gray-900 p-4 space-y-2">
+      <a href="{{ route('index') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Home</a>
+      <a href="{{ route('treatments') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Treatments</a>
+      <a href="{{ route('services') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Contraindications</a>
+      <a href="{{ route('policies') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Clinic Regulations</a>
+      <a href="{{ route('gallery') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Gallery</a>
     </div>
   </header>
   <main>
