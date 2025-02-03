@@ -34,208 +34,6 @@
       document.getElementById("myLinks").classList.toggle("hidden");
     }
   </script>
-  <style>
-    body {
-      font-family: system-ui;
-      color: rgba(255, 255, 255, 0.85);
-      background-color: black;
-      margin: 0;
-    }
-    .fa-bars {
-         color: tan;
-      }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      color: white;
-      background-color: rgba(14, 13, 14, 0.60);
-      max-width: 100%;
-    }
-    header {
-      padding: 0;
-    }
-    .topnav {
-      display: flex;
-      background-color: rgba(14, 13, 14, 0.60);
-      position: relative;
-    }
-    
-    .topnav #myLinks {
-    list-style: none;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    margin-right: 1em;
-    }
-    
-    .topnav a {
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      display: block;
-    }
-    
-    .topnav a.icon {
-      display: none;
-      position: absolute;
-    }
-    .logo {
-      width: 10%;
-      object-fit: cover;
-    }
-    
-    .topnav a:hover {
-      background-color: rgba(14, 13, 14, 0.60);
-      color: white;
-    }
-    .nav-item a {
-      font-size: 1.25rem;
-      text-decoration: none;
-      color: transparent;
-      /* Hide the default text color */
-      background: linear-gradient(90deg, #cab15c, #e8de9c, #d6c273);
-      -webkit-background-clip: text;
-      background-clip: text;
-      transition: color 0.3s, text-shadow 0.3s;
-    }
-    
-    .nav-item a:hover {
-      text-decoration: underline;
-      color: transparent;
-      background: linear-gradient(90deg, #e8de9c, #d6c273, #cab15c);
-      -webkit-background-clip: text;
-      background-clip: text;
-      text-shadow: 0px 0px 1px #e8de9c;
-      /* Layers of glow for a neon effect */
-      opacity: 95%;
-    }
-    
-    .book-now {
-      background: rgb(238, 185, 93);
-      background: linear-gradient(145deg, rgba(238, 185, 93, 0.8603816526610644) 25%, rgba(242, 237, 207, 1) 52%, rgba(238, 185, 93, 1) 77%);
-      color: black;
-      opacity: 85%;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      font-family: serif;
-      text-decoration: none;
-      font-size: 2rem;
-    }
-    
-    .book-now:hover {
-      opacity: 100%;
-      transition: opacity 0.3s ease;
-    }
-    
-    hr {
-      visibility: hidden;
-    }
-    
-    /* Regulations Section */
-    .regulations {
-      max-width: 800px;
-      margin: 40px auto;
-      background-color: rgba(14, 13, 14, 0.60);
-      color: white;
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-      text-align: center;
-      border: double;
-      border-color: #d6c273;
-      background-color: rgba(14, 13, 14, 0.60);
-    }
-    
-    .regulations h2 {
-      font-size: 2.5rem;
-      margin-bottom: 2em;
-      color: #cab15c;
-    }
-    
-    .regulations ul {
-      list-style-type: disc;
-      text-align: left;
-      font-size: 1.3rem;
-      line-height: 1.8;
-      padding-left: 20px;
-      margin: 0;
-    }
-    
-    .regulations ul li {
-      margin-bottom: 15px;
-    }
-    
-    /* Media Queries for Responsiveness */
-    @media (max-width: 768px) {
-      header {
-        padding: 0;
-      }
-      .topnav {
-        display: block;
-        overflow: hidden;
-        background-color: rgba(14, 13, 14, 0.60);
-        position: relative;
-      }
-      
-      .topnav #myLinks {
-        display: none;
-        list-style: none;
-      }
-      
-      .topnav a {
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-      }
-      
-      .topnav a.icon {
-        background: rgba(14, 13, 14, 0.60);
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      
-      .topnav a:hover {
-        background-color: rgba(14, 13, 14, 0.60);
-        color: white;
-      }
-      .logo {
-        width: 12%;
-        min-height: 100%;
-      }
-      hr {
-        visibility: visible;
-        width: 100%;
-        border-color: #cab15c;
-        margin: 0px;
-        padding: 0px;
-      }
-      
-      .regulations {
-        border: none;
-        background-color: rgba(14, 13, 14, 0.60);
-      }
-      
-      .book-now {
-        font-size: 1.2rem;
-        margin-top: 1rem;
-      }
-      
-      .regulations {
-        padding: 20px;
-      }
-      
-      .regulations h2 {
-        font-size: 2rem;
-      }
-      
-      .regulations ul {
-        font-size: 1.2rem;
-      }
-    }
-  </style>
 </head>
 <body>
   <header class="bg-opacity-60 bg-gray-900">
@@ -260,7 +58,7 @@
     </div>
   </header>
   <div class="regulations">
-    <h2>Clinic Regulations</h2>
+    <h2>Our Clinic Regulations</h2>
     <ul>
       <li>By subscribing for the treatment, you fully accept the regulations and the rules listed below.</li>
       <li>Clients before each treatment sign the consent for the procedure and take into account the side effects of the performed treatment.</li>
@@ -270,10 +68,41 @@
       <li>If the treatment takes place, its price is reduced by the value of the deposit.</li>
       <li>The deposit can be settled by bank transfer: <strong>L ALEXIA ATELIER Ltd</strong>, Sort Code: <strong>20-59-43</strong>, Account: <strong>33814505</strong>.</li>
       <li>In the title of the transfer, enter your date and time of the visit. Failure to provide these details makes it impossible to guarantee availability of the booked date.</li>
-      <li>When booking the date, ensure there are no Clinic Regulations for the procedure. If there are doubts about your health or medications, contact me immediately. Appearing at the appointment with an obvious contraindication results in the loss of the deposit.</li>
+      <li>When booking the date, ensure there are no contraindications for the procedure. If there are doubts about your health or medications, contact me immediately. Appearing at the appointment with an obvious contraindication results in the loss of the deposit.</li>
       <li>All consultation regarding skin condition, skin examination, pre-treatment, and after-treatment advice costs £35 for a 25-minute session. If the Client books an appointment and pays for the treatment in full after the consultation, the consultation is FREE.</li>
       <li>The customer has the right to change the date of the visit at least 48 hours before the planned visit. Last-minute cancellations result in a lost deposit. Multiple cancellations may lead to being added to the "Black List" and loss of the advance payment.</li>
-    </ul>
+      <li>Clients can postpone the appointment twice, requesting no later than 48 hours before the planned meeting. Otherwise, the down payment will be forfeited. Appointments cannot be postponed indefinitely.</li>
+      <li>Complete resignation from the treatment forfeits the down payment. The treatment cannot be transferred to another client.</li>
+      <li>Clients with previous permanent makeup must inform the linergist. Arriving with old, visible makeup without prior notice, which makes the procedure impossible, results in loss of the deposit.</li>
+      <li>During the semi-permanent makeup treatment, an initial drawing is made, and the method is selected based on the client’s natural beauty.</li>
+      <li>The artist reserves the right to refuse service if the Client’s expectations are inconsistent with the proposed visualization.</li>
+      <li>If the Client does not accept the proposed shape, method, and color of the pigment and decides to resign during the visit, the advance payment is non-refundable.</li>
+      <li>L' Alexia Atelier does not guarantee the effect or final result of the procedure. The skin’s response and aftercare are crucial.</li>
+      <li>Lip Modeling requires 4-6 weeks to settle. Multiple visits may be needed for optimal results.</li>
+      <li>Clients delaying makeup correction due to pregnancy must pay 30% of the current price within two years or 100% afterward.</li>
+      <li>Permanent makeup refreshes up to a year cost 50% of the current price. Over two years, it costs 100%.</li>
+      <li>Yearly Top Up after Semi Permanent makeup is required, the salon is not responsible for failure to refresh and maintain makeup according to recommendations.</li>
+      <li>Semi permanent makeup is a treatment consisting of two micro pigmentation treatments. Failure to attend or rejection of the second pigmentation process may result in incomplete treatment results.</li>
+      <li>Corrections after other salons are priced individually and treated as new treatments.</li>
+      <li>Visible asymmetries unsuitable for pigmentation require aesthetic medicine treatments.</li>
+      <li>Treatment prices in the price list cover one pigmentation session; corrections are extra.</li>
+      <li>Gift vouchers are non-refundable if contraindications prevent treatment.</li>
+      <li>Gift vouchers are non-refundable and exchangeable without any exceptions.</li>
+      <li>Gift vouchers are worthless after the expiry date.</li>
+      <li>Gift vouchers are not subject to a monopoly.</li>
+      <li>Clients are requested to come alone and mute phones during procedures.</li>
+      <li>Children are not allowed during treatment procedures.</li>
+      <li>Clients arriving over 15 minutes late risk losing their deposit and having the procedure refused.</li>
+      <li>L' Alexia Atelier reserves the right to modify regulations and appointment dates by mutual agreement.</li>
+      <li>No refund policy applies to treatments, as time, products, and work are invested in each appointment. If the client claims the right to return the deposit when the treatment has not taken place, the salon may impose a fine of 100% of the value of the treatment.</li>
+      <li>Complaints must be submitted in person at the salon. Phone calls, messages, or photos are not accepted.</li>
+      <li>Complaint procedures may take up to 30 working days from submission.</li>
+      <li>The salon offers assistance for post-treatment complications if the client cooperates and follows recommendations.</li>
+      <li>Necessary corrections require the Client’s attendance at the salon on the appointed date.</li>
+      <li>Every client who agrees to any treatment in the salon is aware of the risks and consequences of the procedure performed.</li>
+      <li>Clients are responsible for transportation costs to the salon. The salon does not compensate for such expenses.</li>
+      <li>By paying the deposit and attending L' Alexia Atelier, you agree to these rules.</li>
+    </ul>    
   </div>
   <footer>
     <p>&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>

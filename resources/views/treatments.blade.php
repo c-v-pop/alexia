@@ -34,235 +34,6 @@
         document.getElementById("myLinks").classList.toggle("hidden");
       }
     </script>
-   <style>
- body {
-         font-family: system-ui;
-         color: rgba(255, 255, 255, 0.85);
-         background-color: black;
-         margin: 0;
-      }
-      .fa-bars {
-         color: tan;
-      }
-      .double-border {
-         display: flex;
-         flex-direction: column;
-         border: double;
-         border-color: #d6c273;
-         background-color: rgba(14, 13, 14, 0.60);
-         max-width: 1024px;
-         margin: 4em auto;
-         text-align: center;
-      }
-      .double-border h3 {
-         text-align: center;
-      }
-      li {
-         list-style: none;
-         margin: 0.3em 0em;
-      }
-      .flex-center {
-         display: flex;
-         justify-content: center;
-      }
-      header {
-      padding: 0;
-    }
-    .topnav {
-      display: flex;
-      background-color: rgba(14, 13, 14, 0.60);
-      position: relative;
-    }
-    
-    .topnav #myLinks {
-    list-style: none;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    margin-right: 1em;
-    }
-    
-    .topnav a {
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      display: block;
-    }
-    
-    .topnav a.icon {
-      display: none;
-      position: absolute;
-    }
-    .logo {
-      width: 10%;
-      object-fit: cover;
-    }
-    
-    .topnav a:hover {
-      background-color: rgba(14, 13, 14, 0.60);
-      color: white;
-    }
-    .nav-item a {
-      font-size: 1.25rem;
-      text-decoration: none;
-      color: transparent;
-      /* Hide the default text color */
-      background: linear-gradient(90deg, #cab15c, #e8de9c, #d6c273);
-      -webkit-background-clip: text;
-      background-clip: text;
-      transition: color 0.3s, text-shadow 0.3s;
-    }
-    
-    .nav-item a:hover {
-      text-decoration: underline;
-      color: transparent;
-      background: linear-gradient(90deg, #e8de9c, #d6c273, #cab15c);
-      -webkit-background-clip: text;
-      background-clip: text;
-      text-shadow: 0px 0px 1px #e8de9c;
-      /* Layers of glow for a neon effect */
-      opacity: 95%;
-    }
-      .book-now {
-         background: rgb(238, 185, 93);
-         background: linear-gradient(145deg, rgba(238, 185, 93, 0.8603816526610644) 25%, rgba(242, 237, 207, 1) 52%, rgba(238, 185, 93, 1) 77%);
-         color: black;
-         opacity: 85%;
-         padding: 0.5rem 1rem;
-         border-radius: 0.5rem;
-         font-family: serif;
-         text-decoration: none;
-         font-size: 2rem;
-      }
-      .book-now:hover {
-         opacity: 100%;
-         transition: opacity 0.3s ease;
-      }
-      footer {
-         text-align: center;
-         padding: 1rem;
-         color: white;
-         background-color: rgba(14, 13, 14, 0.60);
-         max-width: 100%;
-      }
-      .map-container {
-         text-align: center;
-         margin: 2rem auto;
-         padding: 1.5rem;
-         background-color: rgba(14, 13, 14, 0.60);
-         color: white;
-         border-radius: 0.5rem;
-         max-width: 100%;
-         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-      .map-container p {
-         font-size: 1.25rem;
-         margin: 1.5rem 0;
-         color: rgba(255, 255, 255, 0.85);
-      }
-      .map-container a {
-         text-decoration: none;
-         color: white;
-      }
-      .map-container a:hover {
-         text-decoration: underline;
-         color: transparent;
-         background: linear-gradient(90deg, #e8de9c, #d6c273, #cab15c);
-         -webkit-background-clip: text;
-         background-clip: text;
-         text-shadow: 0px 0px 1px #e8de9c;
-         opacity: 95%;
-      }
-      hr {
-         visibility: hidden;
-      }
-      .hero_block {
-         max-width: 1024px;
-         font-size: larger;
-         margin: 5em auto;
-         display: flex;
-         flex-direction: column;
-         background-color: rgba(14, 13, 14, 0.60);
-      }
-      /* Media Queries for Responsiveness */
-      @media (max-width: 768px) {
-         .hero_block {
-            font-size: medium;
-         }
-         header {
-        padding: 0;
-      }
-      .topnav {
-         display: block;
-        overflow: hidden;
-        background-color: rgba(14, 13, 14, 0.60);
-        position: relative;
-      }
-      
-      .topnav #myLinks {
-        display: none;
-        list-style: none;
-      }
-      
-      .topnav a {
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-      }
-      
-      .topnav a.icon {
-        background: rgba(14, 13, 14, 0.60);
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      
-      .topnav a:hover {
-        background-color: rgba(14, 13, 14, 0.60);
-        color: white;
-      }
-      .logo {
-        width: 12%;
-        min-height: 100%;
-      }
-      hr {
-        visibility: visible;
-        width: 100%;
-        border-color: #cab15c;
-        margin: 0px;
-        padding: 0px;
-      }
-         .nav-item a {
-            font-size: 1rem;
-         }
-         .book-now {
-            color: black;
-            font-size: 1rem;
-            margin-top: 1rem;
-         }
-         .flex-center {
-            flex-direction: column;
-            text-align: center;
-            margin: auto;
-         }
-         ul {
-            margin: 0px;
-            padding: 0px;
-         }
-         section {
-            font-size: small;
-         }
-         
-         .double-border {
-            padding: 0.5em 1.5em;
-            margin: 2em 0.5em;
-            text-align: center;
-            background-color: rgba(14, 13, 14, 0.60);
-         }
-      }
-   </style>
 </head>
 <body>
    <header class="bg-opacity-60 bg-gray-900">
@@ -291,7 +62,7 @@
          <div class="flex-center">
             <section>
                <h2 class="text-center">Please feel FREE to book your consultation with me. <br> I am happy to help you and meet your expectations.</h2>
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>Semi Permanent Make Up</h3>
                   <ul>
                      <li>Patch Test - Free (15min)</li>
@@ -305,7 +76,7 @@
                      <li>TOP UP - up to 12 months - £125.00 (1h)</li>
                   </ul>
                </div>
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>Derma Fillers</h3>
                   <ul>
                      <li>Russian Lips Modeling 1.1ml - £200.00 (1h)</li>
@@ -316,7 +87,7 @@
                      <li>Jaw Line 3.3ml - £470.00 (1h)</li>
                   </ul>
                </div>
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>Lips Dissolving</h3>
                   <ul>
                      <li>Patch Test - Free (15min)</li>
@@ -324,7 +95,7 @@
                      <li>Lips Dissolving Additional Session - £60.00 (30min)</li>
                   </ul>
                </div>
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>Anti Wrinkle Injections</h3>
                   <ul>
                      <li>One Area - £140.00 (30min)</li>
@@ -334,7 +105,7 @@
                      <li>Bunny Lines - £120.00 (30min)</li>
                   </ul>
                </div>
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>Aesthetics Treatments</h3>
                   <ul>
                      <li>Skin Needle Vitamins Mesotherapy - £100.00 (1h)</li>
@@ -356,7 +127,7 @@
                   </ul>
                </div>
                
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>PDO/PLLA Threads Face Lift</h3>
                   <ul>
                      <li>10 Threads - £290.00 (1h)</li>
@@ -366,7 +137,7 @@
                   </ul>
                </div>
                
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>Fat Dissolving</h3>
                   <ul>
                      <li>Double Chin - £90.00 (30min)</li>
@@ -377,7 +148,7 @@
                   </ul>
                </div>
                
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>RF Fractional Microneedling</h3>
                   <ul>
                      <li>RF Microneedling One Session - £200.00 (1h)</li>
@@ -385,7 +156,7 @@
                   </ul>
                </div>
                
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>Skin Care Treatments</h3>
                   <ul>
                      <li>Facial Treatment + Consultation - £60.00+ (2h 20min)</li>
@@ -404,7 +175,7 @@
                   </ul>
                </div>
                
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>Hair Loss Therapy</h3>
                   <ul>
                      <li>Ozon Therapy - £50.00 (30min)</li>
@@ -419,7 +190,7 @@
                   </ul>
                </div>
                
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>IV Drip Vitamins Infusion</h3>
                   <ul>
                      <li>Vitamin C + Magnesium - £90.00 (1h 45min)</li>
@@ -432,7 +203,7 @@
                   </ul>
                </div>
                
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>Carboxytherapy</h3>
                   <ul>
                      <li>Upper + Lower Eyelids - £90.00 (30min)</li>
@@ -444,7 +215,7 @@
                   </ul>
                </div>
                
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>Slimming / Anti-cellulite Body Treatment</h3>
                   <ul>
                      <li>Dermomassage - £50.00 (1h)</li>
@@ -455,7 +226,7 @@
                   </ul>
                </div>
                
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>Small Tattoo</h3>
                   <ul>
                      <li>Small Tattoo up to 7cm - £100.00+ (2h)</li>
@@ -463,7 +234,7 @@
                   </ul>
                </div>
                
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>Laser Hair Removal</h3>
                   <ul>
                      <li>Patch Test - Free (15min)</li>
@@ -502,7 +273,7 @@
                   </ul>
                </div>
                
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>PMU & Small Tattoo Saline Removal</h3>
                   <ul>
                      <li>Patch Test - Free (10min)</li>
@@ -510,7 +281,7 @@
                      <li>3 Sessions - £150.00 (30min)</li>
                   </ul>
                </div>
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>Skin Tags / Red Facial Veins Removal</h3>
                   <ul>
                      <li>15-Minute Session - £60.00 (25min)</li>
@@ -519,7 +290,7 @@
                   </ul>
                </div>
                
-               <div class="service-category double-border">
+               <div class="service-category ">
                   <h3>Lash Lift / Eyebrows Lamination</h3>
                   <ul>
                      <li>Lash Lift - £35.00 (1h)</li>
