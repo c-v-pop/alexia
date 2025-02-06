@@ -55,7 +55,7 @@
       </nav>
       <button class="md:hidden text-[rgba(238,185,93,1)] text-2xl" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
     </div>
-    <div id="myLinks" class="hidden flex flex-col md:hidden bg-gray-900 p-4 space-y-2 items-center">
+    <div id="myLinks" class="hidden flex flex-col md:hidden p-4 space-y-2 items-center">
       <a href="{{ route('index') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Home</a>
       <hr>
       <a href="{{ route('treatments') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Treatments</a>
