@@ -35,10 +35,10 @@
       }
     </script>
 </head>
-<body>
+<body class="text-[rgba(238,185,93,1)] bg-black m-0 p-0">
    <header class="bg-black/95">
       <div class="flex justify-between items-center p-4">
-        <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/logo.webp" alt="Beauty Saloon Logo" class="w-40">
+        <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="w-40">
         <nav class="hidden md:flex space-x-6">
           <a href="{{ route('index') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Home</a>
           <a href="{{ route('treatments') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Treatments</a>
@@ -59,16 +59,16 @@
         <a href="{{ route('policies') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Clinic Regulations</a>
         <hr class="border border-[rgba(238,185,93,0.86)]  w-full block md:hidden">
         <a href="{{ route('gallery') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Gallery</a>
-        <hr class="border border-[rgba(238,185,93,0.86)]  w-full block md:hidden">
-        <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-lg" href="https://laalexiaatelier.booksy.com">Appointments</a>
+        <hr class="border border-[rgba(238,185,93,0.86)]  w-full block md:hidden mb-6">
+        <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-lg text-center m-auto" href="https://laalexiaatelier.booksy.com">Appointments</a>
       </div>    
     </header>
    <main>
-      <div class="hero_block">
-         <div class="flex-center">
+      <div class="flex flex-col md:hidden p-4 space-y-2 items-center">
+         <div>
             <section>
-               <h2 class="text-center">Please feel FREE to book your consultation with me. <br> I am happy to help you and meet your expectations.</h2>
-               <div class="service-category ">
+               <h2>Please feel FREE to book your consultation with me. <br> I am happy to help you and meet your expectations.</h2>
+               <div>
                   <h3>Semi Permanent Make Up</h3>
                   <ul>
                      <li>Patch Test - Free (15min)</li>
@@ -82,7 +82,7 @@
                      <li>TOP UP - up to 12 months - £125.00 (1h)</li>
                   </ul>
                </div>
-               <div class="service-category ">
+               <div>
                   <h3>Derma Fillers</h3>
                   <ul>
                      <li>Russian Lips Modeling 1.1ml - £200.00 (1h)</li>
@@ -93,7 +93,7 @@
                      <li>Jaw Line 3.3ml - £470.00 (1h)</li>
                   </ul>
                </div>
-               <div class="service-category ">
+               <div>
                   <h3>Lips Dissolving</h3>
                   <ul>
                      <li>Patch Test - Free (15min)</li>
@@ -101,7 +101,7 @@
                      <li>Lips Dissolving Additional Session - £60.00 (30min)</li>
                   </ul>
                </div>
-               <div class="service-category ">
+               <div>
                   <h3>Anti Wrinkle Injections</h3>
                   <ul>
                      <li>One Area - £140.00 (30min)</li>
@@ -111,7 +111,7 @@
                      <li>Bunny Lines - £120.00 (30min)</li>
                   </ul>
                </div>
-               <div class="service-category ">
+               <div>
                   <h3>Aesthetics Treatments</h3>
                   <ul>
                      <li>Skin Needle Vitamins Mesotherapy - £100.00 (1h)</li>
@@ -133,7 +133,7 @@
                   </ul>
                </div>
                
-               <div class="service-category ">
+               <div>
                   <h3>PDO/PLLA Threads Face Lift</h3>
                   <ul>
                      <li>10 Threads - £290.00 (1h)</li>
@@ -143,7 +143,7 @@
                   </ul>
                </div>
                
-               <div class="service-category ">
+               <div>
                   <h3>Fat Dissolving</h3>
                   <ul>
                      <li>Double Chin - £90.00 (30min)</li>
@@ -154,7 +154,7 @@
                   </ul>
                </div>
                
-               <div class="service-category ">
+               <div>
                   <h3>RF Fractional Microneedling</h3>
                   <ul>
                      <li>RF Microneedling One Session - £200.00 (1h)</li>
@@ -162,7 +162,7 @@
                   </ul>
                </div>
                
-               <div class="service-category ">
+               <div>
                   <h3>Skin Care Treatments</h3>
                   <ul>
                      <li>Facial Treatment + Consultation - £60.00+ (2h 20min)</li>
@@ -181,7 +181,7 @@
                   </ul>
                </div>
                
-               <div class="service-category ">
+               <div>
                   <h3>Hair Loss Therapy</h3>
                   <ul>
                      <li>Ozon Therapy - £50.00 (30min)</li>
@@ -196,7 +196,7 @@
                   </ul>
                </div>
                
-               <div class="service-category ">
+               <div>
                   <h3>IV Drip Vitamins Infusion</h3>
                   <ul>
                      <li>Vitamin C + Magnesium - £90.00 (1h 45min)</li>
@@ -209,7 +209,7 @@
                   </ul>
                </div>
                
-               <div class="service-category ">
+               <div>
                   <h3>Carboxytherapy</h3>
                   <ul>
                      <li>Upper + Lower Eyelids - £90.00 (30min)</li>
@@ -221,7 +221,7 @@
                   </ul>
                </div>
                
-               <div class="service-category ">
+               <div>
                   <h3>Slimming / Anti-cellulite Body Treatment</h3>
                   <ul>
                      <li>Dermomassage - £50.00 (1h)</li>
@@ -232,7 +232,7 @@
                   </ul>
                </div>
                
-               <div class="service-category ">
+               <div>
                   <h3>Small Tattoo</h3>
                   <ul>
                      <li>Small Tattoo up to 7cm - £100.00+ (2h)</li>
@@ -240,7 +240,7 @@
                   </ul>
                </div>
                
-               <div class="service-category ">
+               <div>
                   <h3>Laser Hair Removal</h3>
                   <ul>
                      <li>Patch Test - Free (15min)</li>
@@ -279,7 +279,7 @@
                   </ul>
                </div>
                
-               <div class="service-category ">
+               <div>
                   <h3>PMU & Small Tattoo Saline Removal</h3>
                   <ul>
                      <li>Patch Test - Free (10min)</li>
@@ -287,7 +287,7 @@
                      <li>3 Sessions - £150.00 (30min)</li>
                   </ul>
                </div>
-               <div class="service-category ">
+               <div>
                   <h3>Skin Tags / Red Facial Veins Removal</h3>
                   <ul>
                      <li>15-Minute Session - £60.00 (25min)</li>
@@ -296,7 +296,7 @@
                   </ul>
                </div>
                
-               <div class="service-category ">
+               <div>
                   <h3>Lash Lift / Eyebrows Lamination</h3>
                   <ul>
                      <li>Lash Lift - £35.00 (1h)</li>
@@ -309,14 +309,15 @@
          </div>
       </div>
    </main>
-   <div class="map-container">
+   <div class="text-center">
       <h3>Find Us</h3>
       <p>Visit us at:</p>
       <p><strong>12A Gilling Cres, Darlington DL1 4TH</strong></p>
       <p><a href="https://www.google.com/maps/dir//12+Gilling+Cres+Darlington+DL1+4TH/@54.5178569,-1.5305936,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x487e9a2ecbb6ea53:0x308f89e3df7508b0"><i class="fa-solid fa-map-location-dot fa-xl"></i></a></p>
    </div>
-   <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/logo.webp" alt="Beauty Saloon Logo" class="w-full m-auto bg-black">
-   <footer>
+   <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:max-w-96 w-full m-auto bg-black">
+
+   <footer class="text-center p-4">
       <p>&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
    </footer>
 </body>
