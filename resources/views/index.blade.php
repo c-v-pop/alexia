@@ -70,7 +70,7 @@
     </div>    
   </header>
   <main class="flex flex-col justify-center m-8">
-    <div class="flex justify-center items-center m-auto">
+    <div class="flex sm:flex-col justify-center items-center m-auto">
       <div class="text-2xl">
         <h1>Welcome to Permanent Makeup & Aesthetics</h1>
         <p>Specializing in personalized treatments for beauty enhancement.</p>
@@ -86,7 +86,7 @@
       </div>
     </div>
     <div>
-      <section class="flex flex-row-reverse justify-start items-center m-auto">
+      <section class="flex sm:flex-col flex-row-reverse justify-start items-center m-auto">
         <h2>&#119808;&#119809;&#119822;&#119828;&#119827; &#119820;&#119812; &#128420;</h2>
         <div class="m-8 text-2xl">
           <p>&#129392;.
