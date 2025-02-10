@@ -70,8 +70,8 @@
     </div>    
   </header>
   <main class="flex flex-col justify-center m-8">
-    <div>
-      <div>
+    <div class="flex justify-center items-center m-auto">
+      <div class="text-2xl">
         <h1>Welcome to Permanent Makeup & Aesthetics</h1>
         <p>Specializing in personalized treatments for beauty enhancement.</p>
         <p>
@@ -82,33 +82,38 @@
         <p>Give us a call today and book a complimentary consultation meeting.</p>
       </div>
       <div>
-        <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/alexia_2.webp" alt="Woman with syringe">
+        <img src="{{ asset('images/alexia-about-me.webp') }}" alt="Woman with syringe">
       </div>
     </div>
     <div>
-      <section>
+      <section class="flex flex-row-reverse justify-start items-center m-auto">
         <h2>&#119808;&#119809;&#119822;&#119828;&#119827; &#119820;&#119812; &#128420;</h2>
-        <p>&#129392;.
-          Thank you for your trust and support &#129782;.
-        </p>
-        <p></p>
-        <p>
-          <strong>15 years of experience:</strong> I am a University graduate, accredited Aesthetic Medicine Practitioner,
-          and Laser Hair Removal Specialist.
-        </p>
-        <p>
-          <strong>Award-winning:</strong> Multiple <i>British Hair and Beauty Awards</i>, including Gold Winner for
-          Semi-Permanent Makeup and Aesthetic Salon of the Year &#127942;.
-        </p>
-        <p>
-          <strong>Published:</strong> Featured in *Leaders* magazine with a 3-page interview.
-        </p>
-        <p>
-          <strong>Artistic roots:</strong> I love creating art and have exhibited my paintings in Hartlepool.
-        </p>
-        <p>
-          <strong>Darlington-based</strong>
-        </p>
+        <div class="m-8 text-2xl">
+          <p>&#129392;.
+            Thank you for your trust and support &#129782;.
+          </p>
+          <p></p>
+          <p>
+            <strong>15 years of experience:</strong> I am a University graduate, accredited Aesthetic Medicine Practitioner,
+            and Laser Hair Removal Specialist.
+          </p>
+          <p>
+            <strong>Award-winning:</strong> Multiple <i>British Hair and Beauty Awards</i>, including Gold Winner for
+            Semi-Permanent Makeup and Aesthetic Salon of the Year &#127942;.
+          </p>
+          <p>
+            <strong>Published:</strong> Featured in *Leaders* magazine with a 3-page interview.
+          </p>
+          <p>
+            <strong>Artistic roots:</strong> I love creating art and have exhibited my paintings in Hartlepool.
+          </p>
+          <p>
+            <strong>Darlington-based</strong>
+          </p>
+        </div>
+        <div>
+          <img src="{{ asset('images/Alexia-about.webp') }}" alt="Woman">
+        </div>
       </div>
     </section>
   </main>
@@ -121,7 +126,7 @@
   <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:max-w-96 w-full m-auto bg-black">
 
 
-  <footer class="bg-black/95 flex flex-col justify-center m-8">
+  <footer class="bg-black/95 flex flex-col justify-center m-auto text-center">
     <p class="text-[rgba(238,185,93,1)]">&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
   </footer>
 </body>
