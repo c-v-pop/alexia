@@ -70,7 +70,7 @@
     </div>    
   </header>
   <main class="flex flex-col justify-center m-8">
-    <div class="flex flex-col justify-center items-center m-auto">
+    <div class="flex flex-col md:flex-row justify-center items-center m-auto">
       <div class="text-2xl">
         <h1>Welcome to Permanent Makeup & Aesthetics</h1>
         <p>Specializing in personalized treatments for beauty enhancement.</p>
@@ -86,13 +86,10 @@
       </div>
     </div>
     <div>
-      <section class="flex flex-col flex-row-reverse justify-start items-center m-auto">
-        <h2>&#119808;&#119809;&#119822;&#119828;&#119827; &#119820;&#119812; &#128420;</h2>
+      <section class="flex flex-col md:flex-row-reverse justify-start items-center m-auto">
         <div class="m-8 text-2xl">
-          <p>&#129392;.
-            Thank you for your trust and support &#129782;.
-          </p>
-          <p></p>
+          <h2 class="font-semibold">About Me</h2>
+          <p>Thank you for your trust and support</p>
           <p>
             <strong>15 years of experience:</strong> I am a University graduate, accredited Aesthetic Medicine Practitioner,
             and Laser Hair Removal Specialist.
@@ -117,6 +114,93 @@
       </div>
     </section>
   </main>
+  <section class="text-center m-8 hidden">
+    <div>
+      <a>PERMANENT MAKEUP</a>
+    </div>
+    <div>
+      <a>FACIAL TREATMENTS</a>
+    </div>
+    <div>
+      <a>AESTHETIC TREATMENTS</a>
+    </div>
+    <div>
+      <a>EYEBROW STYLING</a>
+    </div>
+  </section>
+  <aside>
+    <div class="flex flex-col p-4 space-y-2 items-center text-center m-8">
+        <div>
+            <section>
+                <h2>Please feel FREE to book your consultation with me. <br> I am happy to help you and meet your expectations.</h2>
+                
+                <!-- Permanent Makeup -->
+                <div>
+                    <h3>Permanent Makeup</h3>
+                    <ul class="list-disc">
+                        <li>Patch Test - Free (15min)</li>
+                        <li>Ombre Powder Brows - £230.00 (3h)</li>
+                        <li>Lips Blushing - £230.00 (3h)</li>
+                        <li>Thickening of the Eyelash Line - £170.00 (2h)</li>
+                        <li>Classic Eyeliner - £200.00 (3h)</li>
+                        <li>Decorative Eyeliner - £230.00 (3h)</li>
+                        <li>Shaded Eyeliner - £240.00 (3h)</li>
+                        <li>TOP UP - up to 8 weeks - £50.00 (1h)</li>
+                        <li>TOP UP - up to 12 months - £125.00 (1h)</li>
+                    </ul>
+                </div>
+                
+                <!-- Facial Treatments -->
+                <div>
+                    <h3>Facial Treatments</h3>
+                    <ul class="list-disc">
+                        <li>Facial Treatment + Consultation - £60.00+ (2h 20min)</li>
+                        <li>Diamond Microdermabrasion - £50.00 (1h)</li>
+                        <li>Ultrasonic Cavitation - £50.00 (1h)</li>
+                        <li>Oxybrasion - £50.00 (1h)</li>
+                        <li>Oxybrasion + Oxygen Infusion - £75.00 (1h 30min)</li>
+                        <li>Anti-wrinkle Iron - £60.00 (1h)</li>
+                        <li>Chemical Peel - £60.00 (1h 10min)</li>
+                        <li>Medical Peel - £90.00 (1h 30min)</li>
+                        <li>RF - £60.00 (1h)</li>
+                        <li>Derma Pen - £70.00 (1h 30min)</li>
+                        <li>Meso BB Glow - £75.00 (1h 30min)</li>
+                        <li>Hydrafacial Basic - £80.00 (1h 30min)</li>
+                        <li>Hydrafacial VIP - £120.00 (2h)</li>
+                    </ul>
+                </div>
+                
+                <!-- Aesthetic Treatments -->
+                <div>
+                    <h3>Aesthetic Treatments</h3>
+                    <ul class="list-disc">
+                        <li>Skin Needle Vitamins Mesotherapy - £100.00 (1h)</li>
+                        <li>PRP - Vampire Facial - £130.00 (1h)</li>
+                        <li>PRP + PRF Facial - £190.00 (1h)</li>
+                        <li>Lumi Eyes - £130.00 (1h)</li>
+                        <li>Seventy Hyal Skin Booster - £160.00 (1h)</li>
+                        <li>Profhilo Skin Booster - £220.00 (1h)</li>
+                        <li>Sunekos - £220.00 (1h)</li>
+                        <li>Juvelook Eyes - £200.00 (1h)</li>
+                        <li>Juvelook Vial - £490.00 (1h)</li>
+                        <li>Lenisna Vial - £490.00 (1h)</li>
+                    </ul>
+                </div>
+                
+                <!-- Eyebrow Styling -->
+                <div>
+                    <h3>Eyebrow Styling</h3>
+                    <ul class="list-disc">
+                        <li>Ombre Powder Brows - £230.00 (3h)</li>
+                        <li>Patch Test - Free (15min)</li>
+                        <li>Top-Up (up to 8 weeks) - £50.00 (1h)</li>
+                        <li>Top-Up (up to 12 months) - £125.00 (1h)</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</aside>
   <div class="text-center">
     <h2>Find Us</h2>
     <p>Visit us at:</p>

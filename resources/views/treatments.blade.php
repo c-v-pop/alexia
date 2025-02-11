@@ -64,7 +64,7 @@
       </div>    
     </header>
    <main>
-      <div class="flex flex-col md:hidden p-4 space-y-2 items-center">
+      <div class="flex flex-col p-4 space-y-2 items-center">
          <div>
             <section>
                <h2>Please feel FREE to book your consultation with me. <br> I am happy to help you and meet your expectations.</h2>
