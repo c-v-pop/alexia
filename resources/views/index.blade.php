@@ -114,20 +114,21 @@
       </div>
     </section>
   </main>
-  <section class="text-center m-8 hidden">
-    <div>
-      <a>PERMANENT MAKEUP</a>
-    </div>
-    <div>
-      <a>FACIAL TREATMENTS</a>
-    </div>
-    <div>
-      <a>AESTHETIC TREATMENTS</a>
-    </div>
-    <div>
-      <a>EYEBROW STYLING</a>
-    </div>
-  </section>
+  <section class="text-center m-8 flex flex-wrap justify-center gap-4">
+    @foreach (['PERMANENT MAKEUP', 'FACIAL TREATMENTS'] as $category)
+        <div class="w-full max-w-[250px] md:max-w-[450px] aspect-square bg-contain bg-no-repeat bg-center flex items-center justify-center text-[rgba(238,185,93,1)] text-lg font-bold rounded-md shadow-lg "
+             style="background-image: url('{{ asset('images/laser_hair_removal.webp') }}');">
+            <a>{{ $category }}</a>
+        </div>
+    @endforeach
+    @foreach (['AESTHETIC TREATMENTS', 'EYEBROW STYLING'] as $category)
+        <div class="w-full max-w-[250px] md:max-w-[450px] aspect-square bg-contain bg-no-repeat bg-center flex items-center justify-center text-[rgba(238,185,93,1)] text-lg font-bold rounded-md shadow-lg "
+             style="background-image: url('{{ asset('images/laser_hair_removal.webp') }}');">
+            <a>{{ $category }}</a>
+        </div>
+    @endforeach
+</section>
+
   <aside>
     <div class="flex flex-col p-4 space-y-2 items-center text-center m-8">
         <div>
