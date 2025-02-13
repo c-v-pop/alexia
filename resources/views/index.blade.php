@@ -114,94 +114,34 @@
       </div>
     </section>
   </main>
-  <section class="text-center m-8 flex flex-wrap justify-center gap-4">
-    @foreach (['PERMANENT MAKEUP', 'FACIAL TREATMENTS'] as $category)
-        <div class="w-full max-w-[250px] md:max-w-[450px] aspect-square bg-contain bg-no-repeat bg-center flex items-center justify-center text-[rgba(238,185,93,1)] text-lg font-bold rounded-md shadow-lg "
-             style="background-image: url('{{ asset('images/laser_hair_removal.webp') }}');">
-            <a>{{ $category }}</a>
-        </div>
-    @endforeach
-    @foreach (['AESTHETIC TREATMENTS', 'EYEBROW STYLING'] as $category)
-        <div class="w-full max-w-[250px] md:max-w-[450px] aspect-square bg-contain bg-no-repeat bg-center flex items-center justify-center text-[rgba(238,185,93,1)] text-lg font-bold rounded-md shadow-lg "
-             style="background-image: url('{{ asset('images/laser_hair_removal.webp') }}');">
-            <a>{{ $category }}</a>
-        </div>
+  <section class="text-center m-8 flex flex-col flex-wrap justify-center gap-4">
+    @php
+    $categories = [
+        'FACIAL TREATMENTS' => 'facial_treatment.jpg',
+        'EYEBROWS STYLING' => 'eyebrows.webp',
+        'SEMI PERMANENT MAKEUP' => 'eyebrows.png',
+        'AESTHETIC TREATMENTS' => 'aesthetics-treatment.jpg',
+    ];
+@endphp
+
+<section class="text-center m-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    @foreach ($categories as $category => $image)
+        @php
+            // Convert category name to a URL-friendly slug
+            $slug = Str::slug($category, '-');
+        @endphp
+        <a href="{{ url($slug) }}" class="w-full max-w-[300px] mx-auto">
+            <div class="aspect-square bg-cover bg-center flex items-center justify-center text-white text-lg font-bold rounded-md shadow-lg transition-transform duration-300 hover:scale-105"
+                 style="background-image: url('{{ asset('images/' . rawurlencode($image)) }}');">
+                <div class="bg-black/50 px-4 py-2 rounded-md">
+                    {{ $category }}
+                </div>
+            </div>
+        </a>
     @endforeach
 </section>
 
-  <aside>
-    <div class="flex flex-col p-4 space-y-2 items-center text-center m-8">
-        <div>
-            <section>
-                <h2>Please feel FREE to book your consultation with me. <br> I am happy to help you and meet your expectations.</h2>
-                
-                <!-- Permanent Makeup -->
-                <div>
-                    <h3>Permanent Makeup</h3>
-                    <ul class="list-disc">
-                        <li>Patch Test - Free (15min)</li>
-                        <li>Ombre Powder Brows - £230.00 (3h)</li>
-                        <li>Lips Blushing - £230.00 (3h)</li>
-                        <li>Thickening of the Eyelash Line - £170.00 (2h)</li>
-                        <li>Classic Eyeliner - £200.00 (3h)</li>
-                        <li>Decorative Eyeliner - £230.00 (3h)</li>
-                        <li>Shaded Eyeliner - £240.00 (3h)</li>
-                        <li>TOP UP - up to 8 weeks - £50.00 (1h)</li>
-                        <li>TOP UP - up to 12 months - £125.00 (1h)</li>
-                    </ul>
-                </div>
-                
-                <!-- Facial Treatments -->
-                <div>
-                    <h3>Facial Treatments</h3>
-                    <ul class="list-disc">
-                        <li>Facial Treatment + Consultation - £60.00+ (2h 20min)</li>
-                        <li>Diamond Microdermabrasion - £50.00 (1h)</li>
-                        <li>Ultrasonic Cavitation - £50.00 (1h)</li>
-                        <li>Oxybrasion - £50.00 (1h)</li>
-                        <li>Oxybrasion + Oxygen Infusion - £75.00 (1h 30min)</li>
-                        <li>Anti-wrinkle Iron - £60.00 (1h)</li>
-                        <li>Chemical Peel - £60.00 (1h 10min)</li>
-                        <li>Medical Peel - £90.00 (1h 30min)</li>
-                        <li>RF - £60.00 (1h)</li>
-                        <li>Derma Pen - £70.00 (1h 30min)</li>
-                        <li>Meso BB Glow - £75.00 (1h 30min)</li>
-                        <li>Hydrafacial Basic - £80.00 (1h 30min)</li>
-                        <li>Hydrafacial VIP - £120.00 (2h)</li>
-                    </ul>
-                </div>
-                
-                <!-- Aesthetic Treatments -->
-                <div>
-                    <h3>Aesthetic Treatments</h3>
-                    <ul class="list-disc">
-                        <li>Skin Needle Vitamins Mesotherapy - £100.00 (1h)</li>
-                        <li>PRP - Vampire Facial - £130.00 (1h)</li>
-                        <li>PRP + PRF Facial - £190.00 (1h)</li>
-                        <li>Lumi Eyes - £130.00 (1h)</li>
-                        <li>Seventy Hyal Skin Booster - £160.00 (1h)</li>
-                        <li>Profhilo Skin Booster - £220.00 (1h)</li>
-                        <li>Sunekos - £220.00 (1h)</li>
-                        <li>Juvelook Eyes - £200.00 (1h)</li>
-                        <li>Juvelook Vial - £490.00 (1h)</li>
-                        <li>Lenisna Vial - £490.00 (1h)</li>
-                    </ul>
-                </div>
-                
-                <!-- Eyebrow Styling -->
-                <div>
-                    <h3>Eyebrow Styling</h3>
-                    <ul class="list-disc">
-                        <li>Ombre Powder Brows - £230.00 (3h)</li>
-                        <li>Patch Test - Free (15min)</li>
-                        <li>Top-Up (up to 8 weeks) - £50.00 (1h)</li>
-                        <li>Top-Up (up to 12 months) - £125.00 (1h)</li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-    </div>
-</aside>
+
   <div class="text-center">
     <h2>Find Us</h2>
     <p>Visit us at:</p>
@@ -209,8 +149,6 @@
     <p><a href="https://www.google.com/maps/dir//12+Gilling+Cres+Darlington+DL1+4TH/@54.5178569,-1.5305936,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x487e9a2ecbb6ea53:0x308f89e3df7508b0"><i class="fa-solid fa-map-location-dot fa-xl"></i></a></p>
   </div>
   <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:max-w-96 w-full m-auto bg-black">
-
-
   <footer class="bg-black/95 flex flex-col justify-center m-auto text-center">
     <p class="text-[rgba(238,185,93,1)]">&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
   </footer>
