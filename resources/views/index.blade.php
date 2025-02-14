@@ -118,37 +118,38 @@
     @php
     $categories = [
         'FACIAL TREATMENTS' => 'facial_treatment.jpg',
-        'EYEBROWS STYLING' => 'eyebrows.webp',
-        'SEMI PERMANENT MAKEUP' => 'eyebrows.png',
+        'EYEBROWS STYLING' => 'eyebrows.png',
+        'SEMI PERMANENT MAKEUP' => 'semi-permanent.jpg',
         'AESTHETIC TREATMENTS' => 'aesthetics-treatment.jpg',
     ];
 @endphp
 
-<section class="text-center m-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-    @foreach ($categories as $category => $image)
-        @php
-            // Convert category name to a URL-friendly slug
-            $slug = Str::slug($category, '-');
-        @endphp
-        <a href="{{ url($slug) }}" class="w-full max-w-[300px] mx-auto">
-            <div class="aspect-square bg-cover bg-center flex items-center justify-center text-white text-lg font-bold rounded-md shadow-lg transition-transform duration-300 hover:scale-105"
-                 style="background-image: url('{{ asset('images/' . rawurlencode($image)) }}');">
-                <div class="bg-black/50 px-4 py-2 rounded-md">
-                    {{ $category }}
-                </div>
-            </div>
-        </a>
-    @endforeach
+<section class="text-center m-8 flex flex-wrap justify-center gap-4">
+  @foreach ($categories as $category => $image)
+      @php
+          // Convert category name to a URL-friendly slug
+          $slug = Str::slug($category, '-');
+      @endphp
+      <a href="{{ url($slug) }}" class="w-full sm:w-[48%] md:w-[48%] max-w-[450px]">
+          <div class="aspect-square bg-cover bg-center flex items-center justify-center text-[rgba(238,185,93,1)] text-lg font-bold rounded-md shadow-lg transition-transform duration-300 hover:scale-105"
+               style="background-image: url('{{ asset('images/' . rawurlencode($image)) }}');">
+              <div class="bg-black/50 px-4 py-2 rounded-md">
+                  {{ $category }}
+              </div>
+          </div>
+      </a>
+  @endforeach
 </section>
 
-
+<div>
+  <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:max-w-96 w-full m-auto bg-black">
   <div class="text-center">
     <h2>Find Us</h2>
     <p>Visit us at:</p>
     <p><strong>12A Gilling Cres, Darlington DL1 4TH</strong></p>
     <p><a href="https://www.google.com/maps/dir//12+Gilling+Cres+Darlington+DL1+4TH/@54.5178569,-1.5305936,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x487e9a2ecbb6ea53:0x308f89e3df7508b0"><i class="fa-solid fa-map-location-dot fa-xl"></i></a></p>
   </div>
-  <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:max-w-96 w-full m-auto bg-black">
+</div>
   <footer class="bg-black/95 flex flex-col justify-center m-auto text-center">
     <p class="text-[rgba(238,185,93,1)]">&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
   </footer>
