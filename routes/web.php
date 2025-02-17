@@ -12,8 +12,11 @@ Route::get('/', function () {
 Route::get('/services', [PageController::class, 'services'])->name('services');
 Route::get('/gallery', [PageController::class, 'gallery'])->name('gallery');
 Route::get('/policies', [PageController::class, 'policies'])->name('policies');
-Route::get('/pricelist', [PageController::class, 'pricelist'])->name('pricelist');
 Route::get('/treatments', [PageController::class, 'treatments'])->name('treatments');
+Route::get('/facial-treatments', [PageController::class, 'facialTreatments'])->name('facial-treatments');
+Route::get('/eyebrows-styling', [PageController::class, 'eyebrowsStyling'])->name('eyebrows-styling');
+Route::get('/semi-permanent-makeup', [PageController::class, 'semiPermanentMakeup'])->name('semi-permanent-makeup');
+Route::get('/aesthetic-treatments', [PageController::class, 'aestheticTreatments'])->name('aesthetic-treatments');
 
 // Authenticated and Verified User Routes
 Route::get('/dashboard', function () {

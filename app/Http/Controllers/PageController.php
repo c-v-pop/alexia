@@ -29,5 +29,21 @@ class PageController extends Controller
     {
         return view('treatments');
     }
+    public function facialTreatments()
+    {
+        return view('facial-treatments');
+    }
+    public function eyebrowsStyling()
+    {
+        return view('eyebrows-styling');
+    }
+    public function semiPermanentMakeup()
+    {
+        return view('semi-permanent-makeup');
+    }
+    public function aestheticTreatments()
+    {
+        return view('aesthetic-treatments');
+    }
 }
 
