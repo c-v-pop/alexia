@@ -119,7 +119,7 @@
     $categories = [
         'FACIAL TREATMENTS' => 'facial_treatment.jpg',
         'EYEBROWS STYLING' => 'eyebrows.png',
-        'SEMI PERMANENT MAKEUP' => 'semi-permanent.jpg',
+        'PERMANENT MAKEUP' => 'semi-permanent.jpg',
         'AESTHETIC TREATMENTS' => 'aesthetics-treatment.jpg',
     ];
 @endphp
