@@ -15,7 +15,7 @@ Route::get('/policies', [PageController::class, 'policies'])->name('policies');
 Route::get('/treatments', [PageController::class, 'treatments'])->name('treatments');
 Route::get('/facial-treatments', [PageController::class, 'facialTreatments'])->name('facial-treatments');
 Route::get('/eyebrows-styling', [PageController::class, 'eyebrowsStyling'])->name('eyebrows-styling');
-Route::get('/semi-permanent-makeup', [PageController::class, 'semiPermanentMakeup'])->name('semi-permanent-makeup');
+Route::get('/permanent-makeup', [PageController::class, 'permanentMakeup'])->name('permanent-makeup');
 Route::get('/aesthetic-treatments', [PageController::class, 'aestheticTreatments'])->name('aesthetic-treatments');
 
 // Authenticated and Verified User Routes

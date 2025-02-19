@@ -64,77 +64,47 @@
       </div>    
     </header>
     <aside>
-      <div class="flex flex-col p-4 space-y-2 items-center text-center m-8">
-          <div>
-              <section>
-                  <h2>Please feel FREE to book your consultation with me. <br> I am happy to help you and meet your expectations.</h2>
-                  
-                  <!-- Permanent Makeup -->
-                  <div>
-                      <h3>Permanent Makeup</h3>
-                      <ul class="list-disc">
-                          <li>Patch Test - Free (15min)</li>
-                          <li>Ombre Powder Brows - £230.00 (3h)</li>
-                          <li>Lips Blushing - £230.00 (3h)</li>
-                          <li>Thickening of the Eyelash Line - £170.00 (2h)</li>
-                          <li>Classic Eyeliner - £200.00 (3h)</li>
-                          <li>Decorative Eyeliner - £230.00 (3h)</li>
-                          <li>Shaded Eyeliner - £240.00 (3h)</li>
-                          <li>TOP UP - up to 8 weeks - £50.00 (1h)</li>
-                          <li>TOP UP - up to 12 months - £125.00 (1h)</li>
-                      </ul>
-                  </div>
-                  
-                  <!-- Facial Treatments -->
-                  <div>
-                      <h3>Facial Treatments</h3>
-                      <ul class="list-disc">
-                          <li>Facial Treatment + Consultation - £60.00+ (2h 20min)</li>
-                          <li>Diamond Microdermabrasion - £50.00 (1h)</li>
-                          <li>Ultrasonic Cavitation - £50.00 (1h)</li>
-                          <li>Oxybrasion - £50.00 (1h)</li>
-                          <li>Oxybrasion + Oxygen Infusion - £75.00 (1h 30min)</li>
-                          <li>Anti-wrinkle Iron - £60.00 (1h)</li>
-                          <li>Chemical Peel - £60.00 (1h 10min)</li>
-                          <li>Medical Peel - £90.00 (1h 30min)</li>
-                          <li>RF - £60.00 (1h)</li>
-                          <li>Derma Pen - £70.00 (1h 30min)</li>
-                          <li>Meso BB Glow - £75.00 (1h 30min)</li>
-                          <li>Hydrafacial Basic - £80.00 (1h 30min)</li>
-                          <li>Hydrafacial VIP - £120.00 (2h)</li>
-                      </ul>
-                  </div>
-                  
-                  <!-- Aesthetic Treatments -->
-                  <div>
-                      <h3>Aesthetic Treatments</h3>
-                      <ul class="list-disc">
-                          <li>Skin Needle Vitamins Mesotherapy - £100.00 (1h)</li>
-                          <li>PRP - Vampire Facial - £130.00 (1h)</li>
-                          <li>PRP + PRF Facial - £190.00 (1h)</li>
-                          <li>Lumi Eyes - £130.00 (1h)</li>
-                          <li>Seventy Hyal Skin Booster - £160.00 (1h)</li>
-                          <li>Profhilo Skin Booster - £220.00 (1h)</li>
-                          <li>Sunekos - £220.00 (1h)</li>
-                          <li>Juvelook Eyes - £200.00 (1h)</li>
-                          <li>Juvelook Vial - £490.00 (1h)</li>
-                          <li>Lenisna Vial - £490.00 (1h)</li>
-                      </ul>
-                  </div>
-                  
-                  <!-- Eyebrow Styling -->
-                  <div>
-                      <h3>Eyebrow Styling</h3>
-                      <ul class="list-disc">
-                          <li>Ombre Powder Brows - £230.00 (3h)</li>
-                          <li>Patch Test - Free (15min)</li>
-                          <li>Top-Up (up to 8 weeks) - £50.00 (1h)</li>
-                          <li>Top-Up (up to 12 months) - £125.00 (1h)</li>
-                      </ul>
-                  </div>
-              </section>
-          </div>
-      </div>
+        <section class="text-center m-8 grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center">
+            @php
+            $categories = [
+                'FACIAL TREATMENTS' => 'facial_treatment.jpg',
+                'EYEBROWS STYLING' => 'eyebrows.png',
+            ];
+            $separateCategories = [
+                'PERMANENT MAKEUP' => 'semi-permanent.jpg',
+                'AESTHETIC TREATMENTS' => 'aesthetics-treatment.jpg',
+            ];
+            @endphp
+        
+            {{-- First Block: Facial Treatments & Eyebrows Styling --}}
+            @foreach ($categories as $category => $image)
+                @php $slug = Str::slug($category, '-'); @endphp
+                <a href="{{ url($slug) }}" class="w-full max-w-[650px] mx-auto">
+                    <div class="bg-cover bg-center flex items-center justify-center text-[rgba(238,185,93,1)] text-lg font-bold rounded-md shadow-lg transition-transform duration-300 hover:scale-105"
+                        style="background-image: url('{{ asset('images/' . rawurlencode($image)) }}');">
+                        <div class="bg-black/50 px-4 py-2 rounded-md">
+                            {{ $category }}
+                        </div>
+                    </div>
+                </a>
+            @endforeach
+        
+            {{-- Second Block: Permanent Makeup & Aesthetic Treatments --}}
+            <div class="sm:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                @foreach ($separateCategories as $category => $image)
+                    @php $slug = Str::slug($category, '-'); @endphp
+                    <a href="{{ url($slug) }}" class="w-full max-w-[650px] mx-auto">
+                        <div class="bg-cover bg-center flex items-center justify-center text-[rgba(238,185,93,1)] text-lg font-bold rounded-md shadow-lg transition-transform duration-300 hover:scale-105"
+                            style="background-image: url('{{ asset('images/' . rawurlencode($image)) }}');">
+                            <div class="bg-black/50 px-4 py-2 rounded-md">
+                                {{ $category }}
+                            </div>
+                        </div>
+                    </a>
+                @endforeach
+            </div>
+        </section>
+        
   </aside>
    <div class="text-center">
       <h3>Find Us</h3>

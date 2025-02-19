@@ -67,7 +67,7 @@
         
         <!-- Permanent Makeup -->
         <div>
-          <h3 class="my-16 font-bold text-4xl">Permanent Makeup</h3>
+          <h3 class="my-16 font-bold text-4xl">Eyebrows Makeup</h3>
           <ul class="list-disc text-start flex flex-col gap-4">
             <li>Ombre Powder Brows - £230.00 (3h)</li>
             <li>Patch Test - Free (15min)</li>

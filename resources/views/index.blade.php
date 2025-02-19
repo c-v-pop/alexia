@@ -114,7 +114,7 @@
       </div>
     </section>
   </main>
-  <section class="text-center m-8 flex flex-col flex-wrap justify-center gap-4">
+  <section class="text-center m-8 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl mx-auto">
     @php
     $categories = [
         'FACIAL TREATMENTS' => 'facial_treatment.jpg',
@@ -122,23 +122,23 @@
         'PERMANENT MAKEUP' => 'semi-permanent.jpg',
         'AESTHETIC TREATMENTS' => 'aesthetics-treatment.jpg',
     ];
-@endphp
+    @endphp
 
-<section class="text-center m-8 flex flex-wrap justify-center gap-4">
-  @foreach ($categories as $category => $image)
-      @php
-          // Convert category name to a URL-friendly slug
-          $slug = Str::slug($category, '-');
-      @endphp
-      <a href="{{ url($slug) }}" class="w-full sm:w-[48%] md:w-[48%] max-w-[450px]">
-          <div class="aspect-square bg-cover bg-center flex items-center justify-center text-[rgba(238,185,93,1)] text-lg font-bold rounded-md shadow-lg transition-transform duration-300 hover:scale-105"
-               style="background-image: url('{{ asset('images/' . rawurlencode($image)) }}');">
-              <div class="bg-black/50 px-4 py-2 rounded-md">
-                  {{ $category }}
-              </div>
-          </div>
-      </a>
-  @endforeach
+    @foreach ($categories as $category => $image)
+        @php
+            $slug = Str::slug($category, '-');
+        @endphp
+        <a href="{{ url($slug) }}" class="block w-full">
+            <div class="relative aspect-square bg-cover bg-center rounded-md shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:border-4 hover:border-[rgba(238,185,93,1)]"
+                 style="background-image: url('{{ asset('images/' . rawurlencode($image)) }}');">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <span class="text-[rgba(238,185,93,1)] text-lg font-bold px-4 py-2 rounded-md">
+                        {{ $category }}
+                    </span>
+                </div>
+            </div>
+        </a>
+    @endforeach
 </section>
 
 <div>
