@@ -70,51 +70,55 @@
     </div>    
   </header>
   <main class="flex flex-col justify-center m-8">
-    <div class="flex flex-col md:flex-row justify-center items-center m-auto">
-      <div class="text-2xl">
-        <h1>Welcome to Permanent Makeup & Aesthetics</h1>
-        <p>Specializing in personalized treatments for beauty enhancement.</p>
-        <p>
-          When it comes to your appearance, you deserve the best care that money can buy.
-          Welcome to <span style="font-weight: bold; font-style: italic;">Permanent Make-Up Institute</span>,
-          the number one Skin Expert in cosmetology and aesthetics treatments in the North Yorkshire & Durhamshire area.
-        </p>
-        <p>Give us a call today and book a complimentary consultation meeting.</p>
-      </div>
-      <div>
-        <img src="{{ asset('images/alexia-about-me.webp') }}" alt="Woman with syringe">
-      </div>
-    </div>
-    <div>
-      <section class="flex flex-col md:flex-row-reverse justify-start items-center m-auto">
-        <div class="m-8 text-2xl">
-          <h2 class="font-semibold">About Me</h2>
-          <p>Thank you for your trust and support</p>
-          <p>
-            <strong>15 years of experience:</strong> I am a University graduate, accredited Aesthetic Medicine Practitioner,
-            and Laser Hair Removal Specialist.
-          </p>
-          <p>
-            <strong>Award-winning:</strong> Multiple <i>British Hair and Beauty Awards</i>, including Gold Winner for
-            Semi-Permanent Makeup and Aesthetic Salon of the Year &#127942;.
-          </p>
-          <p>
-            <strong>Published:</strong> Featured in *Leaders* magazine with a 3-page interview.
-          </p>
-          <p>
-            <strong>Artistic roots:</strong> I love creating art and have exhibited my paintings in Hartlepool.
-          </p>
-          <p>
-            <strong>Darlington-based</strong>
-          </p>
+    <div class="flex flex-col md:flex-row justify-center items-center m-auto mb-32">
+        <div class="text-2xl">
+            <h1>Welcome to Permanent Makeup & Aesthetics</h1>
+            <p>Specializing in personalized treatments for beauty enhancement.</p>
+            <p>
+                When it comes to your appearance, you deserve the best care that money can buy.
+                Welcome to <span style="font-weight: bold; font-style: italic;">Permanent Make-Up Institute</span>,
+                the number one Skin Expert in cosmetology and aesthetics treatments in the North Yorkshire & Durhamshire area.
+            </p>
+            <p>Give us a call today and book a complimentary consultation meeting.</p>
         </div>
         <div>
-          <img src="{{ asset('images/Alexia-about.webp') }}" alt="Woman">
+            <img src="{{ asset('images/alexia-about-me.webp') }}" alt="Woman with syringe"
+                class="max-h-[70em] w-auto object-cover rounded-lg">
         </div>
-      </div>
-    </section>
-  </main>
-  <section class="text-center m-8 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl mx-auto">
+    </div>
+    <div>
+        <section class="flex flex-col md:flex-row-reverse justify-start items-center mt-6">
+            <div class="m-8 text-2xl">
+                <h2 class="font-semibold">About Me</h2>
+                <p>Thank you for your trust and support</p>
+                <p>
+                    <strong>15 years of experience:</strong> I am a University graduate, accredited Aesthetic Medicine Practitioner,
+                    and Laser Hair Removal Specialist.
+                </p>
+                <p>
+                    <strong>Award-winning:</strong> Multiple <i>British Hair and Beauty Awards</i>, including Gold Winner for
+                    Semi-Permanent Makeup and Aesthetic Salon of the Year &#127942;.
+                </p>
+                <p>
+                    <strong>Published:</strong> Featured in *Leaders* magazine with a 3-page interview.
+                </p>
+                <p>
+                    <strong>Artistic roots:</strong> I love creating art and have exhibited my paintings in Hartlepool.
+                </p>
+                <p>
+                    <strong>Darlington-based</strong>
+                </p>
+            </div>
+            <div>
+                <img src="{{ asset('images/Alexia-about.webp') }}" alt="Woman"
+                    class="max-h-[70em] w-auto object-cover rounded-lg">
+            </div>
+        </section>
+    </div>
+</main>
+
+  <h2 class="text-4xl text-center mx-auto my-24 font-bold">Treatments</h2>
+  <section class="text-center grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl md:mx-auto my-16 mx-8">
     @php
     $categories = [
         'FACIAL TREATMENTS' => 'facial_treatment.jpg',
@@ -131,7 +135,7 @@
         <a href="{{ url($slug) }}" class="block w-full">
             <div class="relative aspect-square bg-cover bg-center rounded-md shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:border-4 hover:border-[rgba(238,185,93,1)]"
                  style="background-image: url('{{ asset('images/' . rawurlencode($image)) }}');">
-                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center hover:bg-black/0">
                     <span class="text-[rgba(238,185,93,1)] text-lg font-bold px-4 py-2 rounded-md">
                         {{ $category }}
                     </span>
@@ -141,16 +145,16 @@
     @endforeach
 </section>
 
+
 <div>
   <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:max-w-96 w-full m-auto bg-black">
-  <div class="text-center">
-    <h2>Find Us</h2>
-    <p>Visit us at:</p>
+  <div class="text-center mb-10">
+    <h2>Find Us At:</h2>
     <p><strong>12A Gilling Cres, Darlington DL1 4TH</strong></p>
     <p><a href="https://www.google.com/maps/dir//12+Gilling+Cres+Darlington+DL1+4TH/@54.5178569,-1.5305936,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x487e9a2ecbb6ea53:0x308f89e3df7508b0"><i class="fa-solid fa-map-location-dot fa-xl"></i></a></p>
   </div>
 </div>
-  <footer class="bg-black/95 flex flex-col justify-center m-auto text-center">
+  <footer class="bg-black/95 flex flex-col justify-center m-auto text-center mt-6">
     <p class="text-[rgba(238,185,93,1)]">&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
   </footer>
 </body>

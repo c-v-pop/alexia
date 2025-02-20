@@ -69,80 +69,94 @@
     </div>    
   </header>
 
-  <main class="p-4 sm:p-6 lg:p-8">
-    <div class="space-y-8">
+  @php
+  $treatments = [
+      [
+          'title' => 'CONTRAINDICATIONS',
+          'items' => [
+              'Sunbeds - <strong>2 WEEKS BEFORE THE TREATMENT!</strong>',
+              'Blood thinners and drugs.',
+              'Acne medication (e.g., Izotek).',
+              'Steroids (6 months after discontinuation).',
+              'Psoriasis in the place where the procedure is performed (possibility of performing the procedure with taking responsibility for the risk; make-up durability is shorter in a person with diseased skin; much legal necessity to make a pigment).',
+              'Diseases of the throat.',
+              'Hyperfunction and hypofunction of the body (increased probability of pigment exfoliation).',
+              'Unstable diabetes.',
+              'Unregulated hypertension.',
+              'Tendency to keloid scars.',
+              'Blood clotting problems (e.g., hemophilia) - increased chance of pigment spillage.',
+              'Epilepsy (possibility of triggering an epileptic seizure through stress).',
+              'Inflammation of the skin in the place of pigmentation (bacterial, fungal, viral).',
+              'Taking non-steroidal anti-inflammatory drugs (NSAIDs).',
+              'Immunosuppression (inhibiting the process of healing).',
+              'Heart and circulatory system diseases, thrombocytopenia, and anemia.',
+              'Skin diseases: eczema, dermatophytosis, lichen planus, blush, keloids, urticaria, atopic dermatitis, and similar conditions.',
+              'Pregnancy.',
+              'Breastfeeding.',
+              'HIV and hepatitis virus carrier.',
+              'Skin allergy.',
+              'Colds, flu, fevers, and taking antibiotics.',
+              'Cancer under treatment.',
+              'Treatments in the field of aesthetic medicine (about 2-4 weeks prior).',
+              'Active cold sores.',
+              'Excessive and unrealistic expectations of treatment outcomes.',
+          ]
+      ],
+      [
+          'title' => 'RUSSIAN LIPS MODELING',
+          'items' => [
+              'Pregnancy and breastfeeding.',
+              'Age under 18.',
+              'Diabetes (untreated).',
+              'Acne common, rosacea.',
+              'Use of isotretinol.',
+              'Taking antibiotics (the procedure can be performed 2 weeks after the end of treatment).',
+              'Active herpes/cold sores.',
+              'Bacterial, viral, and fungal infections of the skin.',
+              'Inflammations and purulent skin conditions.',
+              'Keloid-prone autoimmune diseases.',
+              'Blood clotting disorders.',
+              'Cancers.',
+              'Collagen diseases (e.g., rheumatoid arthritis, systemic lupus erythematosus, and systemic vasculitis).',
+              'Epilepsy.',
+              'Thyroid diseases (unregulated).',
+              'Allergy to lidocaine.',
+              'Hypersensitivity to hyaluronic acid.',
+              'Unrealistic patient expectations.',
+          ]
+      ]
+  ];
+@endphp
+
+<main class="p-4 sm:p-6 lg:p-8">
+  <div class="space-y-8">
       <div>
-        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">SEMI PERMANENT MAKE-UP</h3>
-        <div class="space-y-6">
-          <div>
-            <h3 class="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-700 mb-3">CONTRAINDICATIONS</h3>
-            <ul class="list-disc pl-5 space-y-2 border-b border-[#D4AF37] pb-6">
-              <li>Sunbeds - <strong>2 WEEKS BEFORE THE TREATMENT!</strong></li>
-              <li>Blood thinners and drugs.</li>
-              <li>Acne medication (e.g., Izotek).</li>
-              <li>Steroids (6 months after discontinuation).</li>
-              <li>Psoriasis in the place where the procedure is performed (possibility of performing the procedure with taking responsibility for the risk; make-up durability is shorter in a person with diseased skin; much legal necessity to make a pigment).</li>
-              <li>Diseases of the throat.</li>
-              <li>Hyperfunction and hypofunction of the body (increased probability of pigment exfoliation).</li>
-              <li>Unstable diabetes.</li>
-              <li>Unregulated hypertension.</li>
-              <li>Tendency to keloid scars.</li>
-              <li>Blood clotting problems (e.g., hemophilia) - increased chance of pigment spillage.</li>
-              <li>Epilepsy (possibility of triggering an epileptic seizure through stress).</li>
-              <li>Inflammation of the skin in the place of pigmentation (bacterial, fungal, viral).</li>
-              <li>Taking non-steroidal anti-inflammatory drugs (NSAIDs).</li>
-              <li>Immunosuppression (inhibiting the process of healing).</li>
-              <li>Heart and circulatory system diseases, thrombocytopenia, and anemia.</li>
-              <li>Skin diseases: eczema, dermatophytosis, lichen planus, blush, keloids, urticaria, atopic dermatitis, and similar conditions.</li>
-              <li>Pregnancy.</li>
-              <li>Breastfeeding.</li>
-              <li>HIV and hepatitis virus carrier.</li>
-              <li>Skin allergy.</li>
-              <li>Colds, flu, fevers, and taking antibiotics.</li>
-              <li>Cancer under treatment.</li>
-              <li>Treatments in the field of aesthetic medicine (about 2-4 weeks prior).</li>
-              <li>Active cold sores.</li>
-              <li>Excessive and unrealistic expectations of treatment outcomes.</li>
-            </ul>
+          <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">SEMI PERMANENT MAKE-UP</h3>
+          <div class="space-y-6">
+              @foreach ($treatments as $treatment)
+                  <div>
+                      <h3 class="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-700 mb-3">
+                          {{ $treatment['title'] }}
+                      </h3>
+                      <ul class="list-disc pl-5 space-y-2 border-b border-[#D4AF37] pb-6">
+                          @foreach ($treatment['items'] as $item)
+                              <li>{!! $item !!}</li>
+                          @endforeach
+                      </ul>
+                  </div>
+              @endforeach
           </div>
-
-          <!-- Repeat the same structure for other sections -->
-          <div>
-            <h3 class="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-700 mb-3">RUSSIAN LIPS MODELING</h3>
-            <ul class="list-disc pl-5 space-y-2 border-b border-[#D4AF37] pb-6">
-              <li>Pregnancy and breastfeeding.</li>
-              <li>Age under 18.</li>
-              <li>Diabetes (untreated).</li>
-              <li>Acne common, rosacea.</li>
-              <li>Use of isotretinol.</li>
-              <li>Taking antibiotics (the procedure can be performed 2 weeks after the end of treatment).</li>
-              <li>Active herpes/cold sores.</li>
-              <li>Bacterial, viral, and fungal infections of the skin.</li>
-              <li>Inflammations and purulent skin conditions.</li>
-              <li>Keloid-prone autoimmune diseases.</li>
-              <li>Blood clotting disorders.</li>
-              <li>Cancers.</li>
-              <li>Collagen diseases (e.g., rheumatoid arthritis, systemic lupus erythematosus, and systemic vasculitis).</li>
-              <li>Epilepsy.</li>
-              <li>Thyroid diseases (unregulated).</li>
-              <li>Allergy to lidocaine.</li>
-              <li>Hypersensitivity to hyaluronic acid.</li>
-              <li>Unrealistic patient expectations.</li>
-            </ul>
-          </div>
-
-          <!-- Add other sections similarly -->
-        </div>
       </div>
-    </div>
-  </main>
+  </div>
+</main>
 
-  <div class="map-container p-4 sm:p-6 lg:p-8 bg-white">
-    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Find Us</h2>
-    <p class="text-gray-700 mb-2">Visit us at:</p>
-    <p class="text-gray-700 font-semibold mb-4">12A Gilling Cres, Darlington DL1 4TH</p>
+
+  <div class="map-container p-4 sm:p-6 lg:p-8 bg-black text-[rgba(238,185,93,1)]">
+    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold  mb-4">Find Us</h2>
+    <p class="mb-2">Visit us at:</p>
+    <p class="font-semibold mb-4">12A Gilling Cres, Darlington DL1 4TH</p>
     <a href="https://www.google.com/maps/dir//12+Gilling+Cres+Darlington+DL1+4TH/@54.5178569,-1.5305936,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x487e9a2ecbb6ea53:0x308f89e3df7508b0" class="text-[#D4AF37] hover:text-[#B8860B]">
-      <i class="fa-solid fa-map-location-dot fa-xl"></i>
+      <i class="fa-solid fa-map-location-dot fa-xl text-[rgba(238,185,93,1)]"></i>
     </a>
   </div>
   <img src="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/logo.webp" alt="Beauty Saloon Logo" class="md:max-w-96 w-full m-auto bg-black">

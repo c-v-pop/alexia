@@ -63,7 +63,7 @@
   </header>
   <div class="flex items-start md:items-center justify-center min-h-screen">
     <div class="flex flex-col p-4 space-y-2 items-center text-center flex-wrap md:text-2xl">
-      <section class="mb-10">
+      <section class="mb-10 p-6">
         
         <!-- Permanent Makeup -->
         <div>
@@ -82,12 +82,12 @@
           </ul>
         </div>
       </section>
-      <h2>Please feel FREE to book your consultation with me. <br> I am happy to help you and meet your expectations.</h2>
+      <h2 class="!mb-8 font-semibold">Please feel FREE to book your consultation with me. <br> I am happy to help you and meet your expectations.</h2>
+      <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-2xl text-center m-auto w-full font-bold hover:text-yellow-600 duration-300" href="https://laalexiaatelier.booksy.com">Appointments</a>
+      <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:max-w-96 w-full m-auto bg-black">
     </div>
   </div>
-  <div>
-    <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:max-w-96 w-full m-auto bg-black">
-  </div>
+</div>
   <footer class="bg-black/95 flex flex-col justify-center m-auto text-center">
     <p class="text-[rgba(238,185,93,1)]">&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
   </footer>
