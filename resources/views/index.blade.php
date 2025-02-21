@@ -69,53 +69,48 @@
       <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-lg text-center m-auto" href="https://laalexiaatelier.booksy.com">Appointments</a>
     </div>    
   </header>
-  <main class="flex flex-col justify-center m-8">
-    <div class="flex flex-col md:flex-row justify-center items-center m-auto mb-32">
-        <div class="text-2xl">
-            <h1>Welcome to Permanent Makeup & Aesthetics</h1>
-            <p>Specializing in personalized treatments for beauty enhancement.</p>
-            <p>
-                When it comes to your appearance, you deserve the best care that money can buy.
-                Welcome to <span style="font-weight: bold; font-style: italic;">Permanent Make-Up Institute</span>,
-                the number one Skin Expert in cosmetology and aesthetics treatments in the North Yorkshire & Durhamshire area.
+  <main class="flex flex-col justify-center px-4 sm:px-8 lg:px-16 py-8">
+    <!-- Card 1 -->
+    <div class="bg-black/50 shadow-lg rounded-lg p-8 flex flex-col md:flex-row justify-center items-center mx-auto mb-20 gap-12 md:gap-16 text-white">
+        <div class="text-center md:text-left flex-1">
+            <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-[rgba(238,185,93,1)]">Welcome to Permanent Makeup & Aesthetics</h1>
+            <p class="text-lg sm:text-xl mb-4 text-gray-300">Specializing in personalized treatments for beauty enhancement.</p>
+            <p class="text-lg sm:text-xl mb-4 text-gray-300">
+                When it comes to your appearance, you deserve the best care possible.  
+                Welcome to <span class="font-bold italic text-[rgba(238,185,93,1)]">Permanent Make-Up Institute</span>,  
+                the leading expert in cosmetology and aesthetics treatments in North Yorkshire & Durhamshire.
             </p>
-            <p>Give us a call today and book a complimentary consultation meeting.</p>
+            <p class="text-lg sm:text-xl font-semibold text-[rgba(238,185,93,1)]">Give us a call today to book a complimentary consultation.</p>
         </div>
-        <div>
+        <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-2xl text-center m-auto w-full font-bold hover:text-yellow-600 duration-300 md:hidden" href="https://laalexiaatelier.booksy.com">Appointments</a>
+
+        <div class="w-full md:w-auto">
             <img src="{{ asset('images/alexia-about-me.webp') }}" alt="Woman with syringe"
-                class="max-h-[70em] w-auto object-cover rounded-lg">
+                class="max-h-[45em] w-full md:w-auto object-cover rounded-lg shadow-lg">
         </div>
     </div>
-    <div>
-        <section class="flex flex-col md:flex-row-reverse justify-start items-center mt-6">
-            <div class="m-8 text-2xl">
-                <h2 class="font-semibold">About Me</h2>
-                <p>Thank you for your trust and support</p>
-                <p>
-                    <strong>15 years of experience:</strong> I am a University graduate, accredited Aesthetic Medicine Practitioner,
-                    and Laser Hair Removal Specialist.
-                </p>
-                <p>
-                    <strong>Award-winning:</strong> Multiple <i>British Hair and Beauty Awards</i>, including Gold Winner for
-                    Semi-Permanent Makeup and Aesthetic Salon of the Year &#127942;.
-                </p>
-                <p>
-                    <strong>Published:</strong> Featured in *Leaders* magazine with a 3-page interview.
-                </p>
-                <p>
-                    <strong>Artistic roots:</strong> I love creating art and have exhibited my paintings in Hartlepool.
-                </p>
-                <p>
-                    <strong>Darlington-based</strong>
-                </p>
-            </div>
-            <div>
-                <img src="{{ asset('images/Alexia-about.webp') }}" alt="Woman"
-                    class="max-h-[70em] w-auto object-cover rounded-lg">
-            </div>
-        </section>
+
+    <!-- Card 2 (Reversed Layout) -->
+    <div class="bg-black/50 shadow-lg rounded-lg p-8 flex flex-col md:flex-row-reverse justify-center items-center mx-auto mb-20 gap-12 md:gap-16 w-full text-white">
+        <div class="text-center md:text-left flex-1">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-[rgba(238,185,93,1)]">About Me</h2>
+            <p class="text-lg sm:text-xl font-semibold mb-4 text-[rgba(238,185,93,1)]">Thank you for your trust and support.</p>
+            <ul class="text-lg sm:text-xl space-y-3 text-gray-300">
+                <li><strong class="text-[rgba(238,185,93,1)]">15 years of experience:</strong> University graduate, accredited Aesthetic Medicine Practitioner, and Laser Hair Removal Specialist.</li>
+                <li><strong class="text-[rgba(238,185,93,1)]">Award-winning:</strong> Multiple <i>British Hair and Beauty Awards</i>, including Gold Winner for Semi-Permanent Makeup and Aesthetic Salon of the Year 🏆.</li>
+                <li><strong class="text-[rgba(238,185,93,1)]">Published:</strong> Featured in <i>Leaders</i> magazine with a 3-page interview.</li>
+                <li><strong class="text-[rgba(238,185,93,1)]">Artistic roots:</strong> Passionate about art, with paintings exhibited in Hartlepool.</li>
+                <li><strong class="text-[rgba(238,185,93,1)]">Based in Darlington.</strong></li>
+            </ul>
+        </div>
+        <div class="w-full md:w-auto">
+            <img src="{{ asset('images/Alexia-about.webp') }}" alt="Woman"
+                class="max-h-[45em] w-full md:w-auto object-cover rounded-lg shadow-lg">
+        </div>
     </div>
 </main>
+
+
 
   <h2 class="text-4xl text-center mx-auto my-24 font-bold">Treatments</h2>
   <section class="text-center grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl md:mx-auto my-16 mx-8">
