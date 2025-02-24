@@ -168,8 +168,8 @@
         </a>
     </p>
 </div>
-  <footer class="bg-gray-900 text-white text-center p-4">
-    <p>&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
+  <footer class="bg-black text-white text-center p-4">
+    <p class="text-[rgba(238,185,93,1)]">&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
   </footer>
 
   <script>

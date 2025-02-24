@@ -79,7 +79,7 @@
       </p>
   </div>
   <footer class="text-center p-4 bg-opacity-60 bg-black mt-6">
-    <p>&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
+    <p class="text-[rgba(238,185,93,1)]">&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
   </footer>
 </body>
 </html>

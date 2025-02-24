@@ -145,7 +145,7 @@
       </p>
   </div>
   <footer class="text-center m-8">
-    <p>&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
+    <p class="text-[rgba(238,185,93,1)]">&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
   </footer>
 </body>
 </html>
