@@ -9,7 +9,7 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
-Route::get('/services', [PageController::class, 'services'])->name('services');
+Route::get('/contraindications', [PageController::class, 'contraindications'])->name('contraindications');
 Route::get('/gallery', [PageController::class, 'gallery'])->name('gallery');
 Route::get('/policies', [PageController::class, 'policies'])->name('policies');
 Route::get('/treatments', [PageController::class, 'treatments'])->name('treatments');

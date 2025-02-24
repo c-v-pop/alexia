@@ -38,80 +38,112 @@
 <body class="text-[rgba(238,185,93,1)] bg-black m-0 p-0">
   <header class="bg-black/95">
     <div class="flex justify-between items-center p-4">
-      <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="w-40">
-      <nav class="hidden md:flex space-x-6">
-        <a href="{{ route('index') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Home</a>
-        <a href="{{ route('treatments') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Treatments</a>
-        <a href="{{ route('services') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Contraindications</a>
-        <a href="{{ route('policies') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Clinic Regulations</a>
-        <a href="{{ route('gallery') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Gallery</a>
-        <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-lg" href="https://laalexiaatelier.booksy.com">Appointments</a>
-      </nav>
-      <button class="md:hidden text-[rgba(238,185,93,1)] text-2xl" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+        <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="w-40">
+        <nav class="hidden md:flex space-x-6">
+            <a href="{{ route('index') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Home</a>
+            <a href="{{ route('treatments') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Treatments</a>
+            <a href="{{ route('contraindications') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Contraindications</a>
+            <a href="{{ route('policies') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Clinic Regulations</a>
+            <a href="{{ route('gallery') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Gallery</a>
+            <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[rgba(238,185,93,0.6)]" href="https://laalexiaatelier.booksy.com">Appointments</a>
+        </nav>
+        <button class="md:hidden text-[rgba(238,185,93,1)] text-2xl" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
     </div>
-    <div id="myLinks" class="hidden flex flex-col md:hidden p-4 space-y-2 items-start">
-      <a href="{{ route('index') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Home</a>
-      <hr class="border border-[rgba(238,185,93,0.86)]  w-full block md:hidden">
-      <a href="{{ route('treatments') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Treatments</a>
-      <hr class="border border-[rgba(238,185,93,0.86)]  w-full block md:hidden">
-      <a href="{{ route('services') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Contraindications</a>
-      <hr class="border border-[rgba(238,185,93,0.86)]  w-full block md:hidden">
-      <a href="{{ route('policies') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Clinic Regulations</a>
-      <hr class="border border-[rgba(238,185,93,0.86)]  w-full block md:hidden">
-      <a href="{{ route('gallery') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text">Gallery</a>
-      <hr class="border border-[rgba(238,185,93,0.86)]  w-full block md:hidden">
-      <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-lg text-center m-auto" href="https://laalexiaatelier.booksy.com">Appointments</a>
-    </div>    
-  </header>
-  <div class="flex flex-col justify-center m-8">
-    <h2>Our Clinic Regulations</h2>
-    <ul>
-      <li>By subscribing for the treatment, you fully accept the regulations and the rules listed below.</li>
-      <li>Clients before each treatment sign the consent for the procedure and take into account the side effects of the performed treatment.</li>
-      <li>All clients for all needle procedures must be over 18 years old.</li>
-      <li>£30-£50 secure deposit is required. Unless the operator requests otherwise.</li>
-      <li>The Client has 24 hours from the moment of signing up to settle the deposit. If not done, the reservation is automatically canceled, and the date becomes available to other customers.</li>
-      <li>If the treatment takes place, its price is reduced by the value of the deposit.</li>
-      <li>The deposit can be settled by bank transfer: <strong>L ALEXIA ATELIER Ltd</strong>, Sort Code: <strong>20-59-43</strong>, Account: <strong>33814505</strong>.</li>
-      <li>In the title of the transfer, enter your date and time of the visit. Failure to provide these details makes it impossible to guarantee availability of the booked date.</li>
-      <li>When booking the date, ensure there are no contraindications for the procedure. If there are doubts about your health or medications, contact me immediately. Appearing at the appointment with an obvious contraindication results in the loss of the deposit.</li>
-      <li>All consultation regarding skin condition, skin examination, pre-treatment, and after-treatment advice costs £35 for a 25-minute session. If the Client books an appointment and pays for the treatment in full after the consultation, the consultation is FREE.</li>
-      <li>The customer has the right to change the date of the visit at least 48 hours before the planned visit. Last-minute cancellations result in a lost deposit. Multiple cancellations may lead to being added to the "Black List" and loss of the advance payment.</li>
-      <li>Clients can postpone the appointment twice, requesting no later than 48 hours before the planned meeting. Otherwise, the down payment will be forfeited. Appointments cannot be postponed indefinitely.</li>
-      <li>Complete resignation from the treatment forfeits the down payment. The treatment cannot be transferred to another client.</li>
-      <li>Clients with previous permanent makeup must inform the linergist. Arriving with old, visible makeup without prior notice, which makes the procedure impossible, results in loss of the deposit.</li>
-      <li>During the semi-permanent makeup treatment, an initial drawing is made, and the method is selected based on the client’s natural beauty.</li>
-      <li>The artist reserves the right to refuse service if the Client’s expectations are inconsistent with the proposed visualization.</li>
-      <li>If the Client does not accept the proposed shape, method, and color of the pigment and decides to resign during the visit, the advance payment is non-refundable.</li>
-      <li>L' Alexia Atelier does not guarantee the effect or final result of the procedure. The skin’s response and aftercare are crucial.</li>
-      <li>Lip Modeling requires 4-6 weeks to settle. Multiple visits may be needed for optimal results.</li>
-      <li>Clients delaying makeup correction due to pregnancy must pay 30% of the current price within two years or 100% afterward.</li>
-      <li>Permanent makeup refreshes up to a year cost 50% of the current price. Over two years, it costs 100%.</li>
-      <li>Yearly Top Up after Semi Permanent makeup is required, the salon is not responsible for failure to refresh and maintain makeup according to recommendations.</li>
-      <li>Semi permanent makeup is a treatment consisting of two micro pigmentation treatments. Failure to attend or rejection of the second pigmentation process may result in incomplete treatment results.</li>
-      <li>Corrections after other salons are priced individually and treated as new treatments.</li>
-      <li>Visible asymmetries unsuitable for pigmentation require aesthetic medicine treatments.</li>
-      <li>Treatment prices in the price list cover one pigmentation session; corrections are extra.</li>
-      <li>Gift vouchers are non-refundable if contraindications prevent treatment.</li>
-      <li>Gift vouchers are non-refundable and exchangeable without any exceptions.</li>
-      <li>Gift vouchers are worthless after the expiry date.</li>
-      <li>Gift vouchers are not subject to a monopoly.</li>
-      <li>Clients are requested to come alone and mute phones during procedures.</li>
-      <li>Children are not allowed during treatment procedures.</li>
-      <li>Clients arriving over 15 minutes late risk losing their deposit and having the procedure refused.</li>
-      <li>L' Alexia Atelier reserves the right to modify regulations and appointment dates by mutual agreement.</li>
-      <li>No refund policy applies to treatments, as time, products, and work are invested in each appointment. If the client claims the right to return the deposit when the treatment has not taken place, the salon may impose a fine of 100% of the value of the treatment.</li>
-      <li>Complaints must be submitted in person at the salon. Phone calls, messages, or photos are not accepted.</li>
-      <li>Complaint procedures may take up to 30 working days from submission.</li>
-      <li>The salon offers assistance for post-treatment complications if the client cooperates and follows recommendations.</li>
-      <li>Necessary corrections require the Client’s attendance at the salon on the appointed date.</li>
-      <li>Every client who agrees to any treatment in the salon is aware of the risks and consequences of the procedure performed.</li>
-      <li>Clients are responsible for transportation costs to the salon. The salon does not compensate for such expenses.</li>
-      <li>By paying the deposit and attending L' Alexia Atelier, you agree to these rules.</li>
-    </ul>    
-  </div>
-  <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:max-w-96 w-full m-auto bg-black">
+    <div id="myLinks" class="hidden flex flex-col md:hidden p-4 space-y-2 items-start transition-all duration-300">
+        <a href="{{ route('index') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text hover:pl-2 transition-all duration-300">Home</a>
+        <hr class="border border-[rgba(238,185,93,0.86)] w-full block md:hidden">
+        <a href="{{ route('treatments') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text hover:pl-2 transition-all duration-300">Treatments</a>
+        <hr class="border border-[rgba(238,185,93,0.86)] w-full block md:hidden">
+        <a href="{{ route('contraindications') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text hover:pl-2 transition-all duration-300">Contraindications</a>
+        <hr class="border border-[rgba(238,185,93,0.86)] w-full block md:hidden">
+        <a href="{{ route('policies') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text hover:pl-2 transition-all duration-300">Clinic Regulations</a>
+        <hr class="border border-[rgba(238,185,93,0.86)] w-full block md:hidden">
+        <a href="{{ route('gallery') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text hover:pl-2 transition-all duration-300">Gallery</a>
+        <hr class="border border-[rgba(238,185,93,0.86)] w-full block md:hidden">
+        <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-lg text-center m-auto transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[rgba(238,185,93,0.6)]" href="https://laalexiaatelier.booksy.com">Appointments</a>
+    </div>
+</header>
+<div class="p-6 sm:p-8 lg:p-10 max-w-5xl mx-auto">
+  <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[rgba(238,185,93,1)] text-center mb-6">
+      Our Clinic Regulations
+  </h2>
 
+  <div class="border-2 border-[rgba(238,185,93,1)] rounded-xl p-6 sm:p-8">
+      <div class="grid md:grid-cols-1 gap-8">
+          @php
+              $regulations = [
+                  "By subscribing for the treatment, you fully accept the regulations and rules listed below.",
+                  "Clients before each treatment sign the consent for the procedure and take into account the side effects.",
+                  "All clients for all needle procedures must be over 18 years old.",
+                  "£30-£50 secure deposit is required. Unless the operator requests otherwise.",
+                  "The Client has 24 hours from the moment of signing up to settle the deposit. If not done, the reservation is automatically canceled, and the date becomes available to other customers.",
+                  "If the treatment takes place, its price is reduced by the value of the deposit.",
+                  "The deposit can be settled by bank transfer: <strong>L ALEXIA ATELIER Ltd</strong>, Sort Code: <strong>20-59-43</strong>, Account: <strong>33814505</strong>.",
+                  "In the title of the transfer, enter your date and time of the visit. Failure to provide these details makes it impossible to guarantee availability of the booked date.",
+                  "When booking the date, ensure there are no contraindications for the procedure. If there are doubts about your health or medications, contact me immediately. Appearing at the appointment with an obvious contraindication results in the loss of the deposit.",
+                  "All consultation regarding skin condition, skin examination, pre-treatment, and after-treatment advice costs £35 for a 25-minute session. If the Client books an appointment and pays for the treatment in full after the consultation, the consultation is FREE.",
+                  "The customer has the right to change the date of the visit at least 48 hours before the planned visit. Last-minute cancellations result in a lost deposit. Multiple cancellations may lead to being added to the 'Black List' and loss of the advance payment.",
+                  "Clients can postpone the appointment twice, requesting no later than 48 hours before the planned meeting. Otherwise, the down payment will be forfeited. Appointments cannot be postponed indefinitely.",
+                  "Complete resignation from the treatment forfeits the down payment. The treatment cannot be transferred to another client.",
+                  "Clients with previous permanent makeup must inform the linergist. Arriving with old, visible makeup without prior notice, which makes the procedure impossible, results in loss of the deposit.",
+                  "During the semi-permanent makeup treatment, an initial drawing is made, and the method is selected based on the client’s natural beauty.",
+                  "The artist reserves the right to refuse service if the Client’s expectations are inconsistent with the proposed visualization.",
+                  "If the Client does not accept the proposed shape, method, and color of the pigment and decides to resign during the visit, the advance payment is non-refundable.",
+                  "L' Alexia Atelier does not guarantee the effect or final result of the procedure. The skin’s response and aftercare are crucial.",
+                  "Lip Modeling requires 4-6 weeks to settle. Multiple visits may be needed for optimal results.",
+                  "Clients delaying makeup correction due to pregnancy must pay 30% of the current price within two years or 100% afterward.",
+                  "Permanent makeup refreshes up to a year cost 50% of the current price. Over two years, it costs 100%.",
+                  "Yearly Top Up after Semi Permanent makeup is required, the salon is not responsible for failure to refresh and maintain makeup according to recommendations.",
+                  "Semi permanent makeup is a treatment consisting of two micro pigmentation treatments. Failure to attend or rejection of the second pigmentation process may result in incomplete treatment results.",
+                  "Corrections after other salons are priced individually and treated as new treatments.",
+                  "Visible asymmetries unsuitable for pigmentation require aesthetic medicine treatments.",
+                  "Treatment prices in the price list cover one pigmentation session; corrections are extra.",
+                  "Gift vouchers are non-refundable if contraindications prevent treatment.",
+                  "Gift vouchers are non-refundable and exchangeable without any exceptions.",
+                  "Gift vouchers are worthless after the expiry date.",
+                  "Gift vouchers are not subject to a monopoly.",
+                  "Clients are requested to come alone and mute phones during procedures.",
+                  "Children are not allowed during treatment procedures.",
+                  "Clients arriving over 15 minutes late risk losing their deposit and having the procedure refused.",
+                  "L' Alexia Atelier reserves the right to modify regulations and appointment dates by mutual agreement.",
+                  "No refund policy applies to treatments, as time, products, and work are invested in each appointment. If the client claims the right to return the deposit when the treatment has not taken place, the salon may impose a fine of 100% of the value of the treatment.",
+                  "Complaints must be submitted in person at the salon. Phone calls, messages, or photos are not accepted.",
+                  "Complaint procedures may take up to 30 working days from submission.",
+                  "The salon offers assistance for post-treatment complications if the client cooperates and follows recommendations.",
+                  "Necessary corrections require the Client’s attendance at the salon on the appointed date.",
+                  "Every client who agrees to any treatment in the salon is aware of the risks and consequences of the procedure performed.",
+                  "Clients are responsible for transportation costs to the salon. The salon does not compensate for such expenses.",
+                  "By paying the deposit and attending L' Alexia Atelier, you agree to these rules."
+              ];
+          @endphp
+
+          <ul class="space-y-4">
+              @foreach ($regulations as $index => $regulation)
+                  <li class="flex items-start hover:text-white duration-300 cursor-default">
+                      <span class="text-[rgba(238,185,93,1)] font-bold mr-2">•</span> 
+                      <span>{!! $regulation !!}</span>
+                  </li>
+                  @if ($index === round(count($regulations) / 2) - 1)
+                      </ul><ul class="space-y-4">
+                  @endif
+              @endforeach
+          </ul>
+      </div>
+  </div>
+</div>
+
+  <div>
+    <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:max-w-96 w-full m-auto bg-black">
+    <div class="text-center mb-10 bg-black/95 p-6 rounded-xl shadow-lg">
+      <h2 class="text-2xl font-bold text-[rgba(238,185,93,1)] mb-2">Find Us At:</h2>
+      <p class="text-lg font-bold text-[rgba(238,185,93,1)]">12A Gilling Cres, Darlington DL1 4TH</p>
+      <p class="mt-4">
+          <a href="https://www.google.com/maps/dir//12+Gilling+Cres+Darlington+DL1+4TH/@54.5178569,-1.5305936,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x487e9a2ecbb6ea53:0x308f89e3df7508b0" 
+             class="inline-block text-[rgba(238,185,93,1)] bg-black/80 hover:bg-[rgba(238,185,93,1)] hover:text-black transition-colors duration-300 p-3 rounded-full shadow-md">
+              <i class="fa-solid fa-map-location-dot fa-2xl"></i>
+          </a>
+      </p>
+  </div>
   <footer class="text-center m-8">
     <p>&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
   </footer>

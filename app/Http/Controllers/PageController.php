@@ -11,9 +11,9 @@ class PageController extends Controller
         return view('home');
     }
 
-    public function services()
+    public function contraindications()
     {
-        return view('services'); 
+        return view('contraindications'); 
     }
 
     public function gallery()
