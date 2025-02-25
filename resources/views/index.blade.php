@@ -42,49 +42,17 @@
 </head>
 
 <body class="text-[rgba(238,185,93,1)] bg-[url('/images/main_bg.webp')] m-0 p-0 bg-repeat-round bg-cover">
-  <header class="bg-transparent">
-    <div class="flex md:justify-between justify-end items-center p-4">
-        <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="w-[32rem] md:w-[18rem]">
-        <nav class="hidden md:flex space-x-6">
-            <a href="{{ route('index') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Home</a>
-            <a href="{{ route('treatments') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Treatments</a>
-            <a href="{{ route('contraindications') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Contraindications</a>
-            <a href="{{ route('policies') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Clinic Regulations</a>
-            <a href="{{ route('gallery') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Gallery</a>
-            <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[rgba(238,185,93,0.6)]" href="https://laalexiaatelier.booksy.com">Appointments</a>
-        </nav>
-        <button class="md:hidden text-[rgba(238,185,93,1)] text-2xl" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
-    </div>
-    <div id="myLinks" class="hidden flex flex-col md:hidden p-4 space-y-2 items-start transition-all duration-300 bg-transparent">
-        <a href="{{ route('index') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text hover:pl-2 transition-all duration-300">Home</a>
-        <hr class="border border-[rgba(238,185,93,0.86)] w-full block md:hidden">
-        <a href="{{ route('treatments') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text hover:pl-2 transition-all duration-300">Treatments</a>
-        <hr class="border border-[rgba(238,185,93,0.86)] w-full block md:hidden">
-        <a href="{{ route('contraindications') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text hover:pl-2 transition-all duration-300">Contraindications</a>
-        <hr class="border border-[rgba(238,185,93,0.86)] w-full block md:hidden">
-        <a href="{{ route('policies') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text hover:pl-2 transition-all duration-300">Clinic Regulations</a>
-        <hr class="border border-[rgba(238,185,93,0.86)] w-full block md:hidden">
-        <a href="{{ route('gallery') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text hover:pl-2 transition-all duration-300">Gallery</a>
-        <hr class="border border-[rgba(238,185,93,0.86)] w-full block md:hidden">
-        <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-lg text-center m-auto transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[rgba(238,185,93,0.6)]" href="https://laalexiaatelier.booksy.com">Appointments</a>
-    </div>
-</header>
+@include('layouts.navigation')
   <main class="flex flex-col justify-center px-4 sm:px-8 lg:px-16 py-8 max-w-[1920px] m-auto">
     <!-- Card 1 -->
-    <div class="bg-transparent/50 relative shadow-lg rounded-lg p-8 flex flex-col md:flex-row justify-center items-center mx-auto mb-20 gap-12 md:gap-16 text-white bg-[url('/images/Alexia-about.webp')] bg-cover bg-no-repeat bg-center md:bg-none">
+    <div class="bg-transparent/50 min-h-[500px] relative shadow-lg rounded-lg p-8 flex flex-col md:flex-row justify-center items-center mx-auto mb-20 gap-12 md:gap-16 text-white bg-[url('/images/Alexia-about.webp')] bg-cover bg-no-repeat bg-center md:bg-none">
     
         {{-- Overlay for better contrast (Only on mobile) --}}
         <div class="absolute inset-0 bg-transparent/40 backdrop-blur-xs rounded-lg md:hidden"></div>
     
         {{-- Text Content --}}
-        <div class="relative text-center md:text-left flex-1 z-10">
+        <div class="relative text-center md:text-left flex-1 z-10 flex flex-col justify-end">
             <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-[rgba(238,185,93,1)]">Welcome to Permanent Makeup & Aesthetics</h1>
-            <p class="text-lg sm:text-xl mb-4 text-gray-200">Specializing in personalized treatments for beauty enhancement.</p>
-            <p class="text-lg sm:text-xl mb-4 text-gray-200">
-                When it comes to your appearance, you deserve the best care possible.  
-                Welcome to <span class="font-bold italic text-[rgba(238,185,93,1)]">Permanent Make-Up Institute</span>,  
-                the leading expert in cosmetology and aesthetics treatments in North Yorkshire & Durhamshire.
-            </p>
             <p class="text-lg sm:text-xl font-semibold text-[rgba(238,185,93,1)]">Give us a call today to book a complimentary consultation.</p>
         </div>
     
@@ -97,15 +65,20 @@
                 class="max-h-[45em] w-full md:w-auto object-cover rounded-lg shadow-lg">
         </div>
     </div>
-    
-
 
     <!-- Card 2 (Reversed Layout) -->
     <div class="bg-transparent/50 shadow-lg rounded-lg p-8 flex flex-col md:flex-row-reverse justify-center items-center mx-auto mb-20 gap-12 md:gap-16 w-full text-white">
         <div class="text-center md:text-left flex-1">
             <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-[rgba(238,185,93,1)]">About Me</h2>
+            <p class="text-lg sm:text-xl mb-4 text-gray-200">Specializing in personalized treatments for beauty enhancement.</p>
+            <p class="text-lg sm:text-xl mb-4 text-gray-200">
+                When it comes to your appearance, you deserve the best care possible.  
+                Welcome to <span class="font-bold italic text-[rgba(238,185,93,1)]">Permanent Make-Up Institute</span>,  
+                the leading expert in cosmetology and aesthetics treatments in North Yorkshire & Durhamshire.
+            </p>
             <p class="text-lg sm:text-xl font-semibold mb-4 text-[rgba(238,185,93,1)]">Thank you for your trust and support.</p>
             <ul class="text-lg sm:text-xl space-y-3 text-gray-300">
+                
                 <li><strong class="text-[rgba(238,185,93,1)]">15 years of experience:</strong> University graduate, accredited Aesthetic Medicine Practitioner, and Laser Hair Removal Specialist.</li>
                 <li><strong class="text-[rgba(238,185,93,1)]">Award-winning:</strong> Multiple <i>British Hair and Beauty Awards</i>, including Gold Winner for Semi-Permanent Makeup and Aesthetic Salon of the Year 🏆.</li>
                 <li><strong class="text-[rgba(238,185,93,1)]">Published:</strong> Featured in <i>Leaders</i> magazine with a 3-page interview.</li>
