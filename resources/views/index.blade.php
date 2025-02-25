@@ -44,7 +44,7 @@
 <body class="text-[rgba(238,185,93,1)] bg-black m-0 p-0">
   <header class="bg-black/95">
     <div class="flex justify-between items-center p-4">
-        <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="w-40">
+        <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:w-[19rem] ">
         <nav class="hidden md:flex space-x-6">
             <a href="{{ route('index') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Home</a>
             <a href="{{ route('treatments') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Treatments</a>
@@ -71,24 +71,34 @@
 </header>
   <main class="flex flex-col justify-center px-4 sm:px-8 lg:px-16 py-8 max-w-[1920px] m-auto">
     <!-- Card 1 -->
-    <div class="bg-black/50 shadow-lg rounded-lg p-8 flex flex-col md:flex-row justify-center items-center mx-auto mb-20 gap-12 md:gap-16 text-white">
-        <div class="text-center md:text-left flex-1">
+    <div class="relative shadow-lg rounded-lg p-8 flex flex-col md:flex-row justify-center items-center mx-auto mb-20 gap-12 md:gap-16 text-white bg-[url('/images/Alexia-about.webp')] bg-cover bg-no-repeat bg-center md:bg-none">
+    
+        {{-- Overlay for better contrast (Only on mobile) --}}
+        <div class="absolute inset-0 bg-black/40 backdrop-blur-xs rounded-lg md:hidden"></div>
+    
+        {{-- Text Content --}}
+        <div class="relative text-center md:text-left flex-1 z-10">
             <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-[rgba(238,185,93,1)]">Welcome to Permanent Makeup & Aesthetics</h1>
-            <p class="text-lg sm:text-xl mb-4 text-gray-300">Specializing in personalized treatments for beauty enhancement.</p>
-            <p class="text-lg sm:text-xl mb-4 text-gray-300">
+            <p class="text-lg sm:text-xl mb-4 text-gray-200">Specializing in personalized treatments for beauty enhancement.</p>
+            <p class="text-lg sm:text-xl mb-4 text-gray-200">
                 When it comes to your appearance, you deserve the best care possible.  
                 Welcome to <span class="font-bold italic text-[rgba(238,185,93,1)]">Permanent Make-Up Institute</span>,  
                 the leading expert in cosmetology and aesthetics treatments in North Yorkshire & Durhamshire.
             </p>
             <p class="text-lg sm:text-xl font-semibold text-[rgba(238,185,93,1)]">Give us a call today to book a complimentary consultation.</p>
         </div>
-        <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-2xl text-center m-auto w-full font-bold hover:text-yellow-600 duration-300 md:hidden" href="https://laalexiaatelier.booksy.com">Appointments</a>
-
-        <div class="w-full md:w-auto">
+    
+        {{-- CTA Button --}}
+        <a class="relative z-10 bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-2xl text-center m-auto w-full font-bold hover:text-yellow-600 duration-300 md:hidden" href="https://laalexiaatelier.booksy.com">Appointments</a>
+    
+        {{-- Image --}}
+        <div class="relative w-full md:w-auto md:block hidden z-10">
             <img src="{{ asset('images/alexia-about-me.webp') }}" alt="Woman with syringe"
                 class="max-h-[45em] w-full md:w-auto object-cover rounded-lg shadow-lg">
         </div>
     </div>
+    
+
 
     <!-- Card 2 (Reversed Layout) -->
     <div class="bg-black/50 shadow-lg rounded-lg p-8 flex flex-col md:flex-row-reverse justify-center items-center mx-auto mb-20 gap-12 md:gap-16 w-full text-white">
@@ -105,7 +115,9 @@
         </div>
         <div class="w-full md:w-auto">
             <img src="{{ asset('images/Alexia-about.webp') }}" alt="Woman"
-                class="max-h-[45em] w-full md:w-auto object-cover rounded-lg shadow-lg">
+                class="max-h-[45em] w-full md:w-auto object-cover rounded-lg shadow-lg hidden md:block">
+            <img src="{{ asset('images/alexia-about-me.webp') }}" alt="Woman with syringe"
+                class="max-h-[45em] w-full md:w-auto object-cover rounded-lg shadow-lg md:hidden block">
         </div>
     </div>
 </main>
