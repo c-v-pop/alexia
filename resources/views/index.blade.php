@@ -44,7 +44,7 @@
 <body class="text-[rgba(238,185,93,1)] bg-black m-0 p-0">
   <header class="bg-black/95">
     <div class="flex justify-between items-center p-4">
-        <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:w-[19rem] ">
+        <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:w-[17rem[ ">
         <nav class="hidden md:flex space-x-6">
             <a href="{{ route('index') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Home</a>
             <a href="{{ route('treatments') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Treatments</a>
