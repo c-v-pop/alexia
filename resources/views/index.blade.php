@@ -41,7 +41,7 @@
   </script>
 </head>
 
-<body class="text-[rgba(238,185,93,1)] bg-[url('/images/main_bg.webp')] m-0 p-0">
+<body class="text-[rgba(238,185,93,1)] bg-[url('/images/main_bg.webp')] m-0 p-0 bg-repeat-round bg-cover">
   <header class="bg-transparent">
     <div class="flex md:justify-between justify-end items-center p-4">
         <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="w-[32rem] md:w-[18rem]">
