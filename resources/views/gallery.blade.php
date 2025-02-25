@@ -25,10 +25,10 @@
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="text-[rgba(238,185,93,1)] bg-black m-0 p-0">
-  <header class="bg-black/95">
-    <div class="flex justify-between items-center p-4">
-        <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:w-[17rem[ ">
+<body class="text-[rgba(238,185,93,1)] bg-[url('/images/main_bg.webp')] m-0 p-0">
+  <header class="bg-transparent">
+    <div class="flex justify-end items-center p-4">
+        <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="w-[32rem] md:w-[18rem]">
         <nav class="hidden md:flex space-x-6">
             <a href="{{ route('index') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Home</a>
             <a href="{{ route('treatments') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Treatments</a>
@@ -39,7 +39,7 @@
         </nav>
         <button class="md:hidden text-[rgba(238,185,93,1)] text-2xl" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
     </div>
-    <div id="myLinks" class="hidden flex flex-col md:hidden p-4 space-y-2 items-start transition-all duration-300">
+    <div id="myLinks" class="hidden flex flex-col md:hidden p-4 space-y-2 items-start transition-all duration-300 bg-transparent">
         <a href="{{ route('index') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text hover:pl-2 transition-all duration-300">Home</a>
         <hr class="border border-[rgba(238,185,93,0.86)] w-full block md:hidden">
         <a href="{{ route('treatments') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text hover:pl-2 transition-all duration-300">Treatments</a>
@@ -67,18 +67,18 @@
     
   </main>
   <div>
-    <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:max-w-96 w-full m-auto bg-black">
-    <div class="text-center mb-10 bg-black/95 p-6 rounded-xl shadow-lg">
+    <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:max-w-96 w-full m-auto bg-transparent">
+    <div class="text-center mb-10 bg-transparent p-6 rounded-xl shadow-lg">
       <h2 class="text-2xl font-bold text-[rgba(238,185,93,1)] mb-2">Find Us At:</h2>
       <p class="text-lg font-bold text-[rgba(238,185,93,1)]">12A Gilling Cres, Darlington DL1 4TH</p>
       <p class="mt-4">
           <a href="https://www.google.com/maps/dir//12+Gilling+Cres+Darlington+DL1+4TH/@54.5178569,-1.5305936,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x487e9a2ecbb6ea53:0x308f89e3df7508b0" 
-             class="inline-block text-[rgba(238,185,93,1)] bg-black/80 hover:bg-[rgba(238,185,93,1)] hover:text-black transition-colors duration-300 p-3 rounded-full shadow-md">
+             class="inline-block text-[rgba(238,185,93,1)] bg-transparent hover:bg-[rgba(238,185,93,1)] hover:text-black transition-colors duration-300 p-3 rounded-full shadow-md">
               <i class="fa-solid fa-map-location-dot fa-2xl"></i>
           </a>
       </p>
   </div>
-  <footer class="text-center p-4 bg-opacity-60 bg-black mt-6">
+  <footer class="text-center p-4 bg-opacity-60 bg-transparent mt-6">
     <p class="text-[rgba(238,185,93,1)]">&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
   </footer>
 </body>

@@ -12,7 +12,7 @@
         @yield('content')
     </main>
 
-    <footer class="text-white py-6 mt-12 w-full bg-black">
+    <footer class="text-white py-6 mt-12 w-full bg-transparent">
         <div class="container mx-auto text-center font-bold">
             <p>&copy; {{ date('Y') }} Permanent Makeup & Aesthetics. All rights reserved.</p>
         </div>
