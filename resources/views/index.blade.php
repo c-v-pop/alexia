@@ -41,19 +41,20 @@
   </script>
 </head>
 
-<body class="text-[rgba(238,185,93,1)] bg-[url('/images/main_bg.webp')] m-0 p-0 bg-repeat-round bg-cover">
+<body class="text-[rgba(238,185,93,1)] bg-[url('/images/8382376.jpg')] bg-repeat-space m-0 p-0 bg-cover">
 @include('layouts.navigation')
+
   <main class="flex flex-col justify-center px-4 sm:px-8 lg:px-16 py-8 max-w-[1920px] m-auto">
     <!-- Card 1 -->
-    <div class="bg-transparent/50 min-h-[500px] relative shadow-lg rounded-lg p-8 flex flex-col md:flex-row justify-center items-center mx-auto mb-20 gap-12 md:gap-16 text-white bg-[url('/images/Alexia-about.webp')] bg-cover bg-no-repeat bg-center md:bg-none">
+    <div class="bg-transparent/50 min-h-[500px] relative shadow-lg rounded-lg p-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-20 gap-12 md:gap-16 text-white bg-[url('/images/Alexia-about.webp')] bg-cover bg-no-repeat bg-center md:bg-none">
     
         {{-- Overlay for better contrast (Only on mobile) --}}
         <div class="absolute inset-0 bg-transparent/40 backdrop-blur-xs rounded-lg md:hidden"></div>
     
         {{-- Text Content --}}
         <div class="relative text-center md:text-left flex-1 z-10 flex flex-col justify-end">
-            <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-[rgba(238,185,93,1)]">Welcome to Permanent Makeup & Aesthetics</h1>
-            <p class="text-lg sm:text-xl font-semibold text-[rgba(238,185,93,1)]">Give us a call today to book a complimentary consultation.</p>
+            <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-white">Welcome to Permanent Makeup & Aesthetics</h1>
+            <p class="text-lg sm:text-xl font-semibold text-white">Give us a call today to book a complimentary consultation.</p>
         </div>
     
         {{-- CTA Button --}}
@@ -116,7 +117,7 @@
             <div class="relative aspect-square bg-cover bg-center rounded-md shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:border-4 hover:border-[rgba(238,185,93,1)]"
                  style="background-image: url('{{ asset('images/' . rawurlencode($image)) }}');">
                 <div class="absolute inset-0 bg-transparent/50 flex items-center justify-center hover:bg-transparent/0">
-                    <span class="text-[rgba(238,185,93,1)] text-lg font-bold px-4 py-2 rounded-md">
+                    <span class="text-white text-lg font-bold px-4 py-2 rounded-md">
                         {{ $category }}
                     </span>
                 </div>
@@ -126,23 +127,7 @@
 </section>
 
 
-<div>
-  <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="md:max-w-96 w-full m-auto bg-transparent">
-  <div class="text-center mb-10 bg-transparent p-6 rounded-xl shadow-lg">
-    <h2 class="text-2xl font-bold text-[rgba(238,185,93,1)] mb-2">Find Us At:</h2>
-    <p class="text-lg font-bold text-[rgba(238,185,93,1)]">12A Gilling Cres, Darlington DL1 4TH</p>
-    <p class="mt-4">
-        <a href="https://www.google.com/maps/dir//12+Gilling+Cres+Darlington+DL1+4TH/@54.5178569,-1.5305936,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x487e9a2ecbb6ea53:0x308f89e3df7508b0" 
-           class="inline-block text-[rgba(238,185,93,1)] bg-transparent hover:bg-[rgba(238,185,93,1)] hover:text-black transition-colors duration-300 p-3 rounded-full shadow-md">
-            <i class="fa-solid fa-map-location-dot fa-xl"></i>
-        </a>
-    </p>
-</div>
-
-</div>
-  <footer class="bg-transparent flex flex-col justify-center m-auto text-center my-6 pb-2">
-    <p class="text-[rgba(238,185,93,1)]">&copy; <?php echo date('Y'); ?> Permanent Makeup & Aesthetics. All rights reserved.</p>
-  </footer>
+@include('layouts.guest')
 </body>
 
 </html>
