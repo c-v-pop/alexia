@@ -25,7 +25,7 @@
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="text-[rgba(238,185,93,1)] bg-[url('/images/main_bg.webp')] m-0 p-0 bg-repeat-round bg-cover">
+<body class="text-[rgba(238,185,93,1)] bg-[url('/images/8382376.jpg')] bg-repeat-space m-0 p-0 bg-cover">
   @include('layouts.navigation')
   <main class="max-w-7xl mx-auto p-6">
     <h2 class="text-3xl font-semibold text-center mb-6">Gallery of Transformations</h2>

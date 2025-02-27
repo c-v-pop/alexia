@@ -40,7 +40,7 @@
     }
   </script>
 </head>
-<body class="text-[rgba(238,185,93,1)] bg-[url('/images/main_bg.webp')] m-0 p-0 bg-repeat-round bg-cover">
+<body class="text-[rgba(238,185,93,1)] bg-[url('/images/8382376.jpg')] bg-repeat-space m-0 p-0 bg-cover">
   @include('layouts.navigation')
 @php 
   $treatments = [

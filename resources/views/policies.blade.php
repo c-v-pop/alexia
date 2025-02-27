@@ -35,7 +35,7 @@
     }
   </script>
 </head>
-<body class="text-[rgba(238,185,93,1)] bg-[url('/images/main_bg.webp')] m-0 p-0 bg-repeat-round bg-cover">
+<body class="text-[rgba(238,185,93,1)] bg-[url('/images/8382376.jpg')] bg-repeat-space m-0 p-0 bg-cover">
   @include('layouts.navigation')
 <div class="p-6 sm:p-8 lg:p-10 max-w-5xl mx-auto">
   <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[rgba(238,185,93,1)] text-center mb-6">

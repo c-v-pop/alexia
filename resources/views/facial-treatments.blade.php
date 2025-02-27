@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +34,7 @@
     }
   </script>
 </head>
-<body class="text-[rgba(238,185,93,1)] bg-[url('/images/main_bg.webp')] m-0 p-0 bg-repeat-round bg-cover">
+<body class="text-[rgba(238,185,93,1)] bg-[url('/images/8382376.jpg')] bg-repeat-space m-0 p-0 bg-cover">
   @include('layouts.navigation')  
   <div class="flex items-start md:items-center justify-center min-h-screen">
     <div class="flex flex-col p-4 space-y-2 items-center text-center flex-wrap md:text-2xl">
