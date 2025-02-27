@@ -6,21 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Meta Tags for SEO -->
-  <meta name="description" content="L'Alexia Atelier offers personalized permanent makeup and aesthetics treatments in Darlington, UK. Enhance your natural beauty with expert care.">
-  <meta name="keywords" content="permanent makeup, aesthetics salon, beauty treatments, Darlington, eyeliner tattoos, eyebrow tattoos, lip blush, skin care, beauty expert">
+  <meta name="description" content="Transform your beauty with expert permanent makeup and aesthetics treatments at L'Alexia Atelier in Darlington, UK. Book your free consultation today!">
+  <meta name="description" content="Transform your beauty with expert permanent makeup and aesthetics treatments at L'Alexia Atelier in Darlington, UK. Book your free consultation today!">
   <meta name="author" content="L'Alexia Atelier">
   
   <!-- Open Graph Meta Tags for Social Media -->
   <meta property="og:title" content="L'Alexia Atelier - Permanent Makeup & Aesthetics Salon">
   <meta property="og:description" content="Enhance your beauty with expert permanent makeup and aesthetics treatments at L'Alexia Atelier in Darlington, UK. Book your consultation today.">
-  <meta property="og:image" content="https://example.com/path-to-image.jpg"> <!-- Replace with actual image -->
-  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:image" content="https://laalexiaatelier.co.uk/images/Alexia-about.webp">
+  <meta property="og:url" content="https://http://laalexiaatelier.co.uk/">
   <meta property="og:type" content="website">
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:title" content="L'Alexia Atelier - Permanent Makeup & Aesthetics Salon">
   <meta name="twitter:description" content="Personalized permanent makeup and aesthetics treatments in Darlington, UK. Book for a consultation at L'Alexia Atelier.">
-  <meta name="twitter:image" content="https://example.com/path-to-image.jpg"> <!-- Replace with actual image -->
+  <meta name="twitter:image" content="https://laalexiaatelier.co.uk/images/Alexia-about.webp"> <!-- Replace with actual image -->
   <meta name="twitter:card" content="summary_large_image">
   
   <!-- Favicon -->
@@ -62,7 +62,7 @@
     
         {{-- Image --}}
         <div class="relative w-full md:w-auto md:block hidden z-10">
-            <img src="{{ asset('images/alexia-about-me.webp') }}" alt="Woman with syringe"
+            <img src="{{ asset('images/bg_removed.webp') }}" alt="Woman with syringe"
                 class="max-h-[45em] w-full md:w-auto object-cover rounded-lg shadow-lg">
         </div>
     </div>
@@ -90,7 +90,7 @@
         <div class="w-full md:w-auto">
             <img src="{{ asset('images/Alexia-about.webp') }}" alt="Woman"
                 class="max-h-[45em] w-full md:w-auto object-cover rounded-lg shadow-lg hidden md:block">
-            <img src="{{ asset('images/alexia-about-me.webp') }}" alt="Woman with syringe"
+            <img src="{{ asset('images/bg_removed.webp') }}" alt="Woman with syringe"
                 class="max-h-[45em] w-full md:w-auto object-cover rounded-lg shadow-lg md:hidden block">
         </div>
     </div>
@@ -127,7 +127,7 @@
 </section>
 
 
-@include('layouts.guest')
+@include('layouts.footer')
 </body>
 
 </html>

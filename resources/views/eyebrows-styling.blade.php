@@ -54,5 +54,5 @@
       <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-2xl text-center m-auto w-full font-bold hover:text-yellow-600 duration-300" href="https://laalexiaatelier.booksy.com">Appointments</a>
     </div>
   </div>
-  @include('layouts.guest')
+  @include('layouts.footer')
 </body>

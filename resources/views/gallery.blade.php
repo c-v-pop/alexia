@@ -40,6 +40,6 @@
     </div>
     
   </main>
-  @include('layouts.guest')
+  @include('layouts.footer')
 </body>
 </html>

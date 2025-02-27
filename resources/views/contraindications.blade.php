@@ -128,7 +128,7 @@
     </div>
 </main>
 
-@include('layouts.guest')
+@include('layouts.footer')
 
   <script>
     function toggleMenu() {

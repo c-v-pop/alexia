@@ -64,6 +64,6 @@
           </a>
       @endforeach
   </section>
-  @include('layouts.guest')
+  @include('layouts.footer')
 </body>
 </html>

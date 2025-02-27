@@ -60,5 +60,5 @@
     </div>
   </div>
 </div>
-@include('layouts.guest')
+@include('layouts.footer')
 </body>
