@@ -33,7 +33,7 @@
     }
   </script>
 </head>
-<body class="text-white bg-[url('/images/main_bg.webp')] m-0 p-0 bg-repeat-round bg-cover">
+<body class="text-white bg-[url('/images/8382376.webp')] bg-repeat-space m-0 p-0 bg-cover" loading="lazy">
   @include('layouts.navigation')
   <div class="flex items-start md:items-center justify-center min-h-screen">
     <div class="flex flex-col p-4 space-y-2 items-center text-center flex-wrap md:text-2xl">

@@ -41,7 +41,7 @@
   </script>
 </head>
 
-<body class="text-[rgba(238,185,93,1)] bg-[url('/images/8382376.jpg')] bg-repeat-space m-0 p-0 bg-cover">
+<body class="text-[rgba(238,185,93,1)] bg-[url('/images/8382376.webp')] bg-repeat-space m-0 p-0 bg-cover" loading="lazy">
 @include('layouts.navigation')
 
   <main class="flex flex-col justify-center px-4 sm:px-8 lg:px-16 py-8 max-w-[1920px] m-auto">
@@ -89,7 +89,7 @@
         </div>
         <div class="w-full md:w-auto">
             <img src="{{ asset('images/Alexia-about.webp') }}" alt="Woman"
-                class="max-h-[45em] w-full md:w-auto object-cover rounded-lg shadow-lg hidden md:block">
+                class="max-h-[45em] w-full md:w-auto object-cover rounded-lg shadow-lg hidden md:block" loading="lazy">
             <img src="{{ asset('images/bg_removed.webp') }}" alt="Woman with syringe"
                 class="max-h-[45em] w-full md:w-auto object-cover rounded-lg shadow-lg md:hidden block">
         </div>
