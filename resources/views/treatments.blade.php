@@ -41,10 +41,10 @@
     <section class="text-center grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl md:mx-auto my-16 mx-8">
       @php
       $categories = [
-          'FACIAL TREATMENTS' => 'facial_treatment.jpg',
-          'EYEBROWS STYLING' => 'eyebrows.png',
-          'PERMANENT MAKEUP' => 'semi-permanent.jpg',
-          'AESTHETIC TREATMENTS' => 'aesthetics-treatment.jpg',
+          'FACIAL TREATMENTS' => 'facial_treatment.webp',
+          'EYEBROWS STYLING' => 'eyebrows.webp',
+          'PERMANENT MAKEUP' => 'semi-permanent.webp',
+          'AESTHETIC TREATMENTS' => 'aesthetics-treatment.webp',
       ];
       @endphp
   

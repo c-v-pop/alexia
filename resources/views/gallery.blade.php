@@ -32,7 +32,7 @@
     <p class="text-center text-lg mb-6">Explore our curated gallery showcasing the artistry and precision of our treatments.</p>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <img src="{{ asset('images/lips.webp') }}" class="rounded-lg shadow-lg transition-transform duration-300 hover:scale-110" alt="Lips after operation">
-      <img src="{{ asset('images/eyebrows.webp') }}" class="rounded-lg shadow-lg transition-transform duration-300 hover:scale-110" alt="Eyebrows after makeup">
+      <img src="{{ asset('images/eyebrowss.webp') }}" class="rounded-lg shadow-lg transition-transform duration-300 hover:scale-110" alt="Eyebrows after makeup">
       <img src="{{ asset('images/scar.webp') }}" class="rounded-lg shadow-lg transition-transform duration-300 hover:scale-110" alt="Healed scar picture after treatment">
       <img src="{{ asset('images/wrinkles.webp') }}" class="rounded-lg shadow-lg transition-transform duration-300 hover:scale-110" alt="Wrinkles picture after intervention">
       <img src="{{ asset('images/wrinkles_2.webp') }}" class="rounded-lg shadow-lg transition-transform duration-300 hover:scale-110" alt="Wrinkles picture after intervention">
