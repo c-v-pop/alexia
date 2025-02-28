@@ -34,15 +34,10 @@
   
   <!-- FontAwesome Script -->
   <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
-  <script>
-    function toggleMenu() {
-      document.getElementById("myLinks").classList.toggle("hidden");
-    }
-  </script>
 </head>
 
-<body class="text-[rgba(238,185,93,1)] bg-[url('/images/8382376.webp')] bg-repeat-space m-0 p-0 bg-cover" loading="lazy">
-@include('layouts.navigation')
+<body class="text-[rgba(238,185,93,1)] bg-[url('/images/8382376.webp')] bg-repeat-space bg-fixed bg-cover m-0 p-0" loading="lazy">
+        @include('layouts.navigation')
 
   <main class="flex flex-col justify-center px-4 sm:px-8 lg:px-16 py-8 max-w-[1920px] m-auto">
     <!-- Card 1 -->

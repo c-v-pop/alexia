@@ -27,13 +27,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome Script -->
   <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
-  <script>
-    function toggleMenu() {
-      document.getElementById("myLinks").classList.toggle("hidden");
-    }
-  </script>
+
 </head>
-<body class="text-white bg-[url('/images/8382376.webp')] bg-repeat-space m-0 p-0 bg-cover">
+<body class="text-[rgba(238,185,93,1)] bg-[url('/images/8382376.webp')] bg-repeat-space bg-fixed bg-cover m-0 p-0" loading="lazy">  
   @include('layouts.navigation')
   <div class="flex items-start md:items-center justify-center min-h-screen">
     <div class="flex flex-col p-4 space-y-2 items-center text-center flex-wrap md:text-2xl">

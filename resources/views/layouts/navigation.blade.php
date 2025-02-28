@@ -1,3 +1,24 @@
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("myLinks");
+
+        if (menu.classList.contains("hidden")) {
+            menu.classList.remove("hidden");
+            setTimeout(() => {
+                menu.classList.remove("opacity-0", "scale-95");
+                menu.classList.add("opacity-100", "scale-100");
+            }, 10); // Delay ensures transition runs
+        } else {
+            menu.classList.remove("opacity-100", "scale-100");
+            menu.classList.add("opacity-0", "scale-95");
+            setTimeout(() => menu.classList.add("hidden"), 300); // Waits for transition
+        }
+    }
+</script>
+</head>
+
+<body class="bg-transparent text-[rgba(238,185,93,1)]">
+
 <header class="bg-transparent">
     <div class="flex md:justify-between justify-evenly items-center p-4">
         <img src="{{ asset('images/logo.webp') }}" alt="Beauty Saloon Logo" class="w-[12rem] md:w-[10rem]">
@@ -9,9 +30,12 @@
             <a href="{{ route('gallery') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Gallery</a>
             <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[rgba(238,185,93,0.6)]" href="https://laalexiaatelier.booksy.com">Appointments</a>
         </nav>
-        <button class="md:hidden text-[rgba(238,185,93,1)] text-2xl" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+        <button class="md:hidden text-[rgba(238,185,93,1)] text-2xl" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </button>
     </div>
-    <div id="myLinks" class="hidden flex flex-col md:hidden p-4 space-y-2 items-start transition-all duration-300 bg-transparent">
+
+    <div id="myLinks" class="hidden flex flex-col md:hidden p-4 space-y-2 items-start transition-all duration-300 ease-in-out opacity-0 scale-95">
         <a href="{{ route('index') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text hover:pl-2 transition-all duration-300">Home</a>
         <hr class="border border-[rgba(238,185,93,0.86)] w-full block md:hidden">
         <a href="{{ route('treatments') }}" class="font-semibold block text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text hover:pl-2 transition-all duration-300">Treatments</a>

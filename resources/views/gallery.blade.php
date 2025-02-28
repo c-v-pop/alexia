@@ -18,16 +18,12 @@
   <link rel="icon" href="https://raw.githubusercontent.com/c-v-pop/alexia/refs/heads/main/public/images/logo.png" type="image/png">
   <title>L'Alexia Atelier - Permanent Makeup & Aesthetics Salon</title>
   <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
-  <script>
-    function toggleMenu() {
-      document.getElementById("myLinks").classList.toggle("hidden");
-    }
-  </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="text-white bg-[url('/images/8382376.webp')] bg-repeat-space m-0 p-0 bg-cover">
-  @include('layouts.navigation')
-  <main class="max-w-7xl mx-auto p-6">
+<body class="text-[rgba(238,185,93,1)] bg-[url('/images/8382376.webp')] bg-repeat-space bg-fixed bg-cover m-0 p-0" loading="lazy">
+    @include('layouts.navigation')
+   <main class="max-w-7xl mx-auto p-6">
     <h2 class="text-3xl font-semibold text-center mb-6">Gallery of Transformations</h2>
     <p class="text-center text-lg mb-6">Explore our curated gallery showcasing the artistry and precision of our treatments.</p>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

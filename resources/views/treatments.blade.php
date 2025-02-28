@@ -35,7 +35,7 @@
       }
     </script>
 </head>
-<body class="text-white bg-[url('/images/8382376.webp')] bg-repeat-space m-0 p-0 bg-cover">
+<body class="text-[rgba(238,185,93,1)] bg-[url('/images/8382376.webp')] bg-repeat-space bg-fixed bg-cover m-0 p-0" loading="lazy">
     @include('layouts.navigation')
     <h2 class="text-4xl text-center mx-auto my-12 font-bold">Treatments</h2>
     <section class="text-center grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl md:mx-auto my-16 mx-8">

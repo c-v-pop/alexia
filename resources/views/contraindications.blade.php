@@ -34,14 +34,9 @@
   
   <!-- FontAwesome Script -->
   <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
-  <script>
-    function toggleMenu() {
-      document.getElementById("myLinks").classList.toggle("hidden");
-    }
-  </script>
+
 </head>
-<body class="text-white bg-[url('/images/8382376.webp')] bg-repeat-space m-0 p-0 bg-cover">
-  @include('layouts.navigation')
+<body class="text-[rgba(238,185,93,1)] bg-[url('/images/8382376.webp')] bg-repeat-space bg-fixed bg-cover m-0 p-0" loading="lazy">  @include('layouts.navigation')
 @php 
   $treatments = [
       [
@@ -129,13 +124,6 @@
 </main>
 
 @include('layouts.footer')
-
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("myLinks");
-      menu.classList.toggle("hidden");
-    }
-  </script>
 </body>
 
 </html>
