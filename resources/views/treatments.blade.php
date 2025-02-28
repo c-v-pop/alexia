@@ -56,7 +56,7 @@
               <div class="relative aspect-square bg-cover bg-center rounded-md shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:border-4 hover:border-[rgba(238,185,93,1)]"
                    style="background-image: url('{{ asset('images/' . rawurlencode($image)) }}');">
                   <div class="absolute inset-0 bg-transparent/50 flex items-center justify-center hover:bg-transparent/0">
-                      <span class="text-[rgba(238,185,93,1)] text-lg font-bold px-4 py-2 rounded-md">
+                      <span class="text-white text-lg font-bold px-4 py-2 rounded-md">
                           {{ $category }}
                       </span>
                   </div>
