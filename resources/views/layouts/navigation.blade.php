@@ -1,20 +1,20 @@
-<script>
+<script defer>
     function toggleMenu() {
         const menu = document.getElementById("myLinks");
-
         if (menu.classList.contains("hidden")) {
             menu.classList.remove("hidden");
-            setTimeout(() => {
+            requestAnimationFrame(() => {
                 menu.classList.remove("opacity-0", "scale-95");
                 menu.classList.add("opacity-100", "scale-100");
-            }, 10); // Delay ensures transition runs
+            });
         } else {
             menu.classList.remove("opacity-100", "scale-100");
             menu.classList.add("opacity-0", "scale-95");
-            setTimeout(() => menu.classList.add("hidden"), 300); // Waits for transition
+            setTimeout(() => menu.classList.add("hidden"), 300);
         }
     }
-</script>
+ </script>
+ 
 </head>
 
 <body class="bg-transparent text-[rgba(238,185,93,1)]">
