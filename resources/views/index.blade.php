@@ -23,6 +23,7 @@
       <!-- Preload Important Assets -->
       <link rel="preload" as="image" href="{{ asset('images/Alexia-about.webp') }}" type="image/webp">
       <link rel="preload" as="image" href="{{ asset('images/bg_removed.webp') }}" type="image/webp">
+      <link rel="preload" as="image" href="{{ asset('images/8382376.webp') }}" type="image/webp">
       <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin="anonymous">
       <link rel="dns-prefetch" href="https://kit.fontawesome.com">
       <!-- Tailwind CSS -->
