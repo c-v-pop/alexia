@@ -30,9 +30,13 @@
             <a href="{{ route('gallery') }}" class="text-sm lg:text-2xl text-transparent bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] bg-clip-text relative after:content-[''] after:block after:h-[2px] after:bg-[rgba(238,185,93,1)] after:w-0 after:transition-all after:duration-300 hover:after:w-full">Gallery</a>
             <a class="bg-[rgba(238,185,93,1)] bg-gradient-to-r from-[rgba(238,185,93,0.86)] via-[rgba(242,237,207,1)] to-[rgba(238,185,93,1)] px-4 py-2 rounded-md text-black text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[rgba(238,185,93,0.6)]" href="https://laalexiaatelier.booksy.com">Appointments</a>
         </nav>
-        <button class="md:hidden text-[rgba(238,185,93,1)] text-2xl" onclick="toggleMenu()" name="Open Menu">
-            <i class="fa fa-bars"></i>
-        </button>
+        <button 
+        class="md:hidden text-[rgba(238,185,93,1)] text-2xl" 
+        onclick="toggleMenu()" 
+        aria-label="Open navigation menu">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <span class="sr-only">Open menu</span>
+    </button>
     </div>
 
     <div id="myLinks" class="hidden flex flex-col md:hidden p-4 space-y-2 items-start transition-all duration-300 ease-in-out opacity-0 scale-95">
