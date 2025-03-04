@@ -3,34 +3,44 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      
       <!-- Meta Tags for SEO -->
       <meta name="description" content="Transform your beauty with expert permanent makeup and aesthetics treatments at L'Alexia Atelier in Darlington, UK. Book your free consultation today!">
       <meta name="author" content="L'Alexia Atelier">
+  
       <!-- Open Graph Meta Tags for Social Media -->
       <meta property="og:title" content="L'Alexia Atelier - Permanent Makeup & Aesthetics Salon">
       <meta property="og:description" content="Enhance your beauty with expert permanent makeup and aesthetics treatments at L'Alexia Atelier in Darlington, UK. Book your consultation today.">
       <meta property="og:image" content="https://laalexiaatelier.co.uk/images/Alexia-about.webp">
       <meta property="og:url" content="https://laalexiaatelier.co.uk/">
       <meta property="og:type" content="website">
+  
       <!-- Twitter Card Meta Tags -->
       <meta name="twitter:title" content="L'Alexia Atelier - Permanent Makeup & Aesthetics Salon">
       <meta name="twitter:description" content="Personalized permanent makeup and aesthetics treatments in Darlington, UK. Book for a consultation at L'Alexia Atelier.">
       <meta name="twitter:image" content="https://laalexiaatelier.co.uk/images/Alexia-about.webp">
       <meta name="twitter:card" content="summary_large_image">
+  
       <!-- Favicon -->
       <link rel="icon" href="{{ asset('images/logo.png') }}" type="image/png">
+  
       <title>L'Alexia Atelier - Permanent Makeup & Aesthetics Salon</title>
+  
       <!-- Preload Important Assets -->
       <link rel="preload" as="image" href="{{ asset('images/Alexia-about.webp') }}" type="image/webp">
       <link rel="preload" as="image" href="{{ asset('images/bg_removed.webp') }}" type="image/webp">
       <link rel="preload" as="image" href="{{ asset('images/8382376.webp') }}" type="image/webp">
-      <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin="anonymous">
+  
+      <!-- Preconnect to Speed Up External Resources -->
+      <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
       <link rel="dns-prefetch" href="https://kit.fontawesome.com">
-      <!-- Tailwind CSS -->
+  
+      <!-- Load CSS (Use Compiled Tailwind Instead) -->
       <script src="https://cdn.tailwindcss.com"></script>
-      <!-- FontAwesome -->
-      <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous"></script>
-   </head>
+  
+      <!-- FontAwesome (Defer Loading) -->
+      <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous" defer></script>
+  </head>
    <body class="text-[rgba(238,185,93,1)] bg-[url('/images/8382376.webp')] bg-repeat-space bg-fixed bg-cover m-0 p-0" loading="lazy">
       @include('layouts.navigation')
       <main class="flex flex-col justify-center px-4 sm:px-8 lg:px-16 py-8 max-w-[1920px] m-auto">
