@@ -36,13 +36,13 @@
       <link rel="dns-prefetch" href="https://kit.fontawesome.com">
   
       <!-- Load CSS (Use Compiled Tailwind Instead) -->
-      <script src="https://cdn.tailwindcss.com"></script>
-  
+    @vite('resources/css/app.css')
+
       <!-- FontAwesome (Defer Loading) -->
       <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous" defer></script>
   </head>
-   <body class="text-[rgba(238,185,93,1)] bg-[url('/images/8382376.webp')] bg-repeat-space bg-fixed bg-cover m-0 p-0" loading="lazy">
-      @include('layouts.navigation')
+  <body class="bg-custom-bg bg-repeat-space bg-fixed bg-cover">
+   @include('layouts.navigation')
       <main class="flex flex-col justify-center px-4 sm:px-8 lg:px-16 py-8 max-w-[1920px] m-auto">
          <!-- Card 1 -->
          <div class="bg-transparent/50 min-h-[500px] relative shadow-lg rounded-lg p-8 flex flex-col md:flex-row justify-between items-center mx-auto mb-20 gap-12 md:gap-16 text-white bg-[url('/images/Alexia-about.webp')] bg-cover bg-no-repeat bg-center md:bg-none">
