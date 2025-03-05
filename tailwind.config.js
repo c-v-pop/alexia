@@ -4,9 +4,9 @@ import forms from '@tailwindcss/forms';
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-        "./resources/views/**/*.blade.php",
-        "./resources/js/**/*.js",
-        "./resources/css/**/*.css" // Ensure CSS files are included
+    "./resources/views/**/*.blade.php",
+    "./resources/js/**/*.js",
+    "./public/images/**/*.webp"    
     ],
 
     theme: {
@@ -14,9 +14,6 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
-            backgroundImage: {
-                'custom-bg': "url('/images/8382376.webp')",
-            }
         },
     },
 
