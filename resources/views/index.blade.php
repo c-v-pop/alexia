@@ -36,7 +36,6 @@
       <link rel="dns-prefetch" href="https://kit.fontawesome.com">
   
       <!-- Load CSS (Use Compiled Tailwind Instead) -->
-    @vite('resources/css/app.css')
     <script src="https://cdn.tailwindcss.com"></script>
       <!-- FontAwesome (Defer Loading) -->
       <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous" defer></script>
