@@ -23,7 +23,6 @@
   <li>✅ <strong>Landing page layout completed</strong> (08.12.2024)</li>
   <li>✅ <strong>Services section added</strong></li>
   <li>✅ <strong>Content imported from the previous website</strong></li>
-  <li>⏳ <strong>Awaiting final text and input from the customer</strong> (as of 7.3.2025)</li>
 </ul>
 
 <p  align="center"> 📷📷📷📷📷 Screenshots 📷📷📷📷📷 </p>
