@@ -26,13 +26,27 @@
   <li>⏳ <strong>Awaiting final text and input from the customer</strong> (as of 7.3.2025)</li>
 </ul>
 
-### 📷 Screenshots (Optional)  
+### 📷 Screenshots
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6ab735d7-e924-431e-996e-a81de8998237" alt="Screenshot 1" />
+</p>
+
+<p align="center">
   <img src="https://github.com/user-attachments/assets/826182e5-d56a-41e6-ad69-63d47df8f471" alt="Screenshot 2" />
+</p>
+
+<p align="center">
   <img src="https://github.com/user-attachments/assets/6b7dba35-160b-45bd-9470-b5c4caa3962a" alt="Screenshot 3" />
+</p>
+
+<p align="center">
   <img src="https://github.com/user-attachments/assets/ae178282-e7cb-41c1-9298-1e2409f702bb" alt="Screenshot 4" />
+</p>
+
+<p align="center">
   <img src="https://github.com/user-attachments/assets/71aaa4af-2acf-4336-8b77-00c31cd32acd" alt="Screenshot 5" />
 </p>
+
+
 
 ---
