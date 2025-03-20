@@ -1,11 +1,19 @@
-# La Alexia Atelier – Beauty & Aesthetics Website  
+<p align="center">
+  # La Alexia Atelier – Beauty & Aesthetics Website  
+</p>
 
-## 🌐 Live Site: [laalexiaatelier.co.uk](https://laalexiaatelier.co.uk/)  
+<p align="center">
+  ## 🌐 Live Site: [laalexiaatelier.co.uk](https://laalexiaatelier.co.uk/)
+</p>
 
-### 📌 Project Overview  
+<p align="center">
+  ### 📌 Project Overview
+</p>
 <p align="center">La Alexia Atelier is a modern and elegant website designed for a beauty and aesthetics business. Built with a clean and responsive layout, the site highlights services, pricing, and essential booking information.</p>
 
-### 🛠️ Tech Stack  
+<p align="center">
+  ### 🛠️ Tech Stack  
+</p>
 <p align="center">
   <strong>Laravel</strong> – Backend framework for managing content and dynamic functionality<br>
   <strong>PHP</strong> – Server-side language powering the application<br>
@@ -15,10 +23,14 @@
   <strong>Ploi.io</strong> – Deployment and server management
 </p>
 
-### 🚀 Deployment & Hosting  
+<p align="center">
+  ### 🚀 Deployment & Hosting  
+</p>
 <p align="center">The website was initially hosted elsewhere but later migrated to <strong>AWS</strong>, with deployment managed through <strong>Ploi.io</strong>. The server was configured from scratch to optimize performance and security.</p>
 
-### 🔧 Features & Development Progress  
+<p align="center">
+  ### 🔧 Features & Development Progress  
+</p>
 <p align="center">
   ✅ <strong>Landing page layout completed</strong> (08.12.2024)<br>
   ✅ <strong>Services section added</strong><br>
