@@ -26,7 +26,7 @@
   <li>⏳ <strong>Awaiting final text and input from the customer</strong> (as of 7.3.2025)</li>
 </ul>
 
-### 📷 Screenshots
+<p  align="center"> ### 📷 Screenshots </p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6ab735d7-e924-431e-996e-a81de8998237" alt="Screenshot 1" />
 </p>
