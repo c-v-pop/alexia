@@ -6,26 +6,27 @@
 <p align="center">La Alexia Atelier is a modern and elegant website designed for a beauty and aesthetics business. Built with a clean and responsive layout, the site highlights services, pricing, and essential booking information.</p>
 
 ### 🛠️ Tech Stack  
-<ul align="center">
-  <li><strong>Laravel</strong> – Backend framework for managing content and dynamic functionality</li>
-  <li><strong>PHP</strong> – Server-side language powering the application</li>
-  <li><strong>TailwindCSS</strong> – Utility-first CSS framework for a sleek and responsive UI</li>
-  <li><strong>Blade</strong> – Laravel’s templating engine for structuring views</li>
-  <li><strong>Herd</strong> – Local Laravel development environment</li>
-  <li><strong>Ploi.io</strong> – Deployment and server management</li>
-</ul>
+<p align="center">
+  <strong>Laravel</strong> – Backend framework for managing content and dynamic functionality<br>
+  <strong>PHP</strong> – Server-side language powering the application<br>
+  <strong>TailwindCSS</strong> – Utility-first CSS framework for a sleek and responsive UI<br>
+  <strong>Blade</strong> – Laravel’s templating engine for structuring views<br>
+  <strong>Herd</strong> – Local Laravel development environment<br>
+  <strong>Ploi.io</strong> – Deployment and server management
+</p>
 
 ### 🚀 Deployment & Hosting  
 <p align="center">The website was initially hosted elsewhere but later migrated to <strong>AWS</strong>, with deployment managed through <strong>Ploi.io</strong>. The server was configured from scratch to optimize performance and security.</p>
 
 ### 🔧 Features & Development Progress  
-<ul align="center">
-  <li>✅ <strong>Landing page layout completed</strong> (08.12.2024)</li>
-  <li>✅ <strong>Services section added</strong></li>
-  <li>✅ <strong>Content imported from the previous website</strong></li>
-</ul>
+<p align="center">
+  ✅ <strong>Landing page layout completed</strong> (08.12.2024)<br>
+  ✅ <strong>Services section added</strong><br>
+  ✅ <strong>Content imported from the previous website</strong>
+</p>
 
-<p  align="center"> 📷📷📷📷📷 Screenshots 📷📷📷📷📷 </p>
+<p align="center"> 📷📷📷📷📷 Screenshots 📷📷📷📷📷 </p>
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6ab735d7-e924-431e-996e-a81de8998237" alt="Screenshot 1" />
 </p>
@@ -45,7 +46,3 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/71aaa4af-2acf-4336-8b77-00c31cd32acd" alt="Screenshot 5" />
 </p>
-
-
-
----
