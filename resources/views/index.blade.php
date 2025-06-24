@@ -37,6 +37,7 @@
   
       <!-- Load CSS (Use Compiled Tailwind Instead) -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
       <!-- FontAwesome (Defer Loading) -->
       <script src="https://kit.fontawesome.com/1ce7f964f6.js" crossorigin="anonymous" defer></script>
   </head>
